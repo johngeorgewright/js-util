@@ -1,0 +1,27 @@
+{
+  "name": "@johngeorgewright/<%= name %>",<% if (!public) { %>
+  "private": true,<% } %>
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "start": "tsc --watch --preserveWatchOutput",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.5"
+  }
+}

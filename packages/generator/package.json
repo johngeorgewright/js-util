@@ -1,0 +1,31 @@
+{
+  "name": "@johngeorgewright/generator",
+  "version": "0.0.0",
+  "description": "Generates a MOL ads packages",
+  "private": true,
+  "files": [
+    "generators/package"
+  ],
+  "scripts": {
+    "prebuild": "rimraf generators",
+    "build": "tsc",
+    "postbuild": "rimraf 'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/yeoman-generator": "4",
+    "jest": "^26.4.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "change-case": "^4.1.1",
+    "yeoman-generator": "^4.12.0"
+  }
+}

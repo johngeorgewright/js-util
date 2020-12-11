@@ -1,0 +1,53 @@
+{
+  "name": "@johngeorgewright/ts-mono-repo",
+  "version": "0.0.0",
+  "description": "The MOL Ads mono-repo",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "build": "lerna run --stream --no-private build",
+    "build:generator": "lerna --scope=@johngeorgewright/generator run build",
+    "commit": "git-cz",
+    "generate:package": "yo ./packages/generator/generators/package",
+    "postgenerate:package": "lerna bootstrap",
+    "release": "lerna exec --no-private --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
+    "start": "lerna run --stream --parallel --ignore=generator start",
+    "test": "lerna run --stream test"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-lerna-scopes": "^11.0.0",
+    "commitizen": "^4.2.1",
+    "cz-lerna-changelog": "^2.0.3",
+    "husky": "^4.3.0",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "semantic-release": "^17.1.2",
+    "semantic-release-monorepo": "^7.0.3",
+    "yo": "^3.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
+      "prettier --ignore-path .gitignore --write"
+    ]
+  }
+}
