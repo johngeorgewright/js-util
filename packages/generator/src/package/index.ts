@@ -18,8 +18,7 @@ export = class PluginGenerator extends Generator {
   async prompting() {
     this.answers = await this.prompt([
       {
-        message:
-          "What is the packages's name? (Minus the @johngeorgewright namespace)",
+        message: "What is the packages's name? (Minus the @johngw namespace)",
         name: 'name',
         type: 'input',
         validate: (x) => !!x || 'You must supply a name',

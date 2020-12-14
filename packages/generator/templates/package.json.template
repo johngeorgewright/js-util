@@ -1,5 +1,5 @@
 {
-  "name": "@johngeorgewright/<%= name %>",<% if (!public) { %>
+  "name": "@johngw/<%= name %>",<% if (!public) { %>
   "private": true,<% } %>
   "version": "0.0.0",
   "description": "<%= description %>",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
+    "url": "https://github.com/johngeorgewright/js-util/issues"
   },
-  "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
+  "homepage": "https://github.com/johngeorgewright/js-util#readme",
   "devDependencies": {
     "@types/jest": "^26.0.3",
     "jest": "^26.1.0",

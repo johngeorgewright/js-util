@@ -1,3 +1,3 @@
-# @johngeorgewright/<%= name %>
+# @johngw/<%= name %>
 
 <%= description %>

@@ -1,12 +1,12 @@
 {
-  "name": "@johngeorgewright/ts-mono-repo",
+  "name": "@johngw/js-util",
   "version": "0.0.0",
   "description": "The MOL Ads mono-repo",
   "main": "index.js",
   "scripts": {
     "postinstall": "lerna bootstrap",
     "build": "lerna run --stream --no-private build",
-    "build:generator": "lerna --scope=@johngeorgewright/generator run build",
+    "build:generator": "lerna --scope=@johngw/generator run build",
     "commit": "git-cz",
     "generate:package": "yo ./packages/generator/generators/package",
     "postgenerate:package": "lerna bootstrap",
@@ -17,9 +17,9 @@
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
+    "url": "https://github.com/johngeorgewright/js-util/issues"
   },
-  "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
+  "homepage": "https://github.com/johngeorgewright/js-util#readme",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
