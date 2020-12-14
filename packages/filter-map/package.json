@@ -1,0 +1,26 @@
+{
+  "name": "@johngw/filter-map",
+  "version": "0.0.0",
+  "description": "Filters and maps an array in 1 loop",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "start": "tsc --watch --preserveWatchOutput",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/js-util/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/js-util#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.5"
+  }
+}
