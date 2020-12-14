@@ -1,13 +1,13 @@
 export default function filterMap<In, Out>(
-  array: ArrayLike<In>,
+  input: ArrayLike<In>,
   filter: (item: In) => boolean,
   map: (item: In) => Out
 ) {
-  const result: Out[] = new Array(array.length)
+  const result: Out[] = new Array(input.length)
   let size = 0
 
-  for (let i = 0; i < array.length; i++) {
-    const item = array[i]
+  for (let i = 0; i < input.length; i++) {
+    const item = input[i]
 
     if (filter(item)) {
       result[size++] = map(item)
