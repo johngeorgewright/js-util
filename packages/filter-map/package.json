@@ -2,7 +2,7 @@
   "name": "@johngw/filter-map",
   "version": "0.0.0",
   "description": "Filters and maps an array in 1 loop",
-  "main": "dist/index.js",
+  "main": "dist/filter-map.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
