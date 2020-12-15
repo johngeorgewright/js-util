@@ -1,13 +1,11 @@
-export default function resolver<T>() {
+export default function resolver<T = void>() {
   let resolve: (value: T | PromiseLike<T>) => void
   let resolved = false
 
-  const promise = new Promise<T>(($resolve) => {
-    resolve = $resolve
-  })
-
   return {
-    promise,
+    promise: new Promise<T>(($resolve) => {
+      resolve = $resolve
+    }),
     resolve: (value: T | PromiseLike<T>) => {
       if (!resolved) {
         resolved = true
