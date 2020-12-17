@@ -33,3 +33,20 @@ filterReduce(
 )
 // 10
 ```
+
+## Builder
+
+> Performant array builder
+
+This is used internally to build arrays. It performs 3x faster than just appending items to array with undefined length.
+
+```typescript
+const builder = new Builder<number>(10_000)
+
+for (let i = 0; i < 10_000; i++) {
+  builder.add(i)
+}
+
+builder.finish()
+// [0, 1, 2, 3, ..., 9999]
+```
