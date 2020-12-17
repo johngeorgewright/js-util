@@ -11,7 +11,7 @@
     "start": "tsc --watch --preserveWatchOutput",
     "test": "jest"
   },
-  "author": "",
+  "author": "John Wright <johngeorge.wright@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/johngeorgewright/js-util/issues"
