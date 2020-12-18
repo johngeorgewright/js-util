@@ -1,5 +1,5 @@
 {
-  "name": "@johngw/array-perf",
+  "name": "@johngw/js-util-perf",
   "private": true,
   "version": "0.0.0",
   "description": "Performance testing for @johngw/array",

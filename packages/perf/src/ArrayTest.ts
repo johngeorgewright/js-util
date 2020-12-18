@@ -1,4 +1,5 @@
 import Table from 'cli-table'
+import Test from './test'
 
 const lengths = [
   10,
@@ -23,7 +24,7 @@ const lengths = [
   99990000,
 ]
 
-export default class Test {
+export default class ArrayTest implements Test {
   private results: { [testName: string]: number[] }
 
   constructor() {

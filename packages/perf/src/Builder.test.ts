@@ -1,5 +1,5 @@
 import Builder from '../../array/src/Builder'
-import Test from './test'
+import Test from './ArrayTest'
 
 const test = new Test()
 
