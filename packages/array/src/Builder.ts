@@ -1,3 +1,5 @@
+const MAX_SIZE = 33_500_000
+
 /**
  * 3x faster than just pushing items to an array.
  * However, you must specify a maximum size.
@@ -13,7 +15,7 @@ export default class Builder<T> {
   private index: number
 
   constructor(maxSize: number) {
-    this.array = new Array(maxSize)
+    this.array = new Array(Math.min(maxSize, MAX_SIZE))
     this.index = 0
   }
 
