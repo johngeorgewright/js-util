@@ -1,0 +1,24 @@
+{
+  "name": "@johngw/array-perf",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Performance testing for @johngw/array",
+  "main": "dist/index.js",
+  "scripts": {
+    "perf": "find src -name '*.test.ts' | xargs ts-node"
+  },
+  "author": "John Wright <johngeorge.wright@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/js-util/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/js-util#readme",
+  "devDependencies": {
+    "@johngw/array": "*",
+    "@types/cli-table": "^0.3.0",
+    "cli-table": "^0.3.4",
+    "colors": "^1.4.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
