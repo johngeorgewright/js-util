@@ -1,8 +1,4 @@
-export class TimeoutError extends Error {
-  constructor(ms: number) {
-    super(`Exceeded ${ms}ms`)
-  }
-}
+import TimeoutError from './TimeoutError'
 
 export default async function detonate(
   ms: number = 0,
