@@ -1,4 +1,4 @@
-export default function resolver<T = void>() {
+export default function defer<T = void>() {
   let reject: (reason?: any) => void
   let resolve: (value: T | PromiseLike<T>) => void
   let resolved = false
