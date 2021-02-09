@@ -26,7 +26,7 @@
     "@commitlint/config-lerna-scopes": "^11.0.0",
     "commitizen": "^4.2.1",
     "cz-lerna-changelog": "^2.0.3",
-    "husky": "^4.3.0",
+    "husky": "^5.0.9",
     "lerna": "^3.22.1",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
