@@ -16,6 +16,10 @@ Returns a promise that resolves in `ms` milliseconds.
 
 Returns a promise and a `resolve` function that resolves the promise.
 
+## debounceP<Args extends unknown[], Return>(fn: (...args: Args) => Promise<Return>, ms: number) => typeof fn
+
+Debounces `fn` to `ms` milliseconds. The debounced function will always return the last result (`Promise<Return>`).
+
 ## detonate(number = 0, Error = TimeoutError): Promise<never>
 
 Returns a promise that rejects in `ms` milliseconds with the given Error.

@@ -1,5 +1,6 @@
-export { default as mapP } from './mapP'
+export { default as debounceP } from './debounceP'
 export { default as defer } from './defer'
 export { default as detonate } from './detonate'
 export { default as detonateRace } from './detonateRace'
+export { default as mapP } from './mapP'
 export { default as timeout } from './timeout'
