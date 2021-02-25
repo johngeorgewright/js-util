@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/johngeorgewright/js-util#readme",
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
+    "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^12.0.0",
     "@commitlint/config-lerna-scopes": "^12.0.0",
     "commitizen": "^4.2.1",
