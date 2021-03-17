@@ -12,20 +12,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
+
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
+
       - name: Test
         run: npm install-ci-test
+
       - name: Build
         run: npm run build
+
       - name: Release
         run: npm run release && git add -A
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Bump Versions
         uses: github-actions-x/commit@v2.7
         with:
