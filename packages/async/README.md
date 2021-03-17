@@ -1,5 +1,9 @@
 # @johngw/async
 
+## cancelablePromise<T>(resolve, reject): Promise<T> & { cancel: () => void }
+
+Creates a promise that can be cancelled. Cancelling a promise is the same as rejecting it with CancelPromiseError.
+
 ## mapP<T, R>(T[], (T, number) => Promise<R>): Promise<R[]>
 
 Shortcut for:
