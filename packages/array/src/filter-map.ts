@@ -1,9 +1,9 @@
 import Builder from './Builder'
 
-export default function filterMap<In, Out>(
+export default function filterMap<In, FilteredIn extends In, Out>(
   input: ArrayLike<In>,
-  filter: (item: In) => boolean,
-  map: (item: In) => Out
+  filter: (item: In) => item is FilteredIn,
+  map: (item: FilteredIn) => Out
 ) {
   const builder = new Builder<Out>(input.length)
 
