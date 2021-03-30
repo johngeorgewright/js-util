@@ -1,4 +1,4 @@
-import { readFile, readdir } from 'fs/promises'
+import { readFile, readdir } from './promises'
 import * as pathHelper from 'path'
 
 export interface ReadFilesOptions {
