@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "File System Utilities",
   "main": "dist/index.js",
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",

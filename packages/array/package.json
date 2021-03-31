@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "JS array utils",
   "main": "dist/index.js",
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
