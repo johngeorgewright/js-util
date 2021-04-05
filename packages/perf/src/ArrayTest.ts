@@ -1,5 +1,5 @@
 import Table from 'cli-table'
-import Test from './test'
+import Test from './Test'
 
 const lengths = [
   10,
@@ -32,22 +32,28 @@ export default class ArrayTest implements Test {
   }
 
   case(name: string, test: (options: { length: number }) => void) {
-    this.results[name] = []
-    console.info(`# ${name}`)
-    for (const length of lengths) {
-      process.stdout.write(`${length} times`)
-      const start = new Date()
-      test({ length })
-      const end = new Date()
-      const ms = end.getTime() - start.getTime()
-      console.info(':', ms, 'ms')
-      this.results[name].push(ms)
-    }
+    setImmediate(() => {
+      this.results[name] = []
+      console.info(`\n# ${name}`)
+      for (const length of lengths) {
+        const start = new Date()
+        test({ length })
+        const end = new Date()
+        const ms = end.getTime() - start.getTime()
+        process.stdout.write('.')
+        this.results[name].push(ms)
+      }
+      console.info('\n')
+    })
   }
 
   finish() {
-    const table = new Table({ head: ['', ...lengths.map((x) => x.toString())] })
-    table.push(...Object.entries(this.results).map(([k, v]) => ({ [k]: v })))
-    console.info(table.toString())
+    setImmediate(() => {
+      const table = new Table({
+        head: ['', ...lengths.map((x) => x.toString())],
+      })
+      table.push(...Object.entries(this.results).map(([k, v]) => ({ [k]: v })))
+      console.info(table.toString())
+    })
   }
 }
