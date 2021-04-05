@@ -1,12 +1,12 @@
 import Builder from './Builder'
 
-export default function separate<T>(
+export default function separate<T, R extends T, L extends Exclude<T, R>>(
   input: ArrayLike<T>,
-  predicate: (item: T) => boolean
-): [T[], T[]] {
+  predicate: (item: T) => item is R
+): [L[], R[]] {
   const { length } = input
-  const leftBuilder = new Builder<T>(length)
-  const rightBuilder = new Builder<T>(length)
+  const leftBuilder = new Builder<L>(length)
+  const rightBuilder = new Builder<R>(length)
 
   for (let i = 0; i < length; i++) {
     const item = input[i]
@@ -14,7 +14,7 @@ export default function separate<T>(
     if (predicate(item)) {
       rightBuilder.add(item)
     } else {
-      leftBuilder.add(item)
+      leftBuilder.add(item as L)
     }
   }
 
