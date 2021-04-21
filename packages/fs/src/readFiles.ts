@@ -9,21 +9,13 @@ export interface ReadFilesOptions {
 
 export default function readFiles(
   dirname: string,
-  options?: {
-    encoding?: undefined
-    filter?: ReadFilesOptions['filter']
-    recursive?: ReadFilesOptions['recursive']
-  }
-): AsyncGenerator<Buffer, void>
+  options: ReadFilesOptions & { encoding: BufferEncoding }
+): AsyncGenerator<string, void>
 
 export default function readFiles(
   dirname: string,
-  options?: {
-    encoding: BufferEncoding
-    filter?: ReadFilesOptions['filter']
-    recursive?: ReadFilesOptions['recursive']
-  }
-): AsyncGenerator<string, void>
+  options?: Omit<ReadFilesOptions, 'encoding'>
+): AsyncGenerator<Buffer, void>
 
 export default async function* readFiles(
   dirname: string,
