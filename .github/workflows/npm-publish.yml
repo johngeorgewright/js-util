@@ -25,15 +25,18 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Release
-        run: npm run release && git add -A
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Release
+      #   run: npm run release && git add -A
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Bump Versions
-        uses: github-actions-x/commit@v2.7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'chore(package): bumped versions'
-          push-branch: master
+      - name: Release
+        run: npx lerna version --conventional-commits --create-release github --yes
+
+      # - name: Bump Versions
+      #   uses: github-actions-x/commit@v2.7
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      #     commit-message: 'chore(package): bumped versions'
+      #     push-branch: master
