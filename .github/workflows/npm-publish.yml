@@ -32,7 +32,10 @@ jobs:
       #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Release
-        run: npx lerna version --conventional-commits --create-release github --yes
+        run: npx lerna version --conventional-commits --create-release=github --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # - name: Bump Versions
       #   uses: github-actions-x/commit@v2.7
