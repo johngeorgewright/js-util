@@ -19,8 +19,11 @@ jobs:
         with:
           node-version: 14
 
+      - name: Install Deps
+        run: npm ci
+
       - name: Test
-        run: npm install-ci-test
+        run: npm run test:ci
 
       - name: Build
         run: npm run build
