@@ -1,6 +1,6 @@
 {
   "name": "@johngw/array",
-  "version": "0.0.0",
+  "version": "3.0.0",
   "description": "JS array utils",
   "main": "dist/index.js",
   "sideEffects": false,
@@ -9,7 +9,8 @@
     "build": "tsc",
     "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "start": "tsc --watch --preserveWatchOutput",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "jest --runInBand"
   },
   "author": "John Wright <johngeorge.wright@gmail.com>",
   "license": "MIT",

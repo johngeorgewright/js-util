@@ -13,6 +13,7 @@
     "release": "lerna exec --no-private --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "start": "lerna run --stream --parallel --ignore=generator start",
     "test": "lerna run --stream test",
+    "test:ci": "lerna run --stream --concurrency 1 test:ci",
     "prepare": "husky install"
   },
   "author": "",
