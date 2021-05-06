@@ -13,6 +13,7 @@
     "release": "lerna exec --no-private --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "start": "lerna run --stream --parallel --ignore=generator start",
     "test": "lerna run --stream test",
+    "test:ci": "lerna run --stream --concurrency 1 test:ci",
     "prepare": "husky install"
   },
   "author": "",
@@ -33,7 +34,7 @@
     "prettier": "^2.1.2",
     "semantic-release": "^17.1.2",
     "semantic-release-monorepo": "^7.0.3",
-    "yo": "^3.1.1"
+    "yo": "^4.1.0"
   },
   "config": {
     "commitizen": {
