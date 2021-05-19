@@ -1,5 +1,9 @@
 # @johngw/async
 
+## accumulateRace<T>(AsyncIterator<T>, number) => Promise<T[]>
+
+Returns an array of results, that have been accumulated from an async interator, within an amount of milliseconds.
+
 ## cancelablePromise<T>(resolve, reject): Promise<T> & { cancel: () => void }
 
 Creates a promise that can be cancelled. Cancelling a promise is the same as rejecting it with CancelPromiseError.
