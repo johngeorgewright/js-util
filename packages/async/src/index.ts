@@ -1,3 +1,4 @@
+export { default as accumulateRace } from './accumulateRace'
 export { default as cancelablePromise } from './cancelablePromise'
 export { default as CancelPromiseError } from './CancelPromiseError'
 export { default as debounceP } from './debounceP'
