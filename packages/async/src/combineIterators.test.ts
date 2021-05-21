@@ -3,20 +3,18 @@ import timeout from './timeout'
 
 test('combine', async () => {
   async function* a() {
-    for (let i = 0; i < 3; i++) {
-      await timeout(5)
-      yield i
-    }
+    await timeout(5)
+    yield 0
+    await timeout(5)
+    yield 2
   }
 
   async function* b() {
-    for (let i = 10; i < 13; i++) {
-      await timeout(8)
-      yield i
-    }
+    await timeout(8)
+    yield 10
   }
 
-  const results = []
+  const results: number[] = []
 
   for await (const result of combineIterators(a(), b())) {
     results.push(result)
@@ -26,10 +24,7 @@ test('combine', async () => {
     Array [
       0,
       10,
-      1,
-      11,
       2,
-      12,
     ]
   `)
 })
