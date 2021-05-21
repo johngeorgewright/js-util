@@ -1,0 +1,36 @@
+import timeout from './timeout'
+import TimeoutError from './TimeoutError'
+
+export default async function* iteratorRace<T>(
+  asyncIterable: AsyncIterable<T>,
+  ms: number
+): AsyncIterable<T> {
+  let asyncIterator: AsyncIterator<T>
+
+  try {
+    const timer = timeout(ms).then(() => {
+      throw new TimeoutError(ms)
+    })
+
+    asyncIterator = await Promise.race([
+      asyncIterable[Symbol.asyncIterator](),
+      timer,
+    ])
+
+    while (true) {
+      const { done, value } = await Promise.race([asyncIterator.next(), timer])
+
+      if (done) {
+        return asyncIterator.return && asyncIterator.return()
+      } else {
+        yield value
+      }
+    }
+  } catch (error) {
+    if (!(error instanceof TimeoutError)) {
+      throw error
+    }
+  } finally {
+    return asyncIterator! && asyncIterator.return && asyncIterator.return()
+  }
+}
