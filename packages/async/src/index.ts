@@ -1,6 +1,7 @@
 export { default as accumulateRace } from './accumulateRace'
 export { default as cancelablePromise } from './cancelablePromise'
 export { default as CancelPromiseError } from './CancelPromiseError'
+export { default as combineIterators } from './combineIterators'
 export { default as debounceP } from './debounceP'
 export { default as defer } from './defer'
 export { default as detonate } from './detonate'

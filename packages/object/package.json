@@ -1,7 +1,7 @@
 {
-  "name": "@johngw/async",
-  "version": "2.4.0",
-  "description": "Async utilities",
+  "name": "@johngw/object",
+  "version": "0.0.0",
+  "description": "Object utilities",
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
@@ -9,8 +9,7 @@
     "build": "tsc",
     "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "start": "tsc --watch --preserveWatchOutput",
-    "test": "jest",
-    "test:ci": "jest --runInBand"
+    "test": "jest"
   },
   "author": "John Wright <johngeorge.wright@gmail.com>",
   "license": "MIT",
@@ -24,8 +23,5 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.3"
-  },
-  "dependencies": {
-    "@johngw/object": "*"
   }
 }
