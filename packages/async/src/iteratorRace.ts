@@ -1,4 +1,4 @@
-import timeout from './timeout'
+import detonate from './detonate'
 import TimeoutError from './TimeoutError'
 
 export default async function* iteratorRace<T>(
@@ -8,9 +8,7 @@ export default async function* iteratorRace<T>(
   let asyncIterator: AsyncIterator<T>
 
   try {
-    const timer = timeout(ms).then(() => {
-      throw new TimeoutError(ms)
-    })
+    const timer = detonate(ms)
 
     asyncIterator = await Promise.race([
       asyncIterable[Symbol.asyncIterator](),

@@ -1,3 +1,4 @@
+import accumulate from './accumulate'
 import combineIterators from './combineIterators'
 import timeout from './timeout'
 
@@ -14,11 +15,7 @@ test('combine', async () => {
     yield 10
   }
 
-  const results: number[] = []
-
-  for await (const result of combineIterators(a(), b())) {
-    results.push(result)
-  }
+  const results = await accumulate(combineIterators(a(), b()))
 
   expect(results).toMatchInlineSnapshot(`
     Array [
