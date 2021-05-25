@@ -32,21 +32,21 @@ export default class EventIterator<T> {
   };
 
   [Symbol.asyncIterator]() {
-    const self = this
+    const next = async (): Promise<IteratorResult<T>> => {
+      if (this.events.length) {
+        return { done: false, value: this.events.shift()! }
+      }
+
+      if ((await Promise.race([this.next, this.cancelled])) === Cancelled) {
+        this.teardown()
+        return { done: true, value: undefined }
+      }
+
+      return { done: false, value: this.events.shift()! }
+    }
 
     return {
-      async next(): Promise<IteratorResult<T>> {
-        if (self.events.length) {
-          return { done: false, value: self.events.shift()! }
-        }
-
-        if ((await Promise.race([self.next, self.cancelled])) === Cancelled) {
-          self.teardown()
-          return { done: true, value: undefined }
-        }
-
-        return { done: false, value: self.events.shift()! }
-      },
+      next,
     }
   }
 }
