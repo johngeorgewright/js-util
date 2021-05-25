@@ -833,6 +833,7 @@ __metadata:
   dependencies:
     "@johngw/object": "*"
     "@types/jest": ^26.0.19
+    "@types/node": ^15.6.1
     jest: ^26.6.3
     rimraf: ^3.0.2
     ts-jest: ^26.4.4
@@ -859,6 +860,7 @@ __metadata:
   resolution: "@johngw/fs@workspace:packages/fs"
   dependencies:
     "@types/jest": ^26.0.19
+    "@types/node": ^15.6.1
     jest: ^26.6.3
     rimraf: ^3.0.2
     ts-jest: ^26.4.4
@@ -1601,7 +1603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^15.6.1":
   version: 15.6.1
   resolution: "@types/node@npm:15.6.1"
   checksum: 07b3855bc0a1ba2215455a3ef4ed5e88711321b3cdc0ba1ea0286f6facbdf61530970b9fa7eec79eb1d46231f986c21ef3b7c1f1e0c365cf1b887d76b0addb86

@@ -1143,6 +1143,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/async", "workspace:packages/async"],
             ["@johngw/object", "workspace:packages/object"],
             ["@types/jest", "npm:26.0.23"],
+            ["@types/node", "npm:15.6.1"],
             ["jest", "npm:26.6.3"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:26.5.6"],
@@ -1173,6 +1174,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@johngw/fs", "workspace:packages/fs"],
             ["@types/jest", "npm:26.0.23"],
+            ["@types/node", "npm:15.6.1"],
             ["jest", "npm:26.6.3"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:26.5.6"],
