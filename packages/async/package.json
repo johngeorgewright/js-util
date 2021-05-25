@@ -26,6 +26,7 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "@johngw/object": "*"
+    "@johngw/object": "*",
+    "tslib": "^2.2.0"
   }
 }

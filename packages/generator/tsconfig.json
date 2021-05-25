@@ -5,6 +5,7 @@
     "lib": ["es2018"],
     "sourceMap": true,
     "outDir": "./generators",
+    "importHelpers": true,
     "downlevelIteration": true,
     "strict": true,
     "noUnusedLocals": true,
