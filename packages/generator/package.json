@@ -7,9 +7,7 @@
     "generators/package"
   ],
   "scripts": {
-    "prebuild": "rimraf generators",
-    "build": "tsc",
-    "postbuild": "rimraf 'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'"
+    "build": "yarn rimraf generators && yarn tsc && yarn rimraf 'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'"
   },
   "keywords": [
     "yeoman-generator"

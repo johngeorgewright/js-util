@@ -1,0 +1,50 @@
+{
+  "folders": [
+    {
+      "name": "✨ @johngw/js-util",
+      "path": "."
+    },
+    {
+      "name": "📦 @johngw/array",
+      "path": "packages/array"
+    },
+    {
+      "name": "📦 @johngw/async",
+      "path": "packages/async"
+    },
+    {
+      "name": "📦 @johngw/error",
+      "path": "packages/error"
+    },
+    {
+      "name": "📦 @johngw/fs",
+      "path": "packages/fs"
+    },
+    {
+      "name": "📦 @johngw/generator",
+      "path": "packages/generator"
+    },
+    {
+      "name": "📦 @johngw/object",
+      "path": "packages/object"
+    },
+    {
+      "name": "📦 @johngw/js-util-perf",
+      "path": "packages/perf"
+    }
+  ],
+  "settings": {
+    "search.exclude": {
+      "**/dist": true,
+      "**/.yarn": true,
+      "**/.pnp.*": true
+    },
+    "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+    "typescript.tsdk": ".yarn/sdks/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "jest.jestCommandLine": "yarn test"
+  },
+  "extensions": {
+    "recommendations": ["arcanis.vscode-zipfs", "esbenp.prettier-vscode"]
+  }
+}
