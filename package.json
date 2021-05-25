@@ -1,20 +1,22 @@
 {
   "name": "@johngw/js-util",
   "version": "0.0.0",
-  "description": "The MOL Ads mono-repo",
+  "description": "The js-util mono-repo",
   "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "postinstall": "lerna bootstrap",
-    "build": "lerna run --stream --no-private build",
-    "build:generator": "lerna --scope=@johngw/generator run build",
-    "commit": "git-cz",
-    "generate:package": "yo ./packages/generator/generators/package",
-    "postgenerate:package": "lerna bootstrap",
-    "release": "lerna exec --no-private --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
-    "start": "lerna run --stream --parallel --ignore=generator start",
-    "test": "lerna run --stream test",
-    "test:ci": "lerna run --stream --concurrency 1 test:ci",
-    "prepare": "husky install"
+    "build": "yarn workspaces foreach --topological-dev --exclude @johngeorgewright/generator run build",
+    "clean": "yarn workspaces foreach run clean",
+    "build:generator": "yarn workspace @johngeorgewright/generator run build",
+    "commit": "yarn git-cz",
+    "generate:package": "yarn yo ./packages/generator/generators/package",
+    "release": "yarn workspaces foreach --no-private --topological-dev run release",
+    "start": "yarn build && yarn workspaces foreach --no-private --parallel --interlaced run start",
+    "test": "yarn workspaces foreach run test",
+    "prepare": "yarn husky install"
   },
   "author": "",
   "license": "UNLICENSED",
@@ -26,24 +28,27 @@
     "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^12.0.0",
     "@commitlint/config-lerna-scopes": "^12.0.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/github": "^7.2.3",
+    "@semantic-release/release-notes-generator": "^9.0.2",
     "commitizen": "^4.2.1",
-    "cz-lerna-changelog": "^2.0.3",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^6.0.0",
-    "lerna": "^4.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.1.2",
-    "semantic-release": "^17.1.2",
-    "semantic-release-monorepo": "^7.0.3",
+    "semantic-release": "^17.4.3",
+    "semantic-release-monorepo": "^7.0.5",
+    "typescript": "^4.2.4",
     "yo": "^4.1.0"
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
+      "path": "cz-conventional-changelog"
     }
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
-      "prettier --ignore-path .gitignore --write"
+      "yarn prettier --write"
     ]
   }
 }
