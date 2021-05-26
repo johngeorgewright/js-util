@@ -16,7 +16,6 @@ jobs:
         shell: python
         run: |
           import re
-          import sys
 
           reftest = re.compile(r'^refs/tags/(?P<package>@johngw/[a-zA-Z0-9_-]+)-v\d+.\d+.\d+$')
           refmatch = reftest.match('${{ github.ref }}')
@@ -24,7 +23,8 @@ jobs:
           if refmatch is None:
             print('Cannot match ref "${{ github.ref }}".')
           else:
-            print('::set-output name=package::%s', refmatch.group('package'))
+            package = refmatch.group('package')
+            print("::set-output name=package::%s" %package)
 
   npm:
     name: NPM
@@ -44,10 +44,10 @@ jobs:
         run: yarn
 
       - name: Build
-        run: yarn build
+        run: yarn workspace ${{ needs.decipher.outputs.package }} build
 
       - name: Test
-        run: yarn test
+        run: yarn workspace ${{ needs.decipher.outputs.package }} test
 
       - name: Publish
         run: yarn workspace ${{ needs.decipher.outputs.package }} npm publish
