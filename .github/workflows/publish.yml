@@ -1,0 +1,56 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  decipher:
+    name: Decipher
+    runs-on: ubuntu-latest
+    outputs:
+      package: ${{ steps.tag.package }}
+    steps:
+      - name: Tag
+        id: tag
+        shell: python
+        run: |
+          import re
+          import sys
+
+          reftest = re.compile(r'^refs/tags/(?P<package>@johngw/[a-zA-Z0-9_-]+)-v\d+.\d+.\d+$')
+          refmatch = p.match('${{ github.ref }}')
+
+          if refmatch is None:
+            print('Cannot match ref "${{ github.ref }}".')
+            return
+
+          print('::set-output name=package::%s', refmatch.group('package'))
+
+  npm:
+    name: NPM
+    runs-on: ubuntu-latest
+    needs: [decipher]
+    if: needs.decipher.outputs.package != ''
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Setup
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Test
+        run: yarn test
+
+      - name: Publish
+        run: yarn workspace ${{ needs.decipher.outpus.package }} npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

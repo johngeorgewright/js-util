@@ -5,12 +5,14 @@ on:
     branches: [master]
 
 jobs:
-  npm-publish:
-    name: NPM Publish
+  github:
+    name: Create GitHub Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
 
       - name: Install Node.js
         uses: actions/setup-node@v2
@@ -29,8 +31,7 @@ jobs:
       - name: Release
         run: yarn release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
 
       - name: Bump Versions
         uses: EndBug/add-and-commit@v7
