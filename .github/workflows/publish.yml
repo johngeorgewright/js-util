@@ -43,6 +43,7 @@ jobs:
       - name: Setup
         run: |
           yarn
+          yarn config set npmPublishRegistry https://registry.npmjs.org
           yarn config set npmAuthToken $NPM_TOKEN
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
