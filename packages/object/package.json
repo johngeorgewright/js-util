@@ -7,7 +7,7 @@
   "scripts": {
     "build": "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "yarn rimraf dist",
-    "release": "yarn semantic-release -e semantic-release-monorepo && yarn npm release",
+    "release": "yarn semantic-release -e semantic-release-monorepo && yarn npm publish",
     "start": "yarn tsc --watch --preserveWatchOutput",
     "test": "yarn jest"
   },
