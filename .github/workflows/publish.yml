@@ -41,15 +41,14 @@ jobs:
           node-version: 14
 
       - name: Setup
-        run: yarn
+        run: |
+          yarn
+          yarn config set npmAuthToken $NPM_TOKEN
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build
         run: yarn workspace ${{ needs.decipher.outputs.package }} build
 
-      - name: Test
-        run: yarn workspace ${{ needs.decipher.outputs.package }} test
-
       - name: Publish
         run: yarn workspace ${{ needs.decipher.outputs.package }} npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
