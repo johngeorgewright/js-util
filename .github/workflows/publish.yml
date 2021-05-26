@@ -19,7 +19,7 @@ jobs:
           import sys
 
           reftest = re.compile(r'^refs/tags/(?P<package>@johngw/[a-zA-Z0-9_-]+)-v\d+.\d+.\d+$')
-          refmatch = p.match('${{ github.ref }}')
+          refmatch = reftest.match('${{ github.ref }}')
 
           if refmatch is None:
             print('Cannot match ref "${{ github.ref }}".')
