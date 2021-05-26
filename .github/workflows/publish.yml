@@ -23,9 +23,8 @@ jobs:
 
           if refmatch is None:
             print('Cannot match ref "${{ github.ref }}".')
-            return
-
-          print('::set-output name=package::%s', refmatch.group('package'))
+          else:
+            print('::set-output name=package::%s', refmatch.group('package'))
 
   npm:
     name: NPM
