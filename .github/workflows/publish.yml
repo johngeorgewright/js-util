@@ -9,7 +9,7 @@ jobs:
     name: Decipher
     runs-on: ubuntu-latest
     outputs:
-      package: ${{ steps.tag.package }}
+      package: ${{ steps.tag.outputs.package }}
     steps:
       - name: Tag
         id: tag
@@ -51,6 +51,6 @@ jobs:
         run: yarn test
 
       - name: Publish
-        run: yarn workspace ${{ needs.decipher.outpus.package }} npm publish
+        run: yarn workspace ${{ needs.decipher.outputs.package }} npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
