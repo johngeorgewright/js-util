@@ -1,9 +1,5 @@
-import detonate from './detonate'
-import TimeoutError from './TimeoutError'
+import { detonate, TimeoutError } from '@johngw/async'
 
-/**
- * @deprecated Use @johngw/async-iterator
- */
 export default async function* iteratorRace<T>(
   asyncIterable: AsyncIterable<T>,
   ms: number

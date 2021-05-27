@@ -1,8 +1,5 @@
 import { isEmpty, map } from '@johngw/object'
 
-/**
- * @deprecated Use @johngw/async-iterator
- */
 export default async function* combineIterators<T>(
   ...asyncIterables: AsyncIterable<T>[]
 ) {
@@ -44,12 +41,12 @@ export default async function* combineIterators<T>(
   }
 
   return results
+}
 
-  async function getNext<T>(asyncIterator: AsyncIterator<T>, index: string) {
-    return asyncIterator.next().then(({ done, value }) => ({
-      index,
-      done,
-      value,
-    }))
-  }
+async function getNext<T>(asyncIterator: AsyncIterator<T>, index: string) {
+  return asyncIterator.next().then(({ done, value }) => ({
+    index,
+    done,
+    value,
+  }))
 }

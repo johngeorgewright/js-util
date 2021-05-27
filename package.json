@@ -8,11 +8,11 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach --topological-dev --exclude @johngeorgewright/generator run build",
+    "build": "yarn workspaces foreach --topological-dev --exclude @johngw/generator run build",
     "clean": "yarn workspaces foreach run clean",
-    "build:generator": "yarn workspace @johngeorgewright/generator run build",
+    "build:generator": "yarn workspace @johngw/generator run build",
     "commit": "yarn git-cz",
-    "generate:package": "yarn yo ./packages/generator/generators/package",
+    "generate:package": "yo ./packages/generator/generators/package",
     "release": "yarn workspaces foreach --no-private --topological-dev run release",
     "start": "yarn build && yarn workspaces foreach --no-private --parallel --interlaced run start",
     "test": "yarn workspaces foreach run test",

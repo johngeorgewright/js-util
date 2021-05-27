@@ -1,8 +1,5 @@
-import timeout from './timeout'
+import { timeout } from '@johngw/async'
 
-/**
- * @deprecated Use @johngw/async-iterator
- */
 export default async function accumulateRace<T>(
   asyncIterable: AsyncIterable<T>,
   ms: number

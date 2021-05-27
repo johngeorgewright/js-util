@@ -1,6 +1,3 @@
-/**
- * @deprecated Use @johngw/async-iterator
- */
 export default async function accumulate<T>(asyncIterable: AsyncIterable<T>) {
   const results: T[] = []
 
