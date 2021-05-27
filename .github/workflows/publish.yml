@@ -1,55 +1,55 @@
-name: Publish
+# name: Publish
 
-on:
-  release:
-    types: [published]
+# on:
+#   release:
+#     types: [published]
 
-jobs:
-  decipher:
-    name: Decipher
-    runs-on: ubuntu-latest
-    outputs:
-      package: ${{ steps.tag.outputs.package }}
-    steps:
-      - name: Tag
-        id: tag
-        shell: python
-        run: |
-          import re
+# jobs:
+#   decipher:
+#     name: Decipher
+#     runs-on: ubuntu-latest
+#     outputs:
+#       package: ${{ steps.tag.outputs.package }}
+#     steps:
+#       - name: Tag
+#         id: tag
+#         shell: python
+#         run: |
+#           import re
 
-          reftest = re.compile(r'^refs/tags/(?P<package>@johngw/[a-zA-Z0-9_-]+)-v\d+.\d+.\d+$')
-          refmatch = reftest.match('${{ github.ref }}')
+#           reftest = re.compile(r'^refs/tags/(?P<package>@johngw/[a-zA-Z0-9_-]+)-v\d+.\d+.\d+$')
+#           refmatch = reftest.match('${{ github.ref }}')
 
-          if refmatch is None:
-            print('Cannot match ref "${{ github.ref }}".')
-          else:
-            package = refmatch.group('package')
-            print("::set-output name=package::%s" %package)
+#           if refmatch is None:
+#             print('Cannot match ref "${{ github.ref }}".')
+#           else:
+#             package = refmatch.group('package')
+#             print("::set-output name=package::%s" %package)
 
-  npm:
-    name: NPM
-    runs-on: ubuntu-latest
-    needs: [decipher]
-    if: needs.decipher.outputs.package != ''
-    steps:
-      - name: Checkout project
-        uses: actions/checkout@v2
+#   npm:
+#     name: NPM
+#     runs-on: ubuntu-latest
+#     needs: [decipher]
+#     if: needs.decipher.outputs.package != ''
+#     steps:
+#       - name: Checkout project
+#         uses: actions/checkout@v2
 
-      - name: Install Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
+#       - name: Install Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: 14
 
-      - name: Setup
-        run: |
-          yarn
-          yarn config set npmPublishRegistry https://registry.npmjs.org
-          yarn config set npmAuthToken $NPM_TOKEN
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+#       - name: Setup
+#         run: |
+#           yarn
+#           yarn config set npmPublishRegistry https://registry.npmjs.org
+#           yarn config set npmAuthToken $NPM_TOKEN
+#         env:
+#           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Build
-        run: yarn workspace ${{ needs.decipher.outputs.package }} build
+#       - name: Build
+#         run: yarn workspace ${{ needs.decipher.outputs.package }} build
 
-      - name: Publish
-        run: yarn workspace ${{ needs.decipher.outputs.package }} npm publish
+#       - name: Publish
+#         run: yarn workspace ${{ needs.decipher.outputs.package }} npm publish
