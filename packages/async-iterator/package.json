@@ -1,0 +1,38 @@
+{
+  "name": "@johngw/async-iterator",
+  "version": "0.0.0",
+  "description": "Async iterator utilities",
+  "main": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "clean": "yarn rimraf dist",
+    "release": "yarn semantic-release -e semantic-release-monorepo",
+    "start": "yarn tsc --watch --preserveWatchOutput",
+    "test": "yarn jest"
+  },
+  "author": "John Wright <johngeorge.wright@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/js-util/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/js-util#readme",
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/github": "7.2.3",
+    "@semantic-release/release-notes-generator": "9.0.2",
+    "@types/jest": "26.0.23",
+    "@types/node": "15.6.1",
+    "jest": "26.6.3",
+    "rimraf": "3.0.2",
+    "semantic-release": "17.4.3",
+    "semantic-release-monorepo": "7.0.5",
+    "ts-jest": "26.5.6",
+    "typescript": "4.2.4"
+  },
+  "dependencies": {
+    "@johngw/async": "workspace:packages/async",
+    "@johngw/object": "*",
+    "tslib": "^2.2.0"
+  }
+}
