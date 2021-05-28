@@ -1,7 +1,7 @@
 {
   "name": "@johngw/object",
   "version": "0.0.0",
-  "description": "Object utilities",
+  "description": "Object utilities.",
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
