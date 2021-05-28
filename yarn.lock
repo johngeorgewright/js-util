@@ -862,7 +862,9 @@ __metadata:
   resolution: "@johngw/array@workspace:packages/array"
   dependencies:
     "@semantic-release/commit-analyzer": 8.0.1
+    "@semantic-release/git": ^9.0.0
     "@semantic-release/github": 7.2.3
+    "@semantic-release/npm": ^7.1.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@types/jest": 26.0.23
     jest: 26.6.3
@@ -882,7 +884,9 @@ __metadata:
     "@johngw/async": "workspace:packages/async"
     "@johngw/object": "workspace:packages/object"
     "@semantic-release/commit-analyzer": 8.0.1
+    "@semantic-release/git": ^9.0.0
     "@semantic-release/github": 7.2.3
+    "@semantic-release/npm": ^7.1.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@types/jest": 26.0.23
     "@types/node": 15.6.1
@@ -902,7 +906,9 @@ __metadata:
   dependencies:
     "@johngw/object": "workspace:packages/object"
     "@semantic-release/commit-analyzer": 8.0.1
+    "@semantic-release/git": ^9.0.0
     "@semantic-release/github": 7.2.3
+    "@semantic-release/npm": ^7.1.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@types/jest": 26.0.23
     "@types/node": 15.6.1
@@ -921,7 +927,9 @@ __metadata:
   resolution: "@johngw/error@workspace:packages/error"
   dependencies:
     "@semantic-release/commit-analyzer": 8.0.1
+    "@semantic-release/git": ^9.0.0
     "@semantic-release/github": 7.2.3
+    "@semantic-release/npm": ^7.1.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@types/jest": 26.0.23
     jest: 26.6.3
@@ -939,7 +947,9 @@ __metadata:
   resolution: "@johngw/fs@workspace:packages/fs"
   dependencies:
     "@semantic-release/commit-analyzer": 8.0.1
+    "@semantic-release/git": ^9.0.0
     "@semantic-release/github": 7.2.3
+    "@semantic-release/npm": ^7.1.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@types/jest": 26.0.23
     "@types/node": 15.6.1
@@ -957,6 +967,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/generator@workspace:packages/generator"
   dependencies:
+    "@semantic-release/git": ^9.0.0
+    "@semantic-release/npm": ^7.1.3
     "@types/jest": 26.0.23
     "@types/yeoman-generator": 5.0.0
     change-case: 4.1.2
@@ -974,6 +986,8 @@ __metadata:
   resolution: "@johngw/js-util-perf@workspace:packages/perf"
   dependencies:
     "@johngw/array": "*"
+    "@semantic-release/git": ^9.0.0
+    "@semantic-release/npm": ^7.1.3
     "@types/cli-table": 0.3.0
     "@types/node": 14.17.1
     cli-table: 0.3.6
@@ -992,7 +1006,9 @@ __metadata:
     "@commitlint/config-conventional": 12.1.4
     "@commitlint/config-lerna-scopes": 12.1.4
     "@semantic-release/commit-analyzer": 8.0.1
+    "@semantic-release/git": ^9.0.0
     "@semantic-release/github": 7.2.3
+    "@semantic-release/npm": ^7.1.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@yarks/cli": 1.1.3
     commitizen: 4.2.4
@@ -1012,7 +1028,9 @@ __metadata:
   resolution: "@johngw/object@workspace:packages/object"
   dependencies:
     "@semantic-release/commit-analyzer": 8.0.1
+    "@semantic-release/git": ^9.0.0
     "@semantic-release/github": 7.2.3
+    "@semantic-release/npm": ^7.1.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@types/jest": 26.0.23
     jest: 26.6.3
@@ -1379,10 +1397,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/error@npm:^2.2.0":
+"@semantic-release/error@npm:^2.1.0, @semantic-release/error@npm:^2.2.0":
   version: 2.2.0
   resolution: "@semantic-release/error@npm:2.2.0"
   checksum: 96502012d8676def27ad904c23b4039cfcdaf2e82e86e6f51155dc391427e082da59e6d2c9eb653c87f1506af6b5c9468bc4261b476ad3bf13f310dc2245fe5d
+  languageName: node
+  linkType: hard
+
+"@semantic-release/git@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "@semantic-release/git@npm:9.0.0"
+  dependencies:
+    "@semantic-release/error": ^2.1.0
+    aggregate-error: ^3.0.0
+    debug: ^4.0.0
+    dir-glob: ^3.0.0
+    execa: ^4.0.0
+    lodash: ^4.17.4
+    micromatch: ^4.0.0
+    p-reduce: ^2.0.0
+  peerDependencies:
+    semantic-release: ">=16.0.0 <18.0.0"
+  checksum: 8a96bc9e44f537b77515761b1958467b218e294eba7091c1b5e2ce8dd5390e60da9c87e7a91d097d1f24709f0ef980b9657d51a04ca01fbf23207fab9a425b00
   languageName: node
   linkType: hard
 
@@ -1412,7 +1448,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/npm@npm:^7.0.0":
+"@semantic-release/npm@npm:^7.0.0, @semantic-release/npm@npm:^7.1.3":
   version: 7.1.3
   resolution: "@semantic-release/npm@npm:7.1.3"
   dependencies:
@@ -8079,7 +8115,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.2, micromatch@npm:^4.0.4":
+"micromatch@npm:^4.0.0, micromatch@npm:^4.0.2, micromatch@npm:^4.0.4":
   version: 4.0.4
   resolution: "micromatch@npm:4.0.4"
   dependencies:
