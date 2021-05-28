@@ -1,7 +1,7 @@
 {
   "name": "@johngw/array",
   "version": "0.0.0",
-  "description": "JS array utils",
+  "description": "JS array utils.",
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {

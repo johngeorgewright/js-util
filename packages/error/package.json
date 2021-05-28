@@ -1,7 +1,7 @@
 {
   "name": "@johngw/error",
   "version": "0.0.0",
-  "description": "Error handling utilities",
+  "description": "Error handling utilities.",
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
