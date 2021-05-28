@@ -26,10 +26,15 @@ jobs:
       - name: Test
         run: yarn test
 
-      - name: Release
-        run: yarn release-workspaces
+      - uses: codfish/semantic-release-action@v1
+        id: semantic
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_AUTHOR_NAME: GitHub Actions
-          GIT_AUTHOR_EMAIL: actions@users.noreply.github.com
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # - name: Release
+      #   run: yarn release-workspaces
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     GIT_AUTHOR_NAME: GitHub Actions
+      #     GIT_AUTHOR_EMAIL: actions@users.noreply.github.com
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
