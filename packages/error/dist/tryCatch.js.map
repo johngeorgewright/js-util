@@ -1,0 +1,1 @@
+{"version":3,"file":"tryCatch.js","sourceRoot":"","sources":["../src/tryCatch.ts"],"names":[],"mappings":";;;AAAA,SAAwB,QAAQ,CAC9B,CAAuB,EACvB,CAAmC;IACnC,cAAa;SAAb,UAAa,EAAb,qBAAa,EAAb,IAAa;QAAb,6BAAa;;IAEb,IAAI;QACF,OAAO,CAAC,wDAAI,IAAI,IAAC;KAClB;IAAC,OAAO,KAAK,EAAE;QACd,OAAO,CAAC,sCAAC,KAAK,kBAAK,IAAI,IAAC;KACzB;AACH,CAAC;AAVD,2BAUC"}
