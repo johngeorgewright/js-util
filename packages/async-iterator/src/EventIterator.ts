@@ -4,7 +4,7 @@ const Cancelled = Symbol('cancelled')
 
 export default class EventIterator<T> {
   private events: T[] = []
-  private untilArrival!: Promise<void>
+  private arrived!: Promise<void>
   private publishArrival!: () => void
   private cancelled: Promise<typeof Cancelled>
   private teardown: Teardown
@@ -20,8 +20,8 @@ export default class EventIterator<T> {
   }
 
   private setupNextArrival() {
-    const { promise: untilArrival, resolve: publishArrival } = defer()
-    this.untilArrival = untilArrival
+    const { promise: arrived, resolve: publishArrival } = defer()
+    this.arrived = arrived
     this.publishArrival = publishArrival
   }
 
@@ -36,9 +36,7 @@ export default class EventIterator<T> {
       return { done: false, value: this.events.shift()! }
     }
 
-    if (
-      (await Promise.race([this.untilArrival, this.cancelled])) === Cancelled
-    ) {
+    if ((await Promise.race([this.arrived, this.cancelled])) === Cancelled) {
       this.teardown()
       return { done: true, value: undefined }
     }
