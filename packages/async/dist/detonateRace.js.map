@@ -1,0 +1,1 @@
+{"version":3,"file":"detonateRace.js","sourceRoot":"","sources":["../src/detonateRace.ts"],"names":[],"mappings":";;;AAAA,wEAAyC;AACzC,gEAAiC;AAEjC,SAA8B,YAAY,CACxC,OAAmB,EACnB,EAAc,EACd,KAAmC;IADnC,mBAAA,EAAA,MAAc;IACd,sBAAA,EAAA,YAAmB,sBAAY,CAAC,EAAE,CAAC;;;YAEnC,sBAAO,OAAO,CAAC,IAAI,CAAC,CAAC,OAAO,EAAE,kBAAQ,CAAC,EAAE,EAAE,KAAK,CAAC,CAAC,CAAC,EAAA;;;CACpD;AAND,+BAMC"}
