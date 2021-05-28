@@ -1,3 +1,3 @@
 # @johngw/object
 
-Object utilities
+Object utilities.

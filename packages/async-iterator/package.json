@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@johngw/async": "workspace:packages/async",
-    "@johngw/object": "*",
+    "@johngw/object": "workspace:packages/object",
     "tslib": "^2.2.0"
   }
 }

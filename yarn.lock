@@ -880,7 +880,7 @@ __metadata:
   resolution: "@johngw/async-iterator@workspace:packages/async-iterator"
   dependencies:
     "@johngw/async": "workspace:packages/async"
-    "@johngw/object": "*"
+    "@johngw/object": "workspace:packages/object"
     "@semantic-release/commit-analyzer": 8.0.1
     "@semantic-release/github": 7.2.3
     "@semantic-release/release-notes-generator": 9.0.2
@@ -900,7 +900,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/async@workspace:packages/async"
   dependencies:
-    "@johngw/object": "*"
+    "@johngw/object": "workspace:packages/object"
     "@semantic-release/commit-analyzer": 8.0.1
     "@semantic-release/github": 7.2.3
     "@semantic-release/release-notes-generator": 9.0.2
@@ -1007,7 +1007,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@johngw/object@*, @johngw/object@workspace:packages/object":
+"@johngw/object@workspace:packages/object":
   version: 0.0.0-use.local
   resolution: "@johngw/object@workspace:packages/object"
   dependencies:
