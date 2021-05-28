@@ -12,7 +12,7 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PUSH_TOKEN }}
 
       - name: Install Node.js
         uses: actions/setup-node@v2
@@ -31,7 +31,7 @@ jobs:
       - name: Release
         run: yarn release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
 
       # - name: Release
       #   run: yarn release-workspaces
