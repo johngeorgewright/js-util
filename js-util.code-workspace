@@ -13,6 +13,10 @@
       "path": "packages/async"
     },
     {
+      "name": "📦 @johngw/async-iterator",
+      "path": "packages/async-iterator"
+    },
+    {
       "name": "📦 @johngw/error",
       "path": "packages/error"
     },

@@ -2,6 +2,9 @@ import defer from './defer'
 
 const Cancelled = Symbol('cancelled')
 
+/**
+ * @deprecated Use @johngw/async-iterator
+ */
 export default class EventIterator<T> {
   private events: T[] = []
   private next: Promise<void>
