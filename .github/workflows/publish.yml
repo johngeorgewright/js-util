@@ -56,8 +56,6 @@ jobs:
         run: yarn workspace ${{ needs.decipher.outputs.package }} build
 
       - name: Publish
-        run: |
-          yarn workspace ${{ needs.decipher.outputs.package }} version ${{ needs.decipher.outputs.version }}
-          yarn workspace ${{ needs.decipher.outputs.package }} npm publish --access public
+        run: yarn workspace ${{ needs.decipher.outputs.package }} npm publish --access public
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
