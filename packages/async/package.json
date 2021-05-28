@@ -1,7 +1,7 @@
 {
   "name": "@johngw/async",
   "version": "0.0.0",
-  "description": "Async utilities.",
+  "description": "Async utilities",
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {

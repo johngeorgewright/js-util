@@ -57,7 +57,7 @@ jobs:
 
       - name: Publish
         run: |
-          yarn version ${{ needs.decipher.outputs.version }}
+          yarn workspace ${{ needs.decipher.outputs.package }} version ${{ needs.decipher.outputs.version }}
           yarn workspace ${{ needs.decipher.outputs.package }} npm publish --access public
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
