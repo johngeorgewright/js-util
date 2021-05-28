@@ -1421,6 +1421,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["common-ancestor-path", "npm:1.0.1"],
             ["json-parse-even-better-errors", "npm:2.3.1"],
             ["json-stringify-nice", "npm:1.1.4"],
+            ["mkdirp", "npm:1.0.4"],
             ["mkdirp-infer-owner", "npm:2.0.0"],
             ["npm-install-checks", "npm:4.0.0"],
             ["npm-package-arg", "npm:8.1.2"],
@@ -1432,7 +1433,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["promise-call-limit", "npm:1.0.1"],
             ["read-package-json-fast", "npm:2.0.2"],
             ["readdir-scoped-modules", "npm:1.1.0"],
+            ["rimraf", "npm:3.0.2"],
             ["semver", "npm:7.3.5"],
+            ["ssri", "npm:8.0.1"],
             ["tar", "npm:6.1.0"],
             ["treeverse", "npm:1.0.4"],
             ["walk-up-path", "npm:1.0.0"]
@@ -1535,6 +1538,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@npmcli/metavuln-calculator", "npm:1.1.1"],
             ["cacache", "npm:15.0.6"],
+            ["json-parse-even-better-errors", "npm:2.3.1"],
             ["pacote", "npm:11.3.3"],
             ["semver", "npm:7.3.5"]
           ],
@@ -3193,6 +3197,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bin-links", "npm:2.2.1"],
             ["cmd-shim", "npm:4.1.0"],
             ["mkdirp", "npm:1.0.4"],
+            ["mkdirp-infer-owner", "npm:2.0.0"],
             ["npm-normalize-package-bin", "npm:1.0.1"],
             ["read-cmd-shim", "npm:2.0.0"],
             ["rimraf", "npm:3.0.2"],

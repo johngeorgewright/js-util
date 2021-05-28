@@ -41,18 +41,63 @@ export = class PluginGenerator extends Generator {
     this.sourceRoot(path.resolve(__dirname, '..', '..', 'templates'))
   }
 
-  writing() {
+  async writing() {
     const context = {
       description: this.answers.description || '',
       name: paramCase(this.answers.name!),
       public: this.answers.public,
     }
 
-    this.fs.copyTpl(
-      this.templatePath('package.json.template'),
-      this.destinationPath('package.json'),
-      context
+    this.packageJson.set('name', `@johngw/${this.answers.name}`)
+    this.packageJson.set('version', '0.0.0')
+    this.packageJson.set('description', this.answers.description)
+    this.packageJson.set('main', 'dist/main.js')
+
+    if (!this.answers.public) {
+      this.packageJson.set('private', true)
+    }
+
+    this.packageJson.set('scripts', {
+      build:
+        "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+      clean: 'yarn rimraf dist',
+      start: 'yarn tsc --watch --preserveWatchOutput',
+      release: 'yarn semantic-release -e semantic-release-monorepo',
+      test: 'yarn jest',
+    })
+
+    this.packageJson.set('license', 'MIT')
+
+    this.packageJson.set('bugs', {
+      url: 'https://github.com/johngeorgewright/ts-mono-repo/issues',
+    })
+
+    this.packageJson.set(
+      'homepage',
+      'https://github.com/johngeorgewright/ts-mono-repo#readme'
     )
+
+    const devDependencies = [
+      '@types/jest',
+      'jest',
+      'rimraf',
+      'ts-jest',
+      'typescript',
+    ]
+
+    if (this.answers.public) {
+      devDependencies.push(
+        '@semantic-release/commit-analyzer',
+        '@semantic-release/git',
+        '@semantic-release/github',
+        '@semantic-release/npm',
+        '@semantic-release/release-notes-generator',
+        'semantic-release',
+        'semantic-release-monorepo'
+      )
+    }
+
+    await this.addDevDependencies(devDependencies)
 
     this.fs.copy(
       this.templatePath('tsconfig.json'),
@@ -85,11 +130,18 @@ export = class PluginGenerator extends Generator {
     )
   }
 
-  install() {
+  async install() {
+    this.spawnCommandSync('yarn', [])
+
     if (this.answers.public) {
-      this.spawnCommandSync('npm', ['publish', '--access', 'public'], {
-        cwd: this.destinationPath(),
-      })
+      this.spawnCommandSync('yarn', [
+        'workspace',
+        `@plugola/${paramCase(this.answers.name!)}`,
+        'npm',
+        'publish',
+        '--access',
+        'public',
+      ])
     }
   }
 }
