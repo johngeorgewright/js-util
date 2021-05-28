@@ -69,12 +69,12 @@ export = class PluginGenerator extends Generator {
     this.packageJson.set('license', 'MIT')
 
     this.packageJson.set('bugs', {
-      url: 'https://github.com/johngeorgewright/ts-mono-repo/issues',
+      url: 'https://github.com/johngeorgewright/js-util/issues',
     })
 
     this.packageJson.set(
       'homepage',
-      'https://github.com/johngeorgewright/ts-mono-repo#readme'
+      'https://github.com/johngeorgewright/js-util#readme'
     )
 
     const devDependencies = [
@@ -136,7 +136,7 @@ export = class PluginGenerator extends Generator {
     if (this.answers.public) {
       this.spawnCommandSync('yarn', [
         'workspace',
-        `@plugola/${paramCase(this.answers.name!)}`,
+        `@johngw/${paramCase(this.answers.name!)}`,
         'npm',
         'publish',
         '--access',

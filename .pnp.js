@@ -14481,6 +14481,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["grouped-queue", "npm:2.0.0"],
             ["inquirer", "npm:8.0.0"],
             ["is-scoped", "npm:2.1.0"],
+            ["isbinaryfile", "npm:4.0.8"],
             ["lodash", "npm:4.17.21"],
             ["log-symbols", "npm:4.1.0"],
             ["mem-fs", "npm:2.1.0"],
