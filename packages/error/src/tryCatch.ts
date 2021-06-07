@@ -1,4 +1,4 @@
-export default function tryCatch<Args extends unknown[], T>(
+export default function tryCatch<T, Args extends unknown[] = []>(
   t: (...args: Args) => T,
   c: (error: any, ...args: Args) => T,
   ...args: Args
