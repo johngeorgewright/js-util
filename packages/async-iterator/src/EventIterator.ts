@@ -2,27 +2,30 @@ import { defer } from '@johngw/async'
 
 const Cancelled = Symbol('cancelled')
 
-export default class EventIterator<T> {
+export default class EventIterator<T> implements AsyncIterable<T> {
   private events: T[] = []
   private arrived!: Promise<void>
   private publishArrival!: () => void
-  private cancelled: Promise<typeof Cancelled>
-  private teardown: Teardown
-
-  public readonly cancel: () => void
+  private cancelled = false
+  private cancelledPromise: Promise<typeof Cancelled>
+  private readonly _cancel: (cancelled: typeof Cancelled) => void
+  private readonly teardown: Teardown
 
   constructor(setup: Setup<T>) {
-    const { promise: cancelled, resolve: cancel } = defer()
-    this.cancelled = cancelled.then(() => Cancelled)
-    this.cancel = cancel
+    const { promise: cancelledPromise, resolve: cancel } =
+      defer<typeof Cancelled>()
+    this.cancelledPromise = cancelledPromise
+    this._cancel = cancel
     this.setupNextArrival()
     this.teardown = setup(this.push)
   }
 
-  private setupNextArrival() {
-    const { promise: arrived, resolve: publishArrival } = defer()
-    this.arrived = arrived
-    this.publishArrival = publishArrival
+  readonly cancel = async (): Promise<IteratorResult<T>> => {
+    if (!this.cancelled) {
+      this._cancel(Cancelled)
+      this.teardown()
+    }
+    return { done: true, value: undefined }
   }
 
   readonly push = (event: T) => {
@@ -31,13 +34,20 @@ export default class EventIterator<T> {
     this.setupNextArrival()
   }
 
+  private setupNextArrival() {
+    const { promise: arrived, resolve: publishArrival } = defer()
+    this.arrived = arrived
+    this.publishArrival = publishArrival
+  }
+
   private readonly next = async (): Promise<IteratorResult<T>> => {
     if (this.events.length) {
       return { done: false, value: this.events.shift()! }
     }
 
-    if ((await Promise.race([this.arrived, this.cancelled])) === Cancelled) {
-      this.teardown()
+    if (
+      (await Promise.race([this.arrived, this.cancelledPromise])) === Cancelled
+    ) {
       return { done: true, value: undefined }
     }
 
@@ -47,6 +57,7 @@ export default class EventIterator<T> {
   [Symbol.asyncIterator]() {
     return {
       next: this.next,
+      return: this.cancel,
     }
   }
 }
