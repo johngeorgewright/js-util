@@ -1,6 +1,6 @@
 {
   "name": "@johngw/async",
-  "version": "2.10.4",
+  "version": "2.10.5",
   "description": "JS/TS Async utilities.",
   "main": "dist/index.js",
   "sideEffects": false,
