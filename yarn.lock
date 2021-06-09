@@ -898,7 +898,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
-    ts-jest: 27.0.2
+    ts-jest: 27.0.3
     tslib: ^2.2.0
     typescript: 4.2.4
   languageName: unknown
@@ -921,7 +921,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
-    ts-jest: 27.0.2
+    ts-jest: 27.0.3
     tslib: ^2.2.0
     typescript: 4.2.4
   languageName: unknown
@@ -943,7 +943,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
-    ts-jest: 27.0.2
+    ts-jest: 27.0.3
     tslib: ^2.2.0
     typescript: 4.2.4
   languageName: unknown
@@ -963,7 +963,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
-    ts-jest: 27.0.2
+    ts-jest: 27.0.3
     tslib: ^2.2.0
     typescript: 4.2.4
   languageName: unknown
@@ -984,7 +984,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
-    ts-jest: 27.0.2
+    ts-jest: 27.0.3
     tslib: ^2.2.0
     typescript: 4.2.4
   languageName: unknown
@@ -999,7 +999,7 @@ __metadata:
     change-case: 4.1.2
     jest: 27.0.4
     rimraf: 3.0.2
-    ts-jest: 27.0.2
+    ts-jest: 27.0.3
     tslib: 2.2.0
     typescript: 4.2.4
     yeoman-generator: 5.3.0
@@ -1012,7 +1012,7 @@ __metadata:
   dependencies:
     "@johngw/array": "*"
     "@types/cli-table": 0.3.0
-    "@types/node": 14.17.2
+    "@types/node": 14.17.3
     cli-table: 0.3.6
     colors: 1.4.0
     ts-node: 10.0.0
@@ -1060,7 +1060,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
-    ts-jest: 27.0.2
+    ts-jest: 27.0.3
     tslib: ^2.2.0
     typescript: 4.2.4
   languageName: unknown
@@ -1779,10 +1779,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.2":
-  version: 14.17.2
-  resolution: "@types/node@npm:14.17.2"
-  checksum: 7a2e90989ce2948d3cdfc1d15fb5f0439ea53971d81a466ad049922bb23ef38252f6639271ae5899670ab93d48ed62542ad687767e45ffa6fe902ce59f518e5b
+"@types/node@npm:14.17.3":
+  version: 14.17.3
+  resolution: "@types/node@npm:14.17.3"
+  checksum: 0d3e3c3dbb8250166d7c8c7c6221bde20a366d2c34b27c0072c3962a32c8a74c4ae4a168bfe53d6193e7b0bba8d8bc87608a6fd2af7918cd444a9aa699b4ce18
   languageName: node
   linkType: hard
 
@@ -11139,9 +11139,9 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:27.0.2":
-  version: 27.0.2
-  resolution: "ts-jest@npm:27.0.2"
+"ts-jest@npm:27.0.3":
+  version: 27.0.3
+  resolution: "ts-jest@npm:27.0.3"
   dependencies:
     bs-logger: 0.x
     buffer-from: 1.x
@@ -11158,7 +11158,7 @@ fsevents@^2.3.2:
     typescript: ">=3.8 <5.0"
   bin:
     ts-jest: cli.js
-  checksum: 21fa05cdd3d43a94514f0526e9956d78e494e247dbda33dc4cab4660b5311c0ef4c14cc58c8f5c8804c55f583c94048f45e4b0d5063f3be1ed4f87d916f3ecbf
+  checksum: a63f3a8620a16335d745f22377a9cc118129d28a5b122c609a7c6aabbb8048c85733c771a0dd39b136e8a75401473409452bdd3c5b9e3b85317c2e3f3ac03267
   languageName: node
   linkType: hard
 
