@@ -1,7 +1,7 @@
 {
   "name": "@johngw/object",
   "version": "1.1.4",
-  "description": "Object utilities.",
+  "description": "JS/TS Object utilities.",
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
