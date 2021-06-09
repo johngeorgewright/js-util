@@ -11,6 +11,39 @@ export default class EventIterator<T> implements AsyncIterable<T> {
   private readonly _cancel: (cancelled: typeof Cancelled) => void
   private readonly teardown: Teardown
 
+  /**
+   * Easy way of turning callback style execution in to async iterables.
+   *
+   * For example, take the following problem:
+   *
+   * @example
+   * async function* yieldEveryClick() {
+   *   const el = document.getElementById('some-id')
+   *   el.addEventListener('click', () => {
+   *     // THIS CANNOT BE DONE!!!
+   *     yield 'clicked'
+   *   })
+   * }
+   *
+   * // The above problem will take some work with wrapping everything in promises
+   * // and manually writing the iterator implementation.
+   * //
+   * // Instead, one can use the `EventIterator`:
+   * const yieldEveryClick = () => new EventIterator((push) => {
+   *   const el = document.getElementById('some-id')
+   *   const fn = () => push('clicked')
+   *   el.addEventListener('click', fn)
+   *   return () => el.removeEventListener('click', fn)
+   * })
+   *
+   * // Now one can iterate through all the events `push`ed. You can also manually
+   * // cancel the iteration where infinite loops are possible.
+   * const iterator = yieldEveryClick()
+   * setTimeout(() => iterator.cancel(), 20000)
+   * for await (const click of iterator) {
+   *   // ...
+   * }
+   */
   constructor(setup: Setup<T>) {
     const { promise: cancelledPromise, resolve: cancel } =
       defer<typeof Cancelled>()
