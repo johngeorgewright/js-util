@@ -12,7 +12,7 @@ test('until', async () => {
     }
   })
 
-  await until(fn, 10)
+  await until(fn, { interval: 10 })
   expect(count).toBe(3)
   expect(fn).toHaveBeenCalledTimes(4)
 })

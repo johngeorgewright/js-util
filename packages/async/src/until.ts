@@ -2,15 +2,18 @@ import timeout from './timeout'
 
 export default async function until(
   fn: () => Promise<boolean>,
-  interval?: number
+  {
+    interval,
+    signal,
+  }: {
+    interval?: number
+    signal?: AbortSignal
+  }
 ) {
   let success = false
 
-  const wait: () => Promise<void> | void =
-    typeof interval === 'undefined' ? () => {} : () => timeout(interval)
-
   do {
     success = await fn()
-    await wait()
+    await timeout(interval, signal)
   } while (!success)
 }

@@ -1,16 +1,41 @@
 import { isEmpty, map } from '@johngw/object'
 
+/**
+ * Combine async iterables and iterate through their results
+ * as they arrive.
+ *
+ * @example
+ * async function* a() {
+ *   await timeout(5)
+ *   yield 0
+ *   await timeout(5)
+ *   yield 2
+ * }
+ *
+ * async function* b() {
+ *   await timeout(8)
+ *   yield 10
+ * }
+ *
+ * for await (const item of combineIterators(a(), b())) {
+ *   // 0
+ *   // 10
+ *   // 2
+ * }
+ */
 export default async function* combineIterators<T>(
   ...asyncIterables: AsyncIterable<T>[]
 ) {
-  const asyncIterators: Record<string, AsyncIterator<T>> =
-    asyncIterables.reduce(
-      (asyncIterators, asyncIterable, index) => ({
-        ...asyncIterators,
-        [index.toString()]: asyncIterable[Symbol.asyncIterator](),
-      }),
-      {}
-    )
+  const asyncIterators: Record<
+    string,
+    AsyncIterator<T>
+  > = asyncIterables.reduce(
+    (asyncIterators, asyncIterable, index) => ({
+      ...asyncIterators,
+      [index.toString()]: asyncIterable[Symbol.asyncIterator](),
+    }),
+    {}
+  )
 
   const results = Array(asyncIterables.length)
 

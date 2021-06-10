@@ -1,4 +1,5 @@
 import detonate from './detonate'
+import AbortController from 'node-abort-controller'
 
 test('it throws after an amount of ms', async () => {
   await Promise.race([
@@ -17,4 +18,11 @@ test('it throws after an amount of ms', async () => {
       }, 20)
     ),
   ])
+})
+
+test('aborting', async () => {
+  const abortController = new AbortController()
+  const detonation = detonate(20, { signal: abortController.signal })
+  abortController.abort()
+  await expect(detonation).rejects.toThrowError('Async operation was aborted')
 })

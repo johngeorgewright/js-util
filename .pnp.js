@@ -1430,6 +1430,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.23"],
             ["@types/node", "npm:15.6.1"],
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.0.4"],
+            ["node-abort-controller", "npm:2.0.0"],
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:17.4.3"],
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.5"],
@@ -4440,7 +4441,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:3.12.1", {
-          "packageLocation": "./.yarn/cache/core-js-npm-3.12.1-6d1063bc86-8b1d05579e.zip/node_modules/core-js/",
+          "packageLocation": "./.yarn/unplugged/core-js-npm-3.12.1-6d1063bc86/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.12.1"]
           ],
@@ -9517,6 +9518,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["node-abort-controller", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/node-abort-controller-npm-2.0.0-2635eee468-d8bf75f45f.zip/node_modules/node-abort-controller/",
+          "packageDependencies": [
+            ["node-abort-controller", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["node-emoji", [
         ["npm:1.10.0", {
           "packageLocation": "./.yarn/cache/node-emoji-npm-1.10.0-3bbb4a73cd-9c73cd0af0.zip/node_modules/node-emoji/",
@@ -12060,7 +12070,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["spawn-sync", [
         ["npm:1.0.15", {
-          "packageLocation": "./.yarn/cache/spawn-sync-npm-1.0.15-ae144228c0-c31c84dd8b.zip/node_modules/spawn-sync/",
+          "packageLocation": "./.yarn/unplugged/spawn-sync-npm-1.0.15-ae144228c0/node_modules/spawn-sync/",
           "packageDependencies": [
             ["spawn-sync", "npm:1.0.15"],
             ["concat-stream", "npm:1.6.2"],
@@ -13918,7 +13928,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["yo", [
         ["npm:4.2.0", {
-          "packageLocation": "./.yarn/cache/yo-npm-4.2.0-fd8fdd1e1a-134d56a0f7.zip/node_modules/yo/",
+          "packageLocation": "./.yarn/unplugged/yo-npm-4.2.0-fd8fdd1e1a/node_modules/yo/",
           "packageDependencies": [
             ["yo", "npm:4.2.0"],
             ["async", "npm:2.6.3"],
