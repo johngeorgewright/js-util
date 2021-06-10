@@ -7,13 +7,12 @@ export default async function detonate(
     error = new TimeoutError(ms),
     signal,
   }: {
-    ms?: number
     error?: Error
     signal?: AbortSignal
   } = {}
 ) {
   return new Promise<never>((_, reject) => {
-    if (signal?.aborted) return
+    if (signal?.aborted) return reject(new AbortError())
     const timeout = setTimeout(() => reject(error), ms)
     signal?.addEventListener('abort', () => {
       clearTimeout(timeout)
