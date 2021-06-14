@@ -918,7 +918,7 @@ __metadata:
     "@types/jest": 26.0.23
     "@types/node": 15.6.1
     jest: 27.0.4
-    node-abort-controller: ^2.0.0
+    node-abort-controller: 2.0.0
     rimraf: 3.0.2
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
@@ -941,7 +941,7 @@ __metadata:
     "@types/jest": 26.0.23
     "@types/node": 15.6.1
     jest: 27.0.4
-    node-abort-controller: ^2.0.0
+    node-abort-controller: 2.0.0
     rimraf: 3.0.2
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
@@ -8077,7 +8077,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"node-abort-controller@npm:^2.0.0":
+"node-abort-controller@npm:2.0.0":
   version: 2.0.0
   resolution: "node-abort-controller@npm:2.0.0"
   checksum: d8bf75f45f62d9961f758daa9924001f3a74899fd850d2fc13c279f510ef35c098bf53553a1b920d6f6721944a83250f19fb798f3832c2e540c883f1844a0404
