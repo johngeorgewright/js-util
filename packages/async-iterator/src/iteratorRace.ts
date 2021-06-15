@@ -1,4 +1,5 @@
 import { AbortError, detonate, TimeoutError } from '@johngw/async'
+import AbortController from 'node-abort-controller'
 
 export default async function* iteratorRace<T>(
   asyncIterable: AsyncIterable<T>,
@@ -6,10 +7,9 @@ export default async function* iteratorRace<T>(
   signal?: AbortSignal
 ): AsyncIterable<T> {
   let asyncIterator: AsyncIterator<T> | undefined
+  const [timer, abort] = createTimer(ms, signal)
 
   try {
-    const timer = detonate(ms, { signal })
-
     asyncIterator = await Promise.race([
       asyncIterable[Symbol.asyncIterator](),
       timer,
@@ -29,6 +29,22 @@ export default async function* iteratorRace<T>(
       throw error
     }
   } finally {
+    abort()
     return asyncIterator?.return?.()
+  }
+}
+
+function createTimer(
+  ms: number,
+  signal?: AbortSignal
+): [Promise<never>, () => void] {
+  if (!signal) {
+    const abortController = new AbortController()
+    return [
+      detonate(ms, { signal: abortController.signal }),
+      () => abortController.abort(),
+    ]
+  } else {
+    return [detonate(ms, { signal }), () => {}]
   }
 }
