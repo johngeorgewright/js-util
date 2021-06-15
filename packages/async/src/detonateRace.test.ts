@@ -5,7 +5,7 @@ test('it rejects after a number of ms', (done) => {
   detonateRace(timeout(20), 10).then(
     () => done('it resolved instead of rejected'),
     (error) => {
-      expect(error.message).toBe('Exceeded 10ms')
+      expect(error.isTimeoutError).toBe(true)
       done()
     }
   )
