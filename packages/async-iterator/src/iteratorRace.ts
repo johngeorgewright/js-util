@@ -25,7 +25,7 @@ export default async function* iteratorRace<T>(
       }
     }
   } catch (error) {
-    if (!(error instanceof TimeoutError) || !(error instanceof AbortError)) {
+    if (error.isTimeoutError || error.isAbortError) {
       throw error
     }
   } finally {
