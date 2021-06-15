@@ -1,4 +1,4 @@
-import { AbortError, detonate, TimeoutError } from '@johngw/async'
+import { detonate } from '@johngw/async'
 import AbortController from 'node-abort-controller'
 
 export default async function* iteratorRace<T>(
@@ -25,7 +25,7 @@ export default async function* iteratorRace<T>(
       }
     }
   } catch (error) {
-    if (error.isTimeoutError || error.isAbortError) {
+    if (!error.isTimeoutError && !error.isAbortError) {
       throw error
     }
   } finally {
