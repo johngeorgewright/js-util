@@ -16,3 +16,24 @@ test('aborting', async () => {
   abortController.abort()
   await expect(promise).rejects.toThrowError('Async operation was aborted')
 })
+
+test('aborting multiple', async () => {
+  const abortController = new AbortController()
+  const one = jest.fn()
+  const two = jest.fn()
+  const three = jest.fn()
+
+  await Promise.race([
+    timeout(10, abortController.signal).then(one),
+    timeout(20, abortController.signal).then(two),
+    timeout(30, abortController.signal).then(three),
+  ]).finally(() => {
+    abortController.abort()
+  })
+
+  await timeout(40)
+
+  expect(one).toHaveBeenCalled()
+  expect(two).not.toHaveBeenCalled()
+  expect(three).not.toHaveBeenCalled()
+})

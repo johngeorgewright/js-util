@@ -1,28 +1,18 @@
 import TimeoutError from './TimeoutError'
 import detonate from './detonate'
-import AbortController from 'node-abort-controller'
+import { AbortSignal } from 'node-abort-controller'
+import race from './race'
 
 export default async function detonateRace<T>(
   promise: Promise<T>,
-  ms: number = 0,
+  ms = 0,
   {
-    error = new TimeoutError(ms),
+    error = () => new TimeoutError(ms),
     signal,
   }: {
-    error?: Error
+    error?: () => Error
     signal?: AbortSignal
   } = {}
 ) {
-  if (!signal) {
-    const abortController = new AbortController()
-    return Promise.race([
-      promise.then((result) => {
-        abortController.abort()
-        return result
-      }),
-      detonate(ms, { error, signal: abortController.signal }),
-    ])
-  }
-
-  return Promise.race([promise, detonate(ms, { error, signal })])
+  return race((signal) => [promise, detonate(ms, { error, signal })], signal)
 }
