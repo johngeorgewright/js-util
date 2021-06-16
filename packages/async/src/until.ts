@@ -1,7 +1,8 @@
 import timeout from './timeout'
+import type { AbortSignal } from 'node-abort-controller'
 
 export default async function until(
-  fn: () => Promise<boolean>,
+  fn: (signal?: AbortSignal) => Promise<boolean>,
   {
     interval,
     signal,
@@ -10,10 +11,7 @@ export default async function until(
     signal?: AbortSignal
   }
 ) {
-  let success = false
-
-  do {
-    success = await fn()
+  for (let success = await fn(signal); !success; success = await fn(signal)) {
     await timeout(interval, signal)
-  } while (!success)
+  }
 }
