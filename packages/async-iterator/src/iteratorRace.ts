@@ -1,5 +1,5 @@
 import { detonate } from '@johngw/async'
-import AbortController from 'node-abort-controller'
+import AbortController, { AbortSignal } from 'node-abort-controller'
 
 export default async function* iteratorRace<T>(
   asyncIterable: AsyncIterable<T>,
@@ -38,13 +38,14 @@ function createTimer(
   ms: number,
   signal?: AbortSignal
 ): [Promise<never>, () => void] {
-  if (!signal) {
-    const abortController = new AbortController()
-    return [
-      detonate(ms, { signal: abortController.signal }),
-      () => abortController.abort(),
-    ]
-  } else {
-    return [detonate(ms, { signal }), () => {}]
+  const abortController = new AbortController()
+
+  if (signal) {
+    signal.addEventListener('abort', () => abortController.abort())
   }
+
+  return [
+    detonate(ms, { signal: abortController.signal }),
+    () => abortController.abort(),
+  ]
 }
