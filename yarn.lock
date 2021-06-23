@@ -997,7 +997,7 @@ __metadata:
   resolution: "@johngw/generator@workspace:packages/generator"
   dependencies:
     "@types/jest": 26.0.23
-    "@types/yeoman-generator": 5.0.0
+    "@types/yeoman-generator": 5.2.0
     change-case: 4.1.2
     jest: 27.0.5
     rimraf: 3.0.2
@@ -1918,7 +1918,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yeoman-generator@npm:*, @types/yeoman-generator@npm:5.0.0":
+"@types/yeoman-generator@npm:*":
   version: 5.0.0
   resolution: "@types/yeoman-generator@npm:5.0.0"
   dependencies:
@@ -1929,6 +1929,20 @@ __metadata:
     "@types/yeoman-environment": "*"
     rxjs: ^6.4.0
   checksum: 4e41f9a59da478acd898b7d710501ae58628ebcd1d37b9ffdbf9b68e3d9641279af836f43400fe9d19e1f8959cbe7f640b17eda06e4978a55b57452ff4d9ad1a
+  languageName: node
+  linkType: hard
+
+"@types/yeoman-generator@npm:5.2.0":
+  version: 5.2.0
+  resolution: "@types/yeoman-generator@npm:5.2.0"
+  dependencies:
+    "@types/debug": "*"
+    "@types/ejs": "*"
+    "@types/inquirer": "*"
+    "@types/mem-fs-editor": "*"
+    "@types/yeoman-environment": "*"
+    rxjs: ^6.4.0
+  checksum: be9589d8183f9eab3c5510c10649bda8fa25f718e42b3647d290a11ef5f4f202b129643b677a297a6717ce82f1b048a1e6e18285298c7e2549c750589ca9ae4e
   languageName: node
   linkType: hard
 
