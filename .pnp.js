@@ -88,7 +88,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarks/cli", "npm:1.1.3"],
             ["commitizen", "npm:4.2.4"],
             ["cz-conventional-changelog", "npm:3.3.0"],
-            ["husky", "npm:6.0.0"],
+            ["husky", "npm:7.0.0"],
             ["lint-staged", "npm:11.0.0"],
             ["prettier", "npm:2.3.2"],
             ["semantic-release", "npm:17.4.4"],
@@ -1558,7 +1558,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarks/cli", "npm:1.1.3"],
             ["commitizen", "npm:4.2.4"],
             ["cz-conventional-changelog", "npm:3.3.0"],
-            ["husky", "npm:6.0.0"],
+            ["husky", "npm:7.0.0"],
             ["lint-staged", "npm:11.0.0"],
             ["prettier", "npm:2.3.2"],
             ["semantic-release", "npm:17.4.4"],
@@ -6697,10 +6697,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:6.0.0", {
-          "packageLocation": "./.yarn/cache/husky-npm-6.0.0-384872ea98-61e1f7f53f.zip/node_modules/husky/",
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/husky-npm-7.0.0-f5b54b1293-56252eeb45.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:6.0.0"]
+            ["husky", "npm:7.0.0"]
           ],
           "linkType": "HARD",
         }]
