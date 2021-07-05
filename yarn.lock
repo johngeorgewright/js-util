@@ -1017,7 +1017,7 @@ __metadata:
     ts-jest: 27.0.3
     tslib: 2.3.0
     typescript: 4.2.4
-    yeoman-generator: 5.3.0
+    yeoman-generator: 5.4.0
   languageName: unknown
   linkType: soft
 
@@ -12099,9 +12099,9 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:5.3.0":
-  version: 5.3.0
-  resolution: "yeoman-generator@npm:5.3.0"
+"yeoman-generator@npm:5.4.0":
+  version: 5.4.0
+  resolution: "yeoman-generator@npm:5.4.0"
   dependencies:
     chalk: ^4.1.0
     dargs: ^7.0.0
@@ -12120,7 +12120,7 @@ typescript@4.2.4:
   peerDependenciesMeta:
     yeoman-environment:
       optional: true
-  checksum: 90c608bf533c5db948ff90c39e822e62cdab72df35ab3466037fed0041d745e22f846298e06bc9a0c85cc638de0b4efa24fe82cc0223ef381134c2d99d69745d
+  checksum: a8d1f82bb826133346a1245c5e73c438b9e976803095b548715c549cb0e291fe0d97129e108dcb78832e927a7205089519fc1cdbb8a24332ef319e602d9a233d
   languageName: node
   linkType: hard
 
