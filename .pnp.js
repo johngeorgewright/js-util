@@ -1579,7 +1579,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.17.5"],
             ["cli-table", "npm:0.3.6"],
             ["colors", "npm:1.4.0"],
-            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.0.0"],
+            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.1.0"],
             ["tslib", "npm:2.3.0"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"]
           ],
@@ -12997,17 +12997,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-node", [
-        ["npm:10.0.0", {
-          "packageLocation": "./.yarn/cache/ts-node-npm-10.0.0-9c3d77d0a0-dc461e2b9b.zip/node_modules/ts-node/",
+        ["npm:10.1.0", {
+          "packageLocation": "./.yarn/cache/ts-node-npm-10.1.0-a47fc35807-d1b582dc36.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "npm:10.0.0"]
+            ["ts-node", "npm:10.1.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.0.0", {
-          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-8e6d6770ce/0/cache/ts-node-npm-10.0.0-9c3d77d0a0-dc461e2b9b.zip/node_modules/ts-node/",
+        ["virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.1.0", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-a4b4595f52/0/cache/ts-node-npm-10.1.0-a47fc35807-d1b582dc36.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.0.0"],
+            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.1.0"],
             ["@swc/core", null],
             ["@swc/wasm", null],
             ["@tsconfig/node10", "npm:1.0.7"],
