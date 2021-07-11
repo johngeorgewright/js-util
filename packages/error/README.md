@@ -17,9 +17,7 @@ const result = tryCatch(
   () => {
     throw new Error('foobar')
   },
-  (error) => {
-    error.message
-  }
+  (error) => error.message
 )
 expect(result).toBe('foobar')
 ```
@@ -31,9 +29,7 @@ const result = tryCatch(
   (a, b) => {
     throw new Error(`${a}${b}`)
   },
-  (error) => {
-    error.message
-  },
+  (error) => error.message,
   'foo',
   'bar'
 )
@@ -49,9 +45,7 @@ const result = tryCatch(() => {
   throw new ReferenceError('Bad reference')
 }, [
   except(ReferenceError, (error) => 'On no, bad reference'),
-  (error) => {
-    error.message
-  },
+  (error) => error.message,
 ])
 expect(result).toBe('On no, bad reference')
 ```
@@ -65,9 +59,7 @@ const result = await tryCatch(
   async () => {
     throw new Error('foobar')
   },
-  async (error) => {
-    error.message
-  }
+  async (error) => error.message
 )
 expect(result).toBe('foobar')
 ```
