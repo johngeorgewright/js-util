@@ -1,4 +1,4 @@
-import tryCatch, { except } from './tryCatch'
+import { except, tryCatch, tryFinally } from './tryCatch'
 
 test('try/catch as return statement', () => {
   expect(
@@ -112,6 +112,17 @@ test('promises with type matching', async () => {
       },
     ])
   ).resolves.toHaveProperty('foo', true)
+})
+
+test('tryFinally', async () => {
+  const bar = jest.fn(() => 'bar')
+  const barP = jest.fn(async () => 'bar')
+
+  expect(tryFinally(() => 'foo', bar)).toBe('foo')
+  expect(bar).toHaveBeenCalled()
+
+  await expect(tryFinally(async () => 'foo', barP)).resolves.toBe('foo')
+  expect(barP).toHaveBeenCalled()
 })
 
 class FooError extends Error {

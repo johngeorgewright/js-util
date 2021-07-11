@@ -1,9 +1,6 @@
-export default function tryCatch<T, Args extends unknown[]>(
+export function tryCatch<T, Args extends unknown[]>(
   t: (...args: Args) => T,
-  c:
-    | Handler<T, Args>
-    | ExceptHandler<T, Args>[]
-    | [...ExceptHandler<T, Args>[], Handler<T, Args>],
+  c: CatchHandler<T, Args>,
   ...args: Args
 ): T | undefined {
   try {
@@ -18,12 +15,56 @@ export default function tryCatch<T, Args extends unknown[]>(
   }
 }
 
+export function tryFinally<T, Args extends unknown[]>(
+  t: (...args: Args) => T,
+  f: (...args: Args) => T,
+  ...args: Args
+): T | undefined {
+  let isPromise = false
+  try {
+    const result = t(...args)
+    isPromise = result instanceof Promise
+    return (
+      isPromise
+        ? (result as unknown as Promise<T>).finally(() => f(...args))
+        : result
+    ) as T
+  } finally {
+    if (!isPromise) {
+      f(...args)
+    }
+  }
+}
+
+export function tryCatchFinally<T, Args extends unknown[]>(
+  t: (...args: Args) => T,
+  c: CatchHandler<T, Args>,
+  f: (...args: Args) => T,
+  ...args: Args
+): T | undefined {
+  let isPromise = false
+  try {
+    const result = t(...args)
+    isPromise = result instanceof Promise
+    return (
+      isPromise
+        ? (result as unknown as Promise<T>)
+            .catch((e) => catchHandler(e, c, args))
+            .finally(() => f(...args))
+        : result
+    ) as T
+  } catch (error) {
+    return catchHandler(error, c, args)
+  } finally {
+    if (!isPromise) {
+      f(...args)
+    }
+  }
+}
+
 function catchHandler<T, Args extends unknown[]>(
   error: any,
-  c:
-    | Handler<T, Args>
-    | ExceptHandler<T, Args>[]
-    | [...ExceptHandler<T, Args>[], Handler<T, Args>],
+  c: CatchHandler<T, Args>,
   args: Args
 ) {
   const excepts = Array.isArray(c) ? c : [c]
@@ -56,6 +97,11 @@ interface Handler<T, Args extends unknown[]> {
 }
 
 type ExceptHandler<T, Args extends unknown[]> = Handler<ExceptResult<T>, Args>
+
+type CatchHandler<T, Args extends unknown[]> =
+  | Handler<T, Args>
+  | ExceptHandler<T, Args>[]
+  | [...ExceptHandler<T, Args>[], Handler<T, Args>]
 
 interface ErrorConstructor {
   new (message?: string): Error
