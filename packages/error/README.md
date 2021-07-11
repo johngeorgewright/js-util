@@ -8,7 +8,7 @@ An adaptation of [assertNever](https://github.com/aikoven/assert-never#readme) t
 
 ## `tryCatch`
 
-Try/catch as an expression that handles error types.
+Try/catch as an expression that handles error types. **NOTE: This will not work as expected if compiled to anything lower than ES6 syntax.**
 
 ### Simple example
 
