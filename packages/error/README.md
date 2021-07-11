@@ -70,5 +70,4 @@ const result = await tryCatch(
   }
 )
 expect(result).toBe('foobar')
-expect(result).toBe('On no, bad reference')
 ```
