@@ -1,5 +1,5 @@
 export function tryCatch<T, Args extends unknown[]>(
-  t: (...args: Args) => T,
+  t: TryHandler<T, Args>,
   c: CatchHandler<T, Args>,
   ...args: Args
 ): T | undefined {
@@ -16,8 +16,8 @@ export function tryCatch<T, Args extends unknown[]>(
 }
 
 export function tryFinally<T, Args extends unknown[]>(
-  t: (...args: Args) => T,
-  f: (...args: Args) => T,
+  t: TryHandler<T, Args>,
+  f: FinallyHnadler<T, Args>,
   ...args: Args
 ): T | undefined {
   let isPromise = false
@@ -37,9 +37,9 @@ export function tryFinally<T, Args extends unknown[]>(
 }
 
 export function tryCatchFinally<T, Args extends unknown[]>(
-  t: (...args: Args) => T,
+  t: TryHandler<T, Args>,
   c: CatchHandler<T, Args>,
-  f: (...args: Args) => T,
+  f: FinallyHnadler<T, Args>,
   ...args: Args
 ): T | undefined {
   let isPromise = false
@@ -72,7 +72,7 @@ function catchHandler<T, Args extends unknown[]>(
   for (const except of excepts) {
     const result = except(error, ...args)
 
-    if (!(result instanceof ExceptResult)) {
+    if (!(result instanceof TypedErrorResult)) {
       return result
     } else if (result.wasCalled) {
       return result.returned
@@ -86,28 +86,37 @@ export function except<EC extends ErrorConstructor, T, Args extends unknown[]>(
   errorConstructor: EC,
   handle: (error: InstanceType<EC>, ...args: Args) => T
 ) {
-  return (error: InstanceType<EC>, ...args: Args): ExceptResult<T> =>
+  return (error: InstanceType<EC>, ...args: Args): TypedErrorResult<T> =>
     error instanceof errorConstructor
-      ? new ExceptResult(true, handle(error, ...args))
-      : new ExceptResult(false)
+      ? new TypedErrorResult(true, handle(error, ...args))
+      : new TypedErrorResult(false)
 }
 
-interface Handler<T, Args extends unknown[]> {
+type TryHandler<T, Args extends unknown[]> = (...args: Args) => T
+
+interface ErrorHandler<T, Args extends unknown[]> {
   (error: any, ...args: Args): T
 }
 
-type ExceptHandler<T, Args extends unknown[]> = Handler<ExceptResult<T>, Args>
+type TypedErrorHandler<T, Args extends unknown[]> = ErrorHandler<
+  TypedErrorResult<T>,
+  Args
+>
 
 type CatchHandler<T, Args extends unknown[]> =
-  | Handler<T, Args>
-  | ExceptHandler<T, Args>[]
-  | [...ExceptHandler<T, Args>[], Handler<T, Args>]
+  | ErrorHandler<T, Args>
+  | TypedErrorHandler<T, Args>[]
+  | [...TypedErrorHandler<T, Args>[], ErrorHandler<T, Args>]
+
+type FinallyHnadler<T, Args extends unknown[]> = (
+  ...args: Args
+) => T extends Promise<any> ? Promise<void> | void : void
 
 interface ErrorConstructor {
   new (message?: string): Error
 }
 
-class ExceptResult<T> {
+class TypedErrorResult<T> {
   public readonly wasCalled: boolean
   public readonly returned?: T
   constructor(wasCalled: true, returned: T)
