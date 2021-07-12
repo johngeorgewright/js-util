@@ -1,3 +1,6 @@
+/**
+ * Try/catch as an expression that handles error types.
+ */
 export function tryCatch<T, Args extends unknown[]>(
   t: TryHandler<T, Args>,
   c: CatchHandler<T, Args>,

@@ -116,7 +116,7 @@ test('promises with type matching', async () => {
 
 test('tryFinally', async () => {
   const bar = jest.fn(() => 'bar')
-  const barP = jest.fn(async () => 'bar')
+  const barP = jest.fn(async () => void 0)
 
   expect(tryFinally(() => 'foo', bar)).toBe('foo')
   expect(bar).toHaveBeenCalled()
