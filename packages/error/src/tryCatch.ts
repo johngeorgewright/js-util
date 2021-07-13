@@ -5,7 +5,7 @@ export function tryCatch<T, Args extends unknown[]>(
   t: TryHandler<T, Args>,
   c: CatchHandler<T, Args>,
   ...args: Args
-): T | undefined {
+): T {
   try {
     const result = t(...args)
     return (
@@ -22,7 +22,7 @@ export function tryFinally<T, Args extends unknown[]>(
   t: TryHandler<T, Args>,
   f: FinallyHnadler<T, Args>,
   ...args: Args
-): T | undefined {
+): T {
   let isPromise = false
   try {
     const result = t(...args)
@@ -44,7 +44,7 @@ export function tryCatchFinally<T, Args extends unknown[]>(
   c: CatchHandler<T, Args>,
   f: FinallyHnadler<T, Args>,
   ...args: Args
-): T | undefined {
+): T {
   let isPromise = false
   try {
     const result = t(...args)
@@ -69,7 +69,8 @@ function catchHandler<T, Args extends unknown[]>(
   error: any,
   c: CatchHandler<T, Args>,
   args: Args
-) {
+  // @ts-ignore
+): T {
   const excepts = Array.isArray(c) ? c : [c]
 
   for (const except of excepts) {
@@ -78,11 +79,9 @@ function catchHandler<T, Args extends unknown[]>(
     if (!(result instanceof TypedErrorResult)) {
       return result
     } else if (result.wasCalled) {
-      return result.returned
+      return result.returned!
     }
   }
-
-  return void 0
 }
 
 export function except<EC extends ErrorConstructor, T, Args extends unknown[]>(
@@ -108,7 +107,6 @@ type TypedErrorHandler<T, Args extends unknown[]> = ErrorHandler<
 
 type CatchHandler<T, Args extends unknown[]> =
   | ErrorHandler<T, Args>
-  | TypedErrorHandler<T, Args>[]
   | [...TypedErrorHandler<T, Args>[], ErrorHandler<T, Args>]
 
 type FinallyHnadler<T, Args extends unknown[]> = (
