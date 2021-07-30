@@ -16,7 +16,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@types/jest": "26.0.24",
-    "@types/yeoman-generator": "5.2.1",
+    "@types/yeoman-generator": "5.2.2",
     "jest": "27.0.6",
     "rimraf": "3.0.2",
     "ts-jest": "27.0.4",
