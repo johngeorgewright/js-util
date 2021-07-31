@@ -94,7 +94,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:17.4.4"],
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.5"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"],
-            ["yo", "npm:4.2.0"]
+            ["yo", "npm:4.3.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -1564,7 +1564,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:17.4.4"],
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.5"],
             ["typescript", "patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"],
-            ["yo", "npm:4.2.0"]
+            ["yo", "npm:4.3.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -3076,15 +3076,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["array-uniq", [
-        ["npm:1.0.3", {
-          "packageLocation": "./.yarn/cache/array-uniq-npm-1.0.3-e7f5d6f3a1-ae11b7fc1e.zip/node_modules/array-uniq/",
-          "packageDependencies": [
-            ["array-uniq", "npm:1.0.3"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["arrify", [
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/arrify-npm-1.0.1-affafba9fe-f1d3bae819.zip/node_modules/arrify/",
@@ -3399,22 +3390,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["bin-version", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/bin-version-npm-2.0.0-ea4f0f729a-66ec07a283.zip/node_modules/bin-version/",
+        ["npm:3.1.0", {
+          "packageLocation": "./.yarn/cache/bin-version-npm-3.1.0-f45ea27610-69fca57110.zip/node_modules/bin-version/",
           "packageDependencies": [
-            ["bin-version", "npm:2.0.0"],
-            ["execa", "npm:0.1.1"],
-            ["find-versions", "npm:2.0.0"]
+            ["bin-version", "npm:3.1.0"],
+            ["execa", "npm:1.0.0"],
+            ["find-versions", "npm:3.2.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["bin-version-check", [
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/bin-version-check-npm-3.0.0-0c9a4d3e6d-9310f00fde.zip/node_modules/bin-version-check/",
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/bin-version-check-npm-4.0.0-6292cc7d15-4556af2262.zip/node_modules/bin-version-check/",
           "packageDependencies": [
-            ["bin-version-check", "npm:3.0.0"],
-            ["bin-version", "npm:2.0.0"],
+            ["bin-version-check", "npm:4.0.0"],
+            ["bin-version", "npm:3.1.0"],
             ["semver", "npm:5.7.1"],
             ["semver-truncate", "npm:1.1.2"]
           ],
@@ -4591,17 +4582,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["cross-spawn-async", [
-        ["npm:2.2.5", {
-          "packageLocation": "./.yarn/cache/cross-spawn-async-npm-2.2.5-414a7d390a-d16a9ed3ae.zip/node_modules/cross-spawn-async/",
-          "packageDependencies": [
-            ["cross-spawn-async", "npm:2.2.5"],
-            ["lru-cache", "npm:4.1.5"],
-            ["which", "npm:1.3.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["crypto-random-string", [
         ["npm:1.0.0", {
           "packageLocation": "./.yarn/cache/crypto-random-string-npm-1.0.0-e708c14263-0876b316cc.zip/node_modules/crypto-random-string/",
@@ -5428,16 +5408,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["execa", [
-        ["npm:0.1.1", {
-          "packageLocation": "./.yarn/cache/execa-npm-0.1.1-43e6588de6-d4f96462fc.zip/node_modules/execa/",
-          "packageDependencies": [
-            ["execa", "npm:0.1.1"],
-            ["cross-spawn-async", "npm:2.2.5"],
-            ["object-assign", "npm:4.1.1"],
-            ["strip-eof", "npm:1.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:0.7.0", {
           "packageLocation": "./.yarn/cache/execa-npm-0.7.0-3f4e53d884-7210f5334e.zip/node_modules/execa/",
           "packageDependencies": [
@@ -5815,12 +5785,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["find-versions", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/find-versions-npm-2.0.0-c36513ecee-552ad4f1c8.zip/node_modules/find-versions/",
+        ["npm:3.2.0", {
+          "packageLocation": "./.yarn/cache/find-versions-npm-3.2.0-2a87d094e9-2ddc16b426.zip/node_modules/find-versions/",
           "packageDependencies": [
-            ["find-versions", "npm:2.0.0"],
-            ["array-uniq", "npm:1.0.3"],
-            ["semver-regex", "npm:1.0.0"]
+            ["find-versions", "npm:3.2.0"],
+            ["semver-regex", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }],
@@ -9124,10 +9093,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:fd8fdd1e1ab1aff90ae91fe85eac7d911e7f9a1fd257fd7778207abf8d50a37e7797145b84aafe2e6992466e66c7bf17c356899f091a8f859177b82c9875ed54#npm:9.0.1", {
-          "packageLocation": "./.yarn/$$virtual/mem-fs-editor-virtual-137a4d37c6/0/cache/mem-fs-editor-npm-9.0.1-95a653c7db-09a4115d14.zip/node_modules/mem-fs-editor/",
+        ["virtual:9dddf0e45b4801e6ee4598ca6f48cf4218582944633a005c6cee62babbb8e8c8f78944e926e0cd72d4a20797b9faa2845c671048f007097dbeb35dbca7380b36#npm:9.0.1", {
+          "packageLocation": "./.yarn/$$virtual/mem-fs-editor-virtual-110475608f/0/cache/mem-fs-editor-npm-9.0.1-95a653c7db-09a4115d14.zip/node_modules/mem-fs-editor/",
           "packageDependencies": [
-            ["mem-fs-editor", "virtual:fd8fdd1e1ab1aff90ae91fe85eac7d911e7f9a1fd257fd7778207abf8d50a37e7797145b84aafe2e6992466e66c7bf17c356899f091a8f859177b82c9875ed54#npm:9.0.1"],
+            ["mem-fs-editor", "virtual:9dddf0e45b4801e6ee4598ca6f48cf4218582944633a005c6cee62babbb8e8c8f78944e926e0cd72d4a20797b9faa2845c671048f007097dbeb35dbca7380b36#npm:9.0.1"],
             ["@types/mem-fs", null],
             ["binaryextensions", "npm:4.15.0"],
             ["commondir", "npm:1.0.1"],
@@ -11835,10 +11804,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["semver-regex", [
-        ["npm:1.0.0", {
-          "packageLocation": "./.yarn/cache/semver-regex-npm-1.0.0-95aa99f4f8-bc76b860c2.zip/node_modules/semver-regex/",
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/semver-regex-npm-2.0.0-218c804009-9b96cc8bd5.zip/node_modules/semver-regex/",
           "packageDependencies": [
-            ["semver-regex", "npm:1.0.0"]
+            ["semver-regex", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }],
@@ -13893,15 +13862,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["yeoman-doctor", [
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/yeoman-doctor-npm-4.0.0-cc4fd993c1-258510c71f.zip/node_modules/yeoman-doctor/",
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/yeoman-doctor-npm-5.0.0-46780b0816-b8c892c5cd.zip/node_modules/yeoman-doctor/",
           "packageDependencies": [
-            ["yeoman-doctor", "npm:4.0.0"],
+            ["yeoman-doctor", "npm:5.0.0"],
             ["ansi-styles", "npm:3.2.1"],
-            ["bin-version-check", "npm:3.0.0"],
+            ["bin-version-check", "npm:4.0.0"],
             ["chalk", "npm:2.4.2"],
             ["global-agent", "npm:2.2.0"],
-            ["global-tunnel-ng", "npm:2.7.1"],
             ["latest-version", "npm:3.1.0"],
             ["log-symbols", "npm:2.2.0"],
             ["semver", "npm:5.7.1"],
@@ -13912,17 +13880,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["yeoman-environment", [
-        ["npm:3.4.0", {
-          "packageLocation": "./.yarn/cache/yeoman-environment-npm-3.4.0-45226d588f-f0d8f29e31.zip/node_modules/yeoman-environment/",
+        ["npm:3.5.1", {
+          "packageLocation": "./.yarn/cache/yeoman-environment-npm-3.5.1-60cbbdf1d3-128a30d2de.zip/node_modules/yeoman-environment/",
           "packageDependencies": [
-            ["yeoman-environment", "npm:3.4.0"]
+            ["yeoman-environment", "npm:3.5.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:fd8fdd1e1ab1aff90ae91fe85eac7d911e7f9a1fd257fd7778207abf8d50a37e7797145b84aafe2e6992466e66c7bf17c356899f091a8f859177b82c9875ed54#npm:3.4.0", {
-          "packageLocation": "./.yarn/$$virtual/yeoman-environment-virtual-74b793e3eb/0/cache/yeoman-environment-npm-3.4.0-45226d588f-f0d8f29e31.zip/node_modules/yeoman-environment/",
+        ["virtual:9dddf0e45b4801e6ee4598ca6f48cf4218582944633a005c6cee62babbb8e8c8f78944e926e0cd72d4a20797b9faa2845c671048f007097dbeb35dbca7380b36#npm:3.5.1", {
+          "packageLocation": "./.yarn/$$virtual/yeoman-environment-virtual-6bba1dcb37/0/cache/yeoman-environment-npm-3.5.1-60cbbdf1d3-128a30d2de.zip/node_modules/yeoman-environment/",
           "packageDependencies": [
-            ["yeoman-environment", "virtual:fd8fdd1e1ab1aff90ae91fe85eac7d911e7f9a1fd257fd7778207abf8d50a37e7797145b84aafe2e6992466e66c7bf17c356899f091a8f859177b82c9875ed54#npm:3.4.0"],
+            ["yeoman-environment", "virtual:9dddf0e45b4801e6ee4598ca6f48cf4218582944633a005c6cee62babbb8e8c8f78944e926e0cd72d4a20797b9faa2845c671048f007097dbeb35dbca7380b36#npm:3.5.1"],
             ["@npmcli/arborist", "npm:2.6.0"],
             ["@types/mem-fs", null],
             ["@types/mem-fs-editor", null],
@@ -13943,11 +13911,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["grouped-queue", "npm:2.0.0"],
             ["inquirer", "npm:8.0.0"],
             ["is-scoped", "npm:2.1.0"],
-            ["isbinaryfile", "npm:4.0.8"],
             ["lodash", "npm:4.17.21"],
             ["log-symbols", "npm:4.1.0"],
             ["mem-fs", "npm:2.1.0"],
-            ["mem-fs-editor", "virtual:fd8fdd1e1ab1aff90ae91fe85eac7d911e7f9a1fd257fd7778207abf8d50a37e7797145b84aafe2e6992466e66c7bf17c356899f091a8f859177b82c9875ed54#npm:9.0.1"],
+            ["mem-fs-editor", "virtual:9dddf0e45b4801e6ee4598ca6f48cf4218582944633a005c6cee62babbb8e8c8f78944e926e0cd72d4a20797b9faa2845c671048f007097dbeb35dbca7380b36#npm:9.0.1"],
             ["minimatch", "npm:3.0.4"],
             ["npmlog", "npm:4.1.2"],
             ["p-queue", "npm:6.6.2"],
@@ -14013,10 +13980,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["yo", [
-        ["npm:4.2.0", {
-          "packageLocation": "./.yarn/cache/yo-npm-4.2.0-fd8fdd1e1a-134d56a0f7.zip/node_modules/yo/",
+        ["npm:4.3.0", {
+          "packageLocation": "./.yarn/cache/yo-npm-4.3.0-9dddf0e45b-0781209e73.zip/node_modules/yo/",
           "packageDependencies": [
-            ["yo", "npm:4.2.0"],
+            ["yo", "npm:4.3.0"],
             ["async", "npm:2.6.3"],
             ["chalk", "npm:2.4.2"],
             ["cli-list", "npm:0.2.0"],
@@ -14031,7 +13998,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["inquirer", "npm:6.5.2"],
             ["insight", "npm:0.10.3"],
             ["lodash", "npm:4.17.21"],
-            ["mem-fs-editor", "virtual:fd8fdd1e1ab1aff90ae91fe85eac7d911e7f9a1fd257fd7778207abf8d50a37e7797145b84aafe2e6992466e66c7bf17c356899f091a8f859177b82c9875ed54#npm:9.0.1"],
+            ["mem-fs-editor", "virtual:9dddf0e45b4801e6ee4598ca6f48cf4218582944633a005c6cee62babbb8e8c8f78944e926e0cd72d4a20797b9faa2845c671048f007097dbeb35dbca7380b36#npm:9.0.1"],
             ["meow", "npm:3.7.0"],
             ["npm-keyword", "npm:5.0.0"],
             ["open", "npm:6.4.0"],
@@ -14046,8 +14013,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["update-notifier", "npm:2.5.0"],
             ["user-home", "npm:2.0.0"],
             ["yeoman-character", "npm:1.1.0"],
-            ["yeoman-doctor", "npm:4.0.0"],
-            ["yeoman-environment", "virtual:fd8fdd1e1ab1aff90ae91fe85eac7d911e7f9a1fd257fd7778207abf8d50a37e7797145b84aafe2e6992466e66c7bf17c356899f091a8f859177b82c9875ed54#npm:3.4.0"],
+            ["yeoman-doctor", "npm:5.0.0"],
+            ["yeoman-environment", "virtual:9dddf0e45b4801e6ee4598ca6f48cf4218582944633a005c6cee62babbb8e8c8f78944e926e0cd72d4a20797b9faa2845c671048f007097dbeb35dbca7380b36#npm:3.5.1"],
             ["yosay", "npm:2.0.2"]
           ],
           "linkType": "HARD",
