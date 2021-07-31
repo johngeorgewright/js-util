@@ -1057,7 +1057,7 @@ __metadata:
     semantic-release: 17.4.4
     semantic-release-monorepo: 7.0.5
     typescript: 4.2.4
-    yo: 4.2.0
+    yo: 4.3.0
   languageName: unknown
   linkType: soft
 
@@ -2311,13 +2311,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"array-uniq@npm:^1.0.0":
-  version: 1.0.3
-  resolution: "array-uniq@npm:1.0.3"
-  checksum: ae11b7fc1e624f7ed45f7a269b521f3f9f73dbff277be9c61fe0240c497bd3fba86367753e0ebdf49bcfd3fee14f4ebab80f573545878525eb48429514a02124
-  languageName: node
-  linkType: hard
-
 "arrify@npm:^1.0.0, arrify@npm:^1.0.1":
   version: 1.0.1
   resolution: "arrify@npm:1.0.1"
@@ -2542,24 +2535,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bin-version-check@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "bin-version-check@npm:3.0.0"
+"bin-version-check@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "bin-version-check@npm:4.0.0"
   dependencies:
-    bin-version: ^2.0.0
-    semver: ^5.1.0
-    semver-truncate: ^1.0.0
-  checksum: 9310f00fde97b7712589263bd1271abf9b73dfda69c95525f26eefbe033ed0d1b50cdd70209615c5a4ed1c506a76a311d5c4f79e195a9717cb3a3e61164e75c3
+    bin-version: ^3.0.0
+    semver: ^5.6.0
+    semver-truncate: ^1.1.2
+  checksum: 4556af2262c9b0843ab089484d304533fe5461967aaab231ddc406aae874731bc054f918c3f7c97495e100dafd9a65b61ba689a6777ad1c3a338d308a36bd6e4
   languageName: node
   linkType: hard
 
-"bin-version@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "bin-version@npm:2.0.0"
+"bin-version@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "bin-version@npm:3.1.0"
   dependencies:
-    execa: ^0.1.1
-    find-versions: ^2.0.0
-  checksum: 66ec07a283aa3d0488396dea1eae8872efa3e8f7450db61ebfce52e406fe4480099e1918f7836b57c828ef04420716730e5d0fb18139a27185f805f7053b8cc9
+    execa: ^1.0.0
+    find-versions: ^3.0.0
+  checksum: 69fca571104dc7954f31fe0a6cf2d720109191e703a1e96b4198dbbd8d1599adc5503e463665c33a922098488e099f1252531857d30c6d2218ce9be4de87d82f
   languageName: node
   linkType: hard
 
@@ -3603,16 +3596,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn-async@npm:^2.1.1":
-  version: 2.2.5
-  resolution: "cross-spawn-async@npm:2.2.5"
-  dependencies:
-    lru-cache: ^4.0.0
-    which: ^1.2.8
-  checksum: d16a9ed3ae31365ea8ecc9c5669a43765021b1c14509f12151cb57c68cf09b909823a5635549ab9e9f17a6999472366972647e301faccaf5fad7b1ab7efe88eb
-  languageName: node
-  linkType: hard
-
 "cross-spawn@npm:^5.0.1":
   version: 5.1.0
   resolution: "cross-spawn@npm:5.1.0"
@@ -4375,17 +4358,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "execa@npm:0.1.1"
-  dependencies:
-    cross-spawn-async: ^2.1.1
-    object-assign: ^4.0.1
-    strip-eof: ^1.0.0
-  checksum: d4f96462fce2025848db1b44abdb44cd9853ef8268e2e65e104a13fbd6e184c811f41661d6964375f1dd1364e285bc135ccf48208241c1c377d74f9af9ce2ff0
-  languageName: node
-  linkType: hard
-
 "execa@npm:^0.7.0":
   version: 0.7.0
   resolution: "execa@npm:0.7.0"
@@ -4725,13 +4697,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-versions@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "find-versions@npm:2.0.0"
+"find-versions@npm:^3.0.0":
+  version: 3.2.0
+  resolution: "find-versions@npm:3.2.0"
   dependencies:
-    array-uniq: ^1.0.0
-    semver-regex: ^1.0.0
-  checksum: 552ad4f1c86bea2a1d3e32297816f07169c57d8d220a7e6e3c82f99468b8a66bd7db41f22f5c86c295a0ced12ad30a3de9fbf30d04b8419f5cb4dc284706baf7
+    semver-regex: ^2.0.0
+  checksum: 2ddc16b4265184e2b7ab68bfd9d84835178fef4193abd957ebe328e0de98e8ca3b31e2a19201c1c8308e24786faa295aab46c0bc21fa89440e2a1bc8174987f0
   languageName: node
   linkType: hard
 
@@ -5157,7 +5128,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"global-tunnel-ng@npm:^2.5.3, global-tunnel-ng@npm:^2.7.1":
+"global-tunnel-ng@npm:^2.7.1":
   version: 2.7.1
   resolution: "global-tunnel-ng@npm:2.7.1"
   dependencies:
@@ -7512,7 +7483,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^4.0.0, lru-cache@npm:^4.0.1":
+"lru-cache@npm:^4.0.1":
   version: 4.1.5
   resolution: "lru-cache@npm:4.1.5"
   dependencies:
@@ -10138,10 +10109,10 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"semver-regex@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "semver-regex@npm:1.0.0"
-  checksum: bc76b860c25df22d62f5c366e2d3469ff42d00c898a5ed9c5368797108dd5ac4b5aae8c8c1514922cb57d315b127aca7defdb94151ca3b913ea50b9844795a76
+"semver-regex@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "semver-regex@npm:2.0.0"
+  checksum: 9b96cc8bd559c1d46968b334ccc88115a2d9d2f7a2125d6838471114ed0c52057e77aae760fbe4932aee06687584733b32aed6d2c9654b2db33e383bfb8f26ce
   languageName: node
   linkType: hard
 
@@ -10152,7 +10123,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"semver-truncate@npm:^1.0.0":
+"semver-truncate@npm:^1.1.2":
   version: 1.1.2
   resolution: "semver-truncate@npm:1.1.2"
   dependencies:
@@ -10161,7 +10132,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"semver@npm:2 || 3 || 4 || 5, semver@npm:^5.0.3, semver@npm:^5.1.0, semver@npm:^5.3.0, semver@npm:^5.5.0":
+"semver@npm:2 || 3 || 4 || 5, semver@npm:^5.0.3, semver@npm:^5.1.0, semver@npm:^5.3.0, semver@npm:^5.5.0, semver@npm:^5.6.0":
   version: 5.7.1
   resolution: "semver@npm:5.7.1"
   bin:
@@ -11802,7 +11773,7 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"which@npm:^1.2.14, which@npm:^1.2.8, which@npm:^1.2.9":
+"which@npm:^1.2.14, which@npm:^1.2.9":
   version: 1.3.1
   resolution: "which@npm:1.3.1"
   dependencies:
@@ -12040,15 +12011,14 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"yeoman-doctor@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "yeoman-doctor@npm:4.0.0"
+"yeoman-doctor@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "yeoman-doctor@npm:5.0.0"
   dependencies:
     ansi-styles: ^3.2.0
-    bin-version-check: ^3.0.0
+    bin-version-check: ^4.0.0
     chalk: ^2.3.0
     global-agent: ^2.0.0
-    global-tunnel-ng: ^2.5.3
     latest-version: ^3.1.0
     log-symbols: ^2.1.0
     semver: ^5.0.3
@@ -12057,13 +12027,13 @@ typescript@4.2.4:
   bin:
     yo-doctor: lib/cli.js
     yodoctor: lib/cli.js
-  checksum: 258510c71f77b686d73429eeef566e8eeac4a7cea1b4c3b88e4d98031db5b08380740b2f8420b0411e08138a23625360142df50936a70487dfc35ca4e1ba0885
+  checksum: b8c892c5cd48c5395cfed5ef076f19a5a4cc52fbae4bca4a0fa88ba7c3728c859c1ae665a2047b122649ea131227a9d98c70a6f59d0716a4153c981200708323
   languageName: node
   linkType: hard
 
-"yeoman-environment@npm:~3.4.0":
-  version: 3.4.0
-  resolution: "yeoman-environment@npm:3.4.0"
+"yeoman-environment@npm:^3.5.1":
+  version: 3.5.1
+  resolution: "yeoman-environment@npm:3.5.1"
   dependencies:
     "@npmcli/arborist": ^2.2.2
     are-we-there-yet: ^1.1.5
@@ -12083,7 +12053,6 @@ typescript@4.2.4:
     grouped-queue: ^2.0.0
     inquirer: ^8.0.0
     is-scoped: ^2.1.0
-    isbinaryfile: ^4.0.8
     lodash: ^4.17.10
     log-symbols: ^4.0.0
     mem-fs: ^1.2.0 || ^2.0.0
@@ -12105,7 +12074,7 @@ typescript@4.2.4:
     mem-fs-editor: ^8.1.2 || ^9.0.0
   bin:
     yoe: cli/index.js
-  checksum: f0d8f29e31044f541f9707c37e43667e444d7bc2f4e801f38ba8dd3a6592dd75443dde62eddb814d7a82936e245dfdbf4b1fc85e3daf61e2f17a541b4ea950a5
+  checksum: 128a30d2de8fb68cd21fc633785b8ba2e146cce536d8d770ae94b3accf06121b493adc917cb2ce861e35a42271c8bf1b93ed88902f37975a19603661b5f8a7be
   languageName: node
   linkType: hard
 
@@ -12141,9 +12110,9 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"yo@npm:4.2.0":
-  version: 4.2.0
-  resolution: "yo@npm:4.2.0"
+"yo@npm:4.3.0":
+  version: 4.3.0
+  resolution: "yo@npm:4.3.0"
   dependencies:
     async: ^2.6.1
     chalk: ^2.4.1
@@ -12174,13 +12143,13 @@ typescript@4.2.4:
     update-notifier: ^2.5.0
     user-home: ^2.0.0
     yeoman-character: ^1.0.0
-    yeoman-doctor: ^4.0.0
-    yeoman-environment: ~3.4.0
+    yeoman-doctor: ^5.0.0
+    yeoman-environment: ^3.5.1
     yosay: ^2.0.2
   bin:
     yo: lib/cli.js
     yo-complete: lib/completion/index.js
-  checksum: 134d56a0f72ee991a8175d952a642d540d963d91c1b16268ff1968cefbc8ae01c5ef7992e9f85f57513f164af88ab5fd3839e64a0afa10857e56ee6759226cbb
+  checksum: 0781209e732eabbabbb4f700298d9eddbad2883ac512840c4253093b22deed0ad2401b74248583befa7e99a82ac6fa265ec648aa138f58bddc1b05f84f17f4f2
   languageName: node
   linkType: hard
 
