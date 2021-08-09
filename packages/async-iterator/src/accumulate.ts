@@ -1,3 +1,5 @@
+import type { AbortSignal } from 'node-abort-controller'
+
 export default async function accumulate<T>(
   asyncIterable: AsyncIterable<T>,
   signal?: AbortSignal
