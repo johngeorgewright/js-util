@@ -1,4 +1,4 @@
-import AbortController from 'node-abort-controller'
+import { AbortController } from 'node-abort-controller'
 import race from './race'
 import timeout from './timeout'
 

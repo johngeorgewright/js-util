@@ -1,5 +1,5 @@
 import { detonate } from '@johngw/async'
-import AbortController, { AbortSignal } from 'node-abort-controller'
+import { AbortController, AbortSignal } from 'node-abort-controller'
 
 export default async function* iteratorRace<T>(
   asyncIterable: AsyncIterable<T>,
