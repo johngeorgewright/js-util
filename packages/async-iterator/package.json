@@ -35,7 +35,7 @@
   "dependencies": {
     "@johngw/async": "workspace:packages/async",
     "@johngw/object": "workspace:packages/object",
-    "node-abort-controller": "^2.0.0",
+    "node-abort-controller": "^3.0.0",
     "tslib": "^2.2.0"
   }
 }
