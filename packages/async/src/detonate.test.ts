@@ -1,5 +1,5 @@
 import detonate from './detonate'
-import AbortController from 'node-abort-controller'
+import { AbortController } from 'node-abort-controller'
 
 test('it throws after an amount of ms', async () => {
   await Promise.race([
