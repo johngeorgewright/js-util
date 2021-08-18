@@ -1034,7 +1034,7 @@ __metadata:
     "@types/node": 14.17.9
     cli-table: 0.3.6
     colors: 1.4.0
-    ts-node: 10.2.0
+    ts-node: 10.2.1
     tslib: 2.3.1
     typescript: 4.3.5
   languageName: unknown
@@ -11171,9 +11171,9 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.2.0":
-  version: 10.2.0
-  resolution: "ts-node@npm:10.2.0"
+"ts-node@npm:10.2.1":
+  version: 10.2.1
+  resolution: "ts-node@npm:10.2.1"
   dependencies:
     "@cspotcode/source-map-support": 0.6.1
     "@tsconfig/node10": ^1.0.7
@@ -11203,7 +11203,7 @@ fsevents@^2.3.2:
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: 7633bc5d27b08202a4d3e0c9a8def2933e98daf6316cb94992e21975f1432e28aeb34d601f69b912f61a1b2515677cb5f4015cab4848bcf4691c4bf1f6736963
+  checksum: 528e79c827198c6333830b7f6a92a9af8ac7932c0acb55db5376046cd2fabddf95ff2e1dff572d0175c68d0781f4401142625f3fa3a515124407b8670f3d3835
   languageName: node
   linkType: hard
 

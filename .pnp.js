@@ -1587,7 +1587,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.17.9"],
             ["cli-table", "npm:0.3.6"],
             ["colors", "npm:1.4.0"],
-            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.2.0"],
+            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.2.1"],
             ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.3.5#builtin<compat/typescript>::version=4.3.5&hash=ddfc1b"]
           ],
@@ -12938,17 +12938,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-node", [
-        ["npm:10.2.0", {
-          "packageLocation": "./.yarn/cache/ts-node-npm-10.2.0-022c53f9b2-7633bc5d27.zip/node_modules/ts-node/",
+        ["npm:10.2.1", {
+          "packageLocation": "./.yarn/cache/ts-node-npm-10.2.1-18dc22b42d-528e79c827.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "npm:10.2.0"]
+            ["ts-node", "npm:10.2.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.2.0", {
-          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-83c87f3ecb/0/cache/ts-node-npm-10.2.0-022c53f9b2-7633bc5d27.zip/node_modules/ts-node/",
+        ["virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.2.1", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-954ee6a54c/0/cache/ts-node-npm-10.2.1-18dc22b42d-528e79c827.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.2.0"],
+            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.2.1"],
             ["@cspotcode/source-map-support", "npm:0.6.1"],
             ["@swc/core", null],
             ["@swc/wasm", null],
