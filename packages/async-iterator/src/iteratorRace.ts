@@ -24,7 +24,7 @@ export default async function* iteratorRace<T>(
         yield value
       }
     }
-  } catch (error) {
+  } catch (error: any) {
     if (!error.isTimeoutError && !error.isAbortError) {
       throw error
     }

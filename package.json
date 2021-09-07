@@ -53,5 +53,6 @@
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
       "yarn prettier --write"
     ]
-  }
+  },
+  "packageManager": "yarn@3.0.1"
 }
