@@ -47,6 +47,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/generator"
       },
       {
+        "name": "@johngw/iterator",
+        "reference": "workspace:packages/iterator"
+      },
+      {
         "name": "@johngw/object",
         "reference": "workspace:packages/object"
       },
@@ -64,6 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@johngw/error", ["workspace:packages/error"]],
       ["@johngw/fs", ["workspace:packages/fs"]],
       ["@johngw/generator", ["workspace:packages/generator"]],
+      ["@johngw/iterator", ["workspace:packages/iterator"]],
       ["@johngw/js-util", ["workspace:."]],
       ["@johngw/js-util-perf", ["workspace:packages/perf"]],
       ["@johngw/object", ["workspace:packages/object"]]
@@ -87,7 +92,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.4"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["husky", "npm:7.0.2"],
+            ["isbinaryfile", "npm:4.0.8"],
+            ["json-parse-even-better-errors", "npm:2.3.1"],
             ["lint-staged", "npm:11.1.2"],
+            ["mkdirp-infer-owner", "npm:2.0.0"],
             ["prettier", "npm:2.4.1"],
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.5"],
@@ -1520,6 +1528,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@johngw/iterator", [
+        ["workspace:packages/iterator", {
+          "packageLocation": "./packages/iterator/",
+          "packageDependencies": [
+            ["@johngw/iterator", "workspace:packages/iterator"],
+            ["@semantic-release/commit-analyzer", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:9.0.1"],
+            ["@semantic-release/git", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:10.0.0"],
+            ["@semantic-release/github", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.1"],
+            ["@semantic-release/npm", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:8.0.0"],
+            ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
+            ["@types/jest", "npm:27.0.2"],
+            ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.2.2"],
+            ["rimraf", "npm:3.0.2"],
+            ["semantic-release", "npm:18.0.0"],
+            ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.5"],
+            ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.0.5"],
+            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@johngw/js-util", [
         ["workspace:.", {
           "packageLocation": "./",
@@ -1537,7 +1566,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.4"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["husky", "npm:7.0.2"],
+            ["isbinaryfile", "npm:4.0.8"],
+            ["json-parse-even-better-errors", "npm:2.3.1"],
             ["lint-staged", "npm:11.1.2"],
+            ["mkdirp-infer-owner", "npm:2.0.0"],
             ["prettier", "npm:2.4.1"],
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.5"],
