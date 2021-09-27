@@ -29,6 +29,10 @@
       "path": "packages/generator"
     },
     {
+      "name": "📦 @johngw/iterator",
+      "path": "packages/iterator"
+    },
+    {
       "name": "📦 @johngw/object",
       "path": "packages/object"
     },

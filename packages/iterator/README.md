@@ -1,0 +1,3 @@
+# @johngw/iterator
+
+Iterator helpers

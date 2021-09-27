@@ -1,0 +1,36 @@
+{
+  "name": "@johngw/iterator",
+  "version": "0.0.0",
+  "description": "Iterator helpers",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "clean": "yarn rimraf dist",
+    "start": "yarn tsc --watch --preserveWatchOutput",
+    "release": "yarn semantic-release -e semantic-release-monorepo",
+    "test": "yarn jest"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/js-util/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/js-util#readme",
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "9.0.1",
+    "@semantic-release/git": "10.0.0",
+    "@semantic-release/github": "8.0.1",
+    "@semantic-release/npm": "8.0.0",
+    "@semantic-release/release-notes-generator": "10.0.2",
+    "@types/jest": "27.0.2",
+    "jest": "27.2.2",
+    "rimraf": "3.0.2",
+    "semantic-release": "18.0.0",
+    "semantic-release-monorepo": "7.0.5",
+    "ts-jest": "27.0.5",
+    "typescript": "4.4.3"
+  },
+  "dependencies": {
+    "ts-toolbelt": "^9.6.0",
+    "tslib": "^2.3.1"
+  }
+}

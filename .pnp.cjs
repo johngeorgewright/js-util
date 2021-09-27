@@ -1544,6 +1544,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.5"],
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.0.5"],
+            ["ts-toolbelt", "npm:9.6.0"],
+            ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",
@@ -13224,6 +13226,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/swc__wasm",
             "@types/typescript",
             "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ts-toolbelt", [
+        ["npm:9.6.0", {
+          "packageLocation": "./.yarn/cache/ts-toolbelt-npm-9.6.0-a95699c8d0-9f35fd95d8.zip/node_modules/ts-toolbelt/",
+          "packageDependencies": [
+            ["ts-toolbelt", "npm:9.6.0"]
           ],
           "linkType": "HARD",
         }]
