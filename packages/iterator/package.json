@@ -1,6 +1,6 @@
 {
   "name": "@johngw/iterator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Iterator helpers",
   "main": "dist/main.js",
   "scripts": {
