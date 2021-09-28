@@ -2,7 +2,7 @@
   "name": "@johngw/iterator",
   "version": "1.0.0",
   "description": "Iterator helpers",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "yarn rimraf dist",

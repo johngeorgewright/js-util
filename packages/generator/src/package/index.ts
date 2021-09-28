@@ -51,7 +51,7 @@ export = class PluginGenerator extends Generator {
     this.packageJson.set('name', `@johngw/${this.answers.name}`)
     this.packageJson.set('version', '0.0.0')
     this.packageJson.set('description', this.answers.description)
-    this.packageJson.set('main', 'dist/main.js')
+    this.packageJson.set('main', 'dist/index.js')
 
     if (!this.answers.public) {
       this.packageJson.set('private', true)
