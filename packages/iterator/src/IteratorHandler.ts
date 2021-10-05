@@ -1,4 +1,8 @@
-import { A, L, O, U } from 'ts-toolbelt'
+import { Last } from 'ts-toolbelt/out/List/Last'
+import { Length } from 'ts-toolbelt/out/List/Length'
+import { Pop } from 'ts-toolbelt/out/List/Pop'
+import { ListOf } from 'ts-toolbelt/out/Object/ListOf'
+import { Merge } from 'ts-toolbelt/out/Object/Merge'
 
 /**
  * Handling iteration as if it were events.
@@ -78,13 +82,15 @@ export default class IteratorHandler<T extends [symbol, unknown], R> {
 type _Events<
   L extends readonly [symbol, unknown][],
   R extends Record<symbol, unknown>
-> = L.Length<L> extends 0
+> = Length<L> extends 0
   ? R
-  : L.Last<L> extends [infer K, infer V]
-  ? _Events<L.Pop<L>, O.Merge<R, Record<A.Cast<K, symbol>, V>>>
+  : Last<L> extends [infer K, infer V]
+  ? K extends symbol
+    ? _Events<Pop<L>, Merge<R, Record<K, V>>>
+    : never
   : never
 
-type Events<T extends [symbol, unknown]> = _Events<U.ListOf<T>, {}>
+type Events<T extends [symbol, unknown]> = _Events<ListOf<T>, {}>
 
 type Handler<T> = (value: T) => any
 
