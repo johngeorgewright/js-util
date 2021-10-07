@@ -1,6 +1,6 @@
 {
   "name": "@johngw/async-iterator",
-  "version": "2.2.2",
+  "version": "3.0.0",
   "description": "JS/TS Async iterator utilities.",
   "main": "dist/index.js",
   "sideEffects": false,
