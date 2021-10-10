@@ -2,14 +2,14 @@ import { defer } from '@johngw/async'
 
 const Cancelled = Symbol('cancelled')
 
-export default class EventIterator<T> implements AsyncIterable<T> {
-  private events: T[] = []
-  private arrived!: Promise<void>
-  private publishArrival!: () => void
-  private cancelled = false
-  private cancelledPromise: Promise<typeof Cancelled>
-  private readonly _cancel: (cancelled: typeof Cancelled) => void
-  private readonly teardown: Teardown
+export default class EventIterator<T> implements AsyncIterableIterator<T> {
+  #events: T[] = []
+  #arrived!: Promise<void>
+  #publishArrival!: () => void
+  #cancelled = false
+  #cancelledPromise: Promise<typeof Cancelled>
+  readonly #cancel: (cancelled: typeof Cancelled) => void
+  readonly #teardown: Teardown
 
   /**
    * Easy way of turning callback style execution in to async iterables.
@@ -44,42 +44,40 @@ export default class EventIterator<T> implements AsyncIterable<T> {
    *   // ...
    * }
    */
-  constructor(setup: Setup<T>) {
+  constructor(setup?: Setup<T>) {
     const { promise: cancelledPromise, resolve: cancel } =
       defer<typeof Cancelled>()
-    this.cancelledPromise = cancelledPromise
-    this._cancel = cancel
-    this.setupNextArrival()
-    this.teardown = setup(this.push)
+    this.#cancelledPromise = cancelledPromise
+    this.#cancel = cancel
+    this.#setupNextArrival()
+    this.#teardown =
+      (setup && setup(this.push, () => setImmediate(this.cancel))) || (() => {})
   }
 
   readonly cancel = async (): Promise<IteratorResult<T>> => {
-    if (!this.cancelled) {
-      this._cancel(Cancelled)
-      this.teardown()
+    if (!this.#cancelled) {
+      this.#cancel(Cancelled)
+      this.#teardown()
     }
     return { done: true, value: undefined }
   }
 
+  readonly return = this.cancel
+
   readonly push = (event: T) => {
-    this.events.push(event)
-    this.publishArrival()
-    this.setupNextArrival()
+    this.#events.push(event)
+    this.#publishArrival()
+    this.#setupNextArrival()
   }
 
-  private setupNextArrival() {
-    const { promise: arrived, resolve: publishArrival } = defer()
-    this.arrived = arrived
-    this.publishArrival = publishArrival
-  }
-
-  private readonly next = async (): Promise<IteratorResult<T>> => {
-    if (this.events.length) {
-      return { done: false, value: this.events.shift()! }
+  readonly next = async (): Promise<IteratorResult<T>> => {
+    if (this.#events.length) {
+      return { done: false, value: this.#events.shift()! }
     }
 
     if (
-      (await Promise.race([this.arrived, this.cancelledPromise])) === Cancelled
+      (await Promise.race([this.#arrived, this.#cancelledPromise])) ===
+      Cancelled
     ) {
       return { done: true, value: undefined }
     }
@@ -88,13 +86,16 @@ export default class EventIterator<T> implements AsyncIterable<T> {
   };
 
   [Symbol.asyncIterator]() {
-    return {
-      next: this.next,
-      return: this.cancel,
-    }
+    return this
+  }
+
+  #setupNextArrival() {
+    const { promise: arrived, resolve: publishArrival } = defer()
+    this.#arrived = arrived
+    this.#publishArrival = publishArrival
   }
 }
 
-type Setup<T> = (push: Pusher<T>) => Teardown
-type Pusher<T> = (event: T) => void
+type Setup<T> = (push: Pusher<T>, cancel: () => {}) => Teardown | void
 type Teardown = () => void
+type Pusher<T> = (event: T) => void
