@@ -22,7 +22,7 @@ test('returning all within time', async () => {
 
 test('aborting', async () => {
   const abortController = new AbortController()
-  timeout(25).then(() => abortController.abort())
+  timeout(29).then(() => abortController.abort())
 
   expect(
     await accumulate(
