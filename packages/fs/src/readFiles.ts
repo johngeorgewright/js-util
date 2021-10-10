@@ -23,13 +23,8 @@ export default async function* readFiles(
 ): AsyncGenerator<Buffer | string, void> {
   for (const entry of await readdir(dirname, { withFileTypes: true })) {
     const path = pathHelper.join(dirname, entry.name)
-
     if (entry.isDirectory()) {
-      if (recursive) {
-        yield* readFiles(path, { encoding, filter, recursive })
-      }
-    } else if (filter(path)) {
-      yield readFile(path, { encoding })
-    }
+      if (recursive) yield* readFiles(path, { encoding, filter, recursive })
+    } else if (filter(path)) yield readFile(path, { encoding })
   }
 }
