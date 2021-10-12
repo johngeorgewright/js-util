@@ -941,7 +941,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.5
     tslib: ^2.2.0
-    typescript: 4.4.3
+    typescript: 4.4.4
   languageName: unknown
   linkType: soft
 
@@ -966,7 +966,7 @@ __metadata:
     ts-jest: 27.0.5
     ts-node: 10.3.0
     tslib: ^2.2.0
-    typescript: 4.4.3
+    typescript: 4.4.4
   languageName: unknown
   linkType: soft
 
@@ -989,7 +989,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.5
     tslib: ^2.2.0
-    typescript: 4.4.3
+    typescript: 4.4.4
   languageName: unknown
   linkType: soft
 
@@ -1009,7 +1009,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.5
     tslib: ^2.2.0
-    typescript: 4.4.3
+    typescript: 4.4.4
   languageName: unknown
   linkType: soft
 
@@ -1030,7 +1030,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.5
     tslib: ^2.2.0
-    typescript: 4.4.3
+    typescript: 4.4.4
   languageName: unknown
   linkType: soft
 
@@ -1045,7 +1045,7 @@ __metadata:
     rimraf: 3.0.2
     ts-jest: 27.0.5
     tslib: 2.3.1
-    typescript: 4.4.3
+    typescript: 4.4.4
     yeoman-generator: 5.4.2
   languageName: unknown
   linkType: soft
@@ -1067,7 +1067,7 @@ __metadata:
     ts-jest: 27.0.5
     ts-toolbelt: ^9.6.0
     tslib: ^2.3.1
-    typescript: 4.4.3
+    typescript: 4.4.4
   languageName: unknown
   linkType: soft
 
@@ -1082,7 +1082,7 @@ __metadata:
     colors: 1.4.0
     ts-node: 10.3.0
     tslib: 2.3.1
-    typescript: 4.4.3
+    typescript: 4.4.4
   languageName: unknown
   linkType: soft
 
@@ -1109,7 +1109,7 @@ __metadata:
     prettier: 2.4.1
     semantic-release: 18.0.0
     semantic-release-monorepo: 7.0.5
-    typescript: 4.4.3
+    typescript: 4.4.4
     yo: 4.3.0
   languageName: unknown
   linkType: soft
@@ -1130,7 +1130,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.5
     tslib: ^2.2.0
-    typescript: 4.4.3
+    typescript: 4.4.4
   languageName: unknown
   linkType: soft
 
@@ -11704,7 +11704,17 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"typescript@4.4.3, typescript@^4.4.3":
+typescript@4.4.4:
+  version: 4.4.4
+  resolution: "typescript@npm:4.4.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 89ecb8436bb48ef5594d49289f5f89103071716b6e4844278f4fb3362856e31203e187a9c76d205c3f0b674d221a058fd28310dbcbcf5d95e9a57229bb5203f1
+  languageName: node
+  linkType: hard
+
+typescript@^4.4.3:
   version: 4.4.3
   resolution: "typescript@npm:4.4.3"
   bin:
@@ -11714,7 +11724,17 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.4.4#~builtin<compat/typescript>":
+  version: 4.4.4
+  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=32657b"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: c97c33903f1eb4f9e178649befdfc859d93157db1eccd1e521e84976ec6861db53412d8018e5e4c5d09268771c65498d42caa64bd881878346c3644f6b7cd202
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
   version: 4.4.3
   resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
   bin:
