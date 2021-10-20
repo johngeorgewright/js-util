@@ -21,6 +21,10 @@
       "path": "packages/error"
     },
     {
+      "name": "📦 @johngw/function",
+      "path": "packages/function"
+    },
+    {
       "name": "📦 @johngw/fs",
       "path": "packages/fs"
     },

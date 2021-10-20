@@ -940,7 +940,7 @@ __metadata:
     semantic-release: 18.0.0
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.7
-    tslib: ^2.2.0
+    tslib: ^2.3.1
     typescript: 4.4.4
   languageName: unknown
   linkType: soft
@@ -965,7 +965,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.7
     ts-node: 10.3.0
-    tslib: ^2.2.0
+    tslib: ^2.3.1
     typescript: 4.4.4
   languageName: unknown
   linkType: soft
@@ -988,7 +988,7 @@ __metadata:
     semantic-release: 18.0.0
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.7
-    tslib: ^2.2.0
+    tslib: ^2.3.1
     typescript: 4.4.4
   languageName: unknown
   linkType: soft
@@ -1008,7 +1008,7 @@ __metadata:
     semantic-release: 18.0.0
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.7
-    tslib: ^2.2.0
+    tslib: ^2.3.1
     typescript: 4.4.4
   languageName: unknown
   linkType: soft
@@ -1029,7 +1029,27 @@ __metadata:
     semantic-release: 18.0.0
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.7
-    tslib: ^2.2.0
+    tslib: ^2.3.1
+    typescript: 4.4.4
+  languageName: unknown
+  linkType: soft
+
+"@johngw/function@workspace:packages/function":
+  version: 0.0.0-use.local
+  resolution: "@johngw/function@workspace:packages/function"
+  dependencies:
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/npm": 8.0.2
+    "@semantic-release/release-notes-generator": 10.0.2
+    "@types/jest": 27.0.2
+    jest: 27.3.1
+    rimraf: 3.0.2
+    semantic-release: 18.0.0
+    semantic-release-monorepo: 7.0.5
+    ts-jest: 27.0.7
+    tslib: ^2.3.1
     typescript: 4.4.4
   languageName: unknown
   linkType: soft
@@ -1129,7 +1149,7 @@ __metadata:
     semantic-release: 18.0.0
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.7
-    tslib: ^2.2.0
+    tslib: ^2.3.1
     typescript: 4.4.4
   languageName: unknown
   linkType: soft
@@ -11608,7 +11628,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.3.1, tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.2.0, tslib@npm:^2.3.1":
+"tslib@npm:2.3.1, tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.3.1":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9

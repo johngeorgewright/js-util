@@ -1,0 +1,3 @@
+# @johngw/function
+
+Function utilities
