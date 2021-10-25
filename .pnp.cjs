@@ -1684,7 +1684,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/js-util-perf", "workspace:packages/perf"],
             ["@johngw/array", "workspace:packages/array"],
             ["@types/cli-table", "npm:0.3.0"],
-            ["@types/node", "npm:14.17.30"],
+            ["@types/node", "npm:14.17.31"],
             ["cli-table", "npm:0.3.6"],
             ["colors", "npm:1.4.0"],
             ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.4.0"],
@@ -2690,10 +2690,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.17.30", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.30-75ed6e6962-5b77bd9fb4.zip/node_modules/@types/node/",
+        ["npm:14.17.31", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.31-3e2d338102-ac6b9e88a2.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.30"]
+            ["@types/node", "npm:14.17.31"]
           ],
           "linkType": "HARD",
         }],
@@ -13440,7 +13440,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:14.17.30"],
+            ["@types/node", "npm:14.17.31"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
