@@ -99,7 +99,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:7.0.4"],
             ["isbinaryfile", "npm:4.0.8"],
             ["json-parse-even-better-errors", "npm:2.3.1"],
-            ["lint-staged", "npm:11.2.4"],
+            ["lint-staged", "npm:11.2.5"],
             ["mkdirp-infer-owner", "npm:2.0.0"],
             ["prettier", "npm:2.4.1"],
             ["semantic-release", "npm:18.0.0"],
@@ -1499,7 +1499,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.2"],
             ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/node", "npm:15.6.1"],
+            ["@types/node", "npm:16.11.6"],
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.3.1"],
             ["node-abort-controller", "npm:3.0.0"],
             ["rimraf", "npm:3.0.2"],
@@ -1525,7 +1525,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.2"],
             ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/node", "npm:15.6.1"],
+            ["@types/node", "npm:16.11.6"],
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.3.1"],
             ["node-abort-controller", "npm:3.0.0"],
             ["rimraf", "npm:3.0.2"],
@@ -1572,7 +1572,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.2"],
             ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/node", "npm:15.6.1"],
+            ["@types/node", "npm:16.11.6"],
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.3.1"],
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:18.0.0"],
@@ -1666,7 +1666,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:7.0.4"],
             ["isbinaryfile", "npm:4.0.8"],
             ["json-parse-even-better-errors", "npm:2.3.1"],
-            ["lint-staged", "npm:11.2.4"],
+            ["lint-staged", "npm:11.2.5"],
             ["mkdirp-infer-owner", "npm:2.0.0"],
             ["prettier", "npm:2.4.1"],
             ["semantic-release", "npm:18.0.0"],
@@ -1684,10 +1684,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/js-util-perf", "workspace:packages/perf"],
             ["@johngw/array", "workspace:packages/array"],
             ["@types/cli-table", "npm:0.3.0"],
-            ["@types/node", "npm:14.17.32"],
+            ["@types/node", "npm:16.11.6"],
             ["cli-table", "npm:0.3.6"],
             ["colors", "npm:1.4.0"],
-            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.4.0"],
+            ["ts-node", "virtual:d34d85dc7535d3dcd499bad48a362b1e8b98c396633d4ce810fc3c2a016b5b7b74f64b55e472ce3b626b994297033628b90b2bc592e9d86b3109fae4a4bf6514#npm:10.4.0"],
             ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=32657b"]
           ],
@@ -2690,13 +2690,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
-        ["npm:14.17.32", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.32-a7799c3ea0-c3ec45db5d.zip/node_modules/@types/node/",
-          "packageDependencies": [
-            ["@types/node", "npm:14.17.32"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:15.14.9", {
           "packageLocation": "./.yarn/cache/@types-node-npm-15.14.9-739a59edff-49f7f0522a.zip/node_modules/@types/node/",
           "packageDependencies": [
@@ -2704,10 +2697,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:15.6.1", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-15.6.1-1a0b9c8653-8ed16d4f74.zip/node_modules/@types/node/",
+        ["npm:16.11.6", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.6-3a38cc239a-6e19634766.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:15.6.1"]
+            ["@types/node", "npm:16.11.6"]
           ],
           "linkType": "HARD",
         }],
@@ -5013,10 +5006,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:367562d25925b628b26c10988ed80fbe996cd3252bb01ea6df3d242282b98d20bbae1fb7bbc5f18d303b2382bb4147b4864a1a3c43564a6c40e19f8c306b3501#npm:4.3.2", {
-          "packageLocation": "./.yarn/__virtual__/debug-virtual-fe4578cd69/0/cache/debug-npm-4.3.2-f0148b6afe-820ea160e2.zip/node_modules/debug/",
+        ["virtual:411a33380c1ab6db736855c65964c5af155fec97c15974605b1b419e6df9f595b9150ab6bf0d8a7dd168a62fdf3cb3f98a94f8777cde4c185c836c075f224f81#npm:4.3.2", {
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-2978db97df/0/cache/debug-npm-4.3.2-f0148b6afe-820ea160e2.zip/node_modules/debug/",
           "packageDependencies": [
-            ["debug", "virtual:367562d25925b628b26c10988ed80fbe996cd3252bb01ea6df3d242282b98d20bbae1fb7bbc5f18d303b2382bb4147b4864a1a3c43564a6c40e19f8c306b3501#npm:4.3.2"],
+            ["debug", "virtual:411a33380c1ab6db736855c65964c5af155fec97c15974605b1b419e6df9f595b9150ab6bf0d8a7dd168a62fdf3cb3f98a94f8777cde4c185c836c075f224f81#npm:4.3.2"],
             ["ms", "npm:2.1.2"],
             ["supports-color", "npm:8.1.1"]
           ],
@@ -8872,19 +8865,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:11.2.4", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-11.2.4-367562d259-9c1478d190.zip/node_modules/lint-staged/",
+        ["npm:11.2.5", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-11.2.5-411a33380c-d5fd11560f.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:11.2.4"],
+            ["lint-staged", "npm:11.2.5"],
             ["cli-truncate", "npm:2.1.0"],
             ["colorette", "npm:1.4.0"],
             ["commander", "npm:8.2.0"],
-            ["debug", "virtual:367562d25925b628b26c10988ed80fbe996cd3252bb01ea6df3d242282b98d20bbae1fb7bbc5f18d303b2382bb4147b4864a1a3c43564a6c40e19f8c306b3501#npm:4.3.2"],
+            ["debug", "virtual:411a33380c1ab6db736855c65964c5af155fec97c15974605b1b419e6df9f595b9150ab6bf0d8a7dd168a62fdf3cb3f98a94f8777cde4c185c836c075f224f81#npm:4.3.2"],
             ["enquirer", "npm:2.3.6"],
             ["execa", "npm:5.1.1"],
             ["js-yaml", "npm:4.1.0"],
             ["lilconfig", "npm:2.0.3"],
-            ["listr2", "virtual:367562d25925b628b26c10988ed80fbe996cd3252bb01ea6df3d242282b98d20bbae1fb7bbc5f18d303b2382bb4147b4864a1a3c43564a6c40e19f8c306b3501#npm:3.12.2"],
+            ["listr2", "virtual:411a33380c1ab6db736855c65964c5af155fec97c15974605b1b419e6df9f595b9150ab6bf0d8a7dd168a62fdf3cb3f98a94f8777cde4c185c836c075f224f81#npm:3.12.2"],
             ["micromatch", "npm:4.0.4"],
             ["normalize-path", "npm:3.0.0"],
             ["please-upgrade-node", "npm:3.2.0"],
@@ -8903,10 +8896,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:367562d25925b628b26c10988ed80fbe996cd3252bb01ea6df3d242282b98d20bbae1fb7bbc5f18d303b2382bb4147b4864a1a3c43564a6c40e19f8c306b3501#npm:3.12.2", {
-          "packageLocation": "./.yarn/__virtual__/listr2-virtual-9cc8005f31/0/cache/listr2-npm-3.12.2-934edf8469-92d72b9b6a.zip/node_modules/listr2/",
+        ["virtual:411a33380c1ab6db736855c65964c5af155fec97c15974605b1b419e6df9f595b9150ab6bf0d8a7dd168a62fdf3cb3f98a94f8777cde4c185c836c075f224f81#npm:3.12.2", {
+          "packageLocation": "./.yarn/__virtual__/listr2-virtual-d60a053b2a/0/cache/listr2-npm-3.12.2-934edf8469-92d72b9b6a.zip/node_modules/listr2/",
           "packageDependencies": [
-            ["listr2", "virtual:367562d25925b628b26c10988ed80fbe996cd3252bb01ea6df3d242282b98d20bbae1fb7bbc5f18d303b2382bb4147b4864a1a3c43564a6c40e19f8c306b3501#npm:3.12.2"],
+            ["listr2", "virtual:411a33380c1ab6db736855c65964c5af155fec97c15974605b1b419e6df9f595b9150ab6bf0d8a7dd168a62fdf3cb3f98a94f8777cde4c185c836c075f224f81#npm:3.12.2"],
             ["@types/enquirer", null],
             ["cli-truncate", "npm:2.1.0"],
             ["colorette", "npm:1.4.0"],
@@ -13429,41 +13422,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.4.0", {
-          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-9b75c21ef1/0/cache/ts-node-npm-10.4.0-04cb6e2279-3933ac0a93.zip/node_modules/ts-node/",
-          "packageDependencies": [
-            ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.4.0"],
-            ["@cspotcode/source-map-support", "npm:0.7.0"],
-            ["@swc/core", null],
-            ["@swc/wasm", null],
-            ["@tsconfig/node10", "npm:1.0.8"],
-            ["@tsconfig/node12", "npm:1.0.9"],
-            ["@tsconfig/node14", "npm:1.0.1"],
-            ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:14.17.32"],
-            ["@types/swc__core", null],
-            ["@types/swc__wasm", null],
-            ["@types/typescript", null],
-            ["acorn", "npm:8.5.0"],
-            ["acorn-walk", "npm:8.2.0"],
-            ["arg", "npm:4.1.3"],
-            ["create-require", "npm:1.1.1"],
-            ["diff", "npm:4.0.2"],
-            ["make-error", "npm:1.3.6"],
-            ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=32657b"],
-            ["yn", "npm:3.1.1"]
-          ],
-          "packagePeers": [
-            "@swc/core",
-            "@swc/wasm",
-            "@types/node",
-            "@types/swc__core",
-            "@types/swc__wasm",
-            "@types/typescript",
-            "typescript"
-          ],
-          "linkType": "HARD",
-        }],
         ["virtual:650fbf12893165252aeca7d72cc3858e1bd57b569932b4fb3e5519792fbf0eba30c84e4744054aaea2689a2310d9ab1f93c09f266974f36dfb14533defc2a7d1#npm:9.1.1", {
           "packageLocation": "./.yarn/__virtual__/ts-node-virtual-ace117b3f3/0/cache/ts-node-npm-9.1.1-4ad31da228-356e2647b8.zip/node_modules/ts-node/",
           "packageDependencies": [
@@ -13494,7 +13452,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:15.6.1"],
+            ["@types/node", "npm:16.11.6"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
