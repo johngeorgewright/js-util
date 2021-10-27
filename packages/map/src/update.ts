@@ -3,5 +3,5 @@ export default function update<K, V>(
   key: K,
   fn: (value?: V) => V
 ) {
-  return map.set(key, fn(map.get(key)))
+  return new Map(map).set(key, fn(map.get(key)))
 }

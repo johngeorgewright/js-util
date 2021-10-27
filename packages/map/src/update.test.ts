@@ -26,3 +26,16 @@ test('when original value exists', () => {
     }
   `)
 })
+
+test('immutability', () => {
+  const map = new Map<string, string[]>()
+  map.set('foo', ['bar'])
+  update(map, 'foo', (v) => (v ? [...v, 'rab'] : v!))
+  expect(map).toMatchInlineSnapshot(`
+    Map {
+      "foo" => Array [
+        "bar",
+      ],
+    }
+  `)
+})
