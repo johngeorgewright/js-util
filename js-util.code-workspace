@@ -29,6 +29,10 @@
       "path": "packages/fs"
     },
     {
+      "name": "📦 @johngw/map",
+      "path": "packages/map"
+    },
+    {
       "name": "🏗 @johngw/generator",
       "path": "packages/generator"
     },
