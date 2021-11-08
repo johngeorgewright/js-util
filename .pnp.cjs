@@ -1461,7 +1461,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.3"],
             ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/node", "npm:16.11.6"],
+            ["@types/node", "npm:16.11.7"],
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.3.1"],
             ["node-abort-controller", "npm:3.0.1"],
             ["rimraf", "npm:3.0.2"],
@@ -1487,7 +1487,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.3"],
             ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/node", "npm:16.11.6"],
+            ["@types/node", "npm:16.11.7"],
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.3.1"],
             ["node-abort-controller", "npm:3.0.1"],
             ["rimraf", "npm:3.0.2"],
@@ -1534,7 +1534,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/npm", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.3"],
             ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/node", "npm:16.11.6"],
+            ["@types/node", "npm:16.11.7"],
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.3.1"],
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:18.0.0"],
@@ -1646,7 +1646,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/js-util-perf", "workspace:packages/perf"],
             ["@johngw/array", "workspace:packages/array"],
             ["@types/cli-table", "npm:0.3.0"],
-            ["@types/node", "npm:16.11.6"],
+            ["@types/node", "npm:16.11.7"],
             ["cli-table", "npm:0.3.6"],
             ["colors", "npm:1.4.0"],
             ["ts-node", "virtual:d34d85dc7535d3dcd499bad48a362b1e8b98c396633d4ce810fc3c2a016b5b7b74f64b55e472ce3b626b994297033628b90b2bc592e9d86b3109fae4a4bf6514#npm:10.4.0"],
@@ -2759,6 +2759,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-16.11.6-3a38cc239a-6e19634766.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:16.11.6"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:16.11.7", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.7-1799a0a435-2706403e6e.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:16.11.7"]
           ],
           "linkType": "HARD",
         }]
@@ -13455,7 +13462,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:16.11.6"],
+            ["@types/node", "npm:16.11.7"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
