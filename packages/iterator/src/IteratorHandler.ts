@@ -1,8 +1,8 @@
 import { Last } from 'ts-toolbelt/out/List/Last'
 import { Length } from 'ts-toolbelt/out/List/Length'
 import { Pop } from 'ts-toolbelt/out/List/Pop'
-import { ListOf } from 'ts-toolbelt/out/Object/ListOf'
 import { Merge } from 'ts-toolbelt/out/Object/Merge'
+import { ListOf } from 'ts-toolbelt/out/Union/ListOf'
 
 /**
  * Handling iteration as if it were events.
