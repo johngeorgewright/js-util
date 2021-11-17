@@ -1049,7 +1049,7 @@ __metadata:
     "@johngw/array": "*"
     "@types/cli-table": 0.3.0
     "@types/node": 16.11.7
-    cli-table: 0.3.6
+    cli-table: 0.3.7
     colors: 1.4.0
     ts-node: 10.4.0
     tslib: 2.3.1
@@ -3254,7 +3254,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-table@npm:0.3.6, cli-table@npm:^0.3.1":
+"cli-table@npm:0.3.7":
+  version: 0.3.7
+  resolution: "cli-table@npm:0.3.7"
+  dependencies:
+    colors: 1.0.3
+    strip-ansi: ^6.0.1
+  checksum: 92b0ca44f2d8b77526808d9af08e2c4e75bf61d5e9227beba6a1804040fc6fca8f45f58a53d1c005d4521226b5ba2032d15ed38ee5e0b421a423531b1d0dd939
+  languageName: node
+  linkType: hard
+
+"cli-table@npm:^0.3.1":
   version: 0.3.6
   resolution: "cli-table@npm:0.3.6"
   dependencies:
