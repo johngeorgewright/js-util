@@ -15,7 +15,7 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@types/jest": "27.0.2",
+    "@types/jest": "27.0.3",
     "@types/yeoman-generator": "5.2.7",
     "jest": "27.3.1",
     "rimraf": "3.0.2",
