@@ -908,7 +908,7 @@ __metadata:
     "@semantic-release/npm": 8.0.3
     "@semantic-release/release-notes-generator": 10.0.2
     "@types/jest": 27.0.3
-    "@types/node": 16.11.9
+    "@types/node": 16.11.10
     jest: 27.3.1
     node-abort-controller: ^3.0.0
     rimraf: 3.0.2
@@ -932,7 +932,7 @@ __metadata:
     "@semantic-release/npm": 8.0.3
     "@semantic-release/release-notes-generator": 10.0.2
     "@types/jest": 27.0.3
-    "@types/node": 16.11.9
+    "@types/node": 16.11.10
     jest: 27.3.1
     node-abort-controller: ^3.0.0
     rimraf: 3.0.2
@@ -974,7 +974,7 @@ __metadata:
     "@semantic-release/npm": 8.0.3
     "@semantic-release/release-notes-generator": 10.0.2
     "@types/jest": 27.0.3
-    "@types/node": 16.11.9
+    "@types/node": 16.11.10
     jest: 27.3.1
     rimraf: 3.0.2
     semantic-release: 18.0.0
@@ -1048,7 +1048,7 @@ __metadata:
   dependencies:
     "@johngw/array": "*"
     "@types/cli-table": 0.3.0
-    "@types/node": 16.11.9
+    "@types/node": 16.11.10
     cli-table: 0.3.8
     colors: 1.4.0
     ts-node: 10.4.0
@@ -2008,10 +2008,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.9":
-  version: 16.11.9
-  resolution: "@types/node@npm:16.11.9"
-  checksum: baec2e6471ee58fd1e9874e6f47ab95a918a0f46b42424392e4c13e3e07f078f8b72b6b48073b0b14f710ed66c5f1b2e497df43f28151000f11f5f299382cfe2
+"@types/node@npm:16.11.10":
+  version: 16.11.10
+  resolution: "@types/node@npm:16.11.10"
+  checksum: 9c79419c5c3d92d5825bffa30f3668533f598d8b63a73ea7fc24e47f162bdbed92b0f8e4f4261cc3314b39cee050e303366d2aa154abc95c63a572a110b8c160
   languageName: node
   linkType: hard
 
