@@ -880,7 +880,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/array@workspace:packages/array"
   dependencies:
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -902,7 +902,7 @@ __metadata:
   dependencies:
     "@johngw/async": "workspace:packages/async"
     "@johngw/object": "workspace:packages/object"
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -926,7 +926,7 @@ __metadata:
   resolution: "@johngw/async@workspace:packages/async"
   dependencies:
     "@johngw/object": "workspace:packages/object"
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -948,7 +948,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/error@workspace:packages/error"
   dependencies:
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -968,7 +968,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/fs@workspace:packages/fs"
   dependencies:
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -989,7 +989,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/function@workspace:packages/function"
   dependencies:
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -1025,7 +1025,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/iterator@workspace:packages/iterator"
   dependencies:
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -1064,7 +1064,7 @@ __metadata:
     "@commitlint/cli": 14.1.0
     "@commitlint/config-conventional": 14.1.0
     "@commitlint/config-lerna-scopes": 14.0.0
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -1089,7 +1089,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/map@workspace:packages/map"
   dependencies:
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -1109,7 +1109,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/object@workspace:packages/object"
   dependencies:
-    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 8.0.3
@@ -1547,7 +1547,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:9.0.1, @semantic-release/commit-analyzer@npm:^9.0.0":
+"@semantic-release/commit-analyzer@npm:9.0.2":
+  version: 9.0.2
+  resolution: "@semantic-release/commit-analyzer@npm:9.0.2"
+  dependencies:
+    conventional-changelog-angular: ^5.0.0
+    conventional-commits-filter: ^2.0.0
+    conventional-commits-parser: ^3.2.3
+    debug: ^4.0.0
+    import-from: ^4.0.0
+    lodash: ^4.17.4
+    micromatch: ^4.0.2
+  peerDependencies:
+    semantic-release: ">=18.0.0-beta.1"
+  checksum: f7f759e608c0c044ba8ec1b3aabad4305ac057cc45156b60a2f8dc355f5193b84ff7c661aefd4522659172f4d6ecf80219b8b28714bd76e4eb32e734b2e6ead9
+  languageName: node
+  linkType: hard
+
+"@semantic-release/commit-analyzer@npm:^9.0.0":
   version: 9.0.1
   resolution: "@semantic-release/commit-analyzer@npm:9.0.1"
   dependencies:
@@ -3756,7 +3773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-commits-parser@npm:^3.0.0, conventional-commits-parser@npm:^3.0.7, conventional-commits-parser@npm:^3.2.2":
+"conventional-commits-parser@npm:^3.0.0, conventional-commits-parser@npm:^3.0.7, conventional-commits-parser@npm:^3.2.2, conventional-commits-parser@npm:^3.2.3":
   version: 3.2.3
   resolution: "conventional-commits-parser@npm:3.2.3"
   dependencies:
