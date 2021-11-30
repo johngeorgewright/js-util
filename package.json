@@ -25,26 +25,26 @@
   },
   "homepage": "https://github.com/johngeorgewright/js-util#readme",
   "devDependencies": {
-    "@commitlint/cli": "14.1.0",
-    "@commitlint/config-conventional": "14.1.0",
-    "@commitlint/config-lerna-scopes": "14.0.0",
-    "@semantic-release/commit-analyzer": "9.0.1",
+    "@commitlint/cli": "15.0.0",
+    "@commitlint/config-conventional": "15.0.0",
+    "@commitlint/config-lerna-scopes": "15.0.0",
+    "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.2",
-    "@semantic-release/npm": "8.0.2",
-    "@semantic-release/release-notes-generator": "10.0.2",
+    "@semantic-release/npm": "8.0.3",
+    "@semantic-release/release-notes-generator": "10.0.3",
     "@yarks/cli": "1.1.3",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "husky": "7.0.4",
     "isbinaryfile": "4.0.8",
     "json-parse-even-better-errors": "2.3.1",
-    "lint-staged": "11.2.6",
+    "lint-staged": "12.1.2",
     "mkdirp-infer-owner": "2.0.0",
-    "prettier": "2.4.1",
-    "semantic-release": "18.0.0",
+    "prettier": "2.5.0",
+    "semantic-release": "18.0.1",
     "semantic-release-monorepo": "7.0.5",
-    "typescript": "4.4.4",
+    "typescript": "4.5.2",
     "yo": "4.3.0"
   },
   "config": {
@@ -57,5 +57,5 @@
       "yarn prettier --write"
     ]
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@3.1.1"
 }
