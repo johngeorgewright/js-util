@@ -1,4 +1,5 @@
 import { defer } from '@johngw/async'
+import { AbortSignal } from 'node-abort-controller'
 
 const Cancelled = Symbol('cancelled')
 
@@ -44,7 +45,7 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
    *   // ...
    * }
    */
-  constructor(setup?: Setup<T>) {
+  constructor(setup?: Setup<T>, signal?: AbortSignal) {
     const { promise: cancelledPromise, resolve: cancel } =
       defer<typeof Cancelled>()
     this.#cancelledPromise = cancelledPromise
@@ -52,10 +53,15 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
     this.#setupNextArrival()
     this.#teardown =
       (setup && setup(this.push, () => setImmediate(this.cancel))) || (() => {})
+    if (signal) {
+      if (signal.aborted) this.cancel()
+      else signal.addEventListener('abort', this.cancel)
+    }
   }
 
   readonly cancel = async (): Promise<IteratorResult<T>> => {
     if (!this.#cancelled) {
+      this.#cancelled = true
       this.#cancel(Cancelled)
       this.#teardown()
     }
@@ -65,9 +71,11 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
   readonly return = this.cancel
 
   readonly push = (event: T) => {
-    this.#events.push(event)
-    this.#publishArrival()
-    this.#setupNextArrival()
+    if (!this.#cancelled) {
+      this.#events.push(event)
+      this.#publishArrival()
+      this.#setupNextArrival()
+    }
   }
 
   readonly next = async (): Promise<IteratorResult<T>> => {
