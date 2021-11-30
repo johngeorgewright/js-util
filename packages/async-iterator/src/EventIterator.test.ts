@@ -1,3 +1,4 @@
+import { AbortController } from 'node-abort-controller'
 import accumulate from './accumulate'
 import EventIterator from './EventIterator'
 
@@ -26,4 +27,19 @@ test('iterating through emitted events', async () => {
   iterator.cancel()
 
   expect(await promise).toEqual(['hello', 'you', 'little', 'foo'])
+})
+
+test('aborting with an abort signal', async () => {
+  const abortController = new AbortController()
+  const iterator = new EventIterator<string>(() => {}, abortController.signal)
+  const promise = accumulate(iterator)
+
+  iterator.push('hello')
+  iterator.push('you')
+  abortController.abort()
+  iterator.push('little')
+  iterator.push('foo')
+  iterator.cancel()
+
+  expect(await promise).toEqual(['hello', 'you'])
 })
