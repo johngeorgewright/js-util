@@ -1,9 +1,9 @@
 export default function map<
   I extends Record<string | number | symbol, unknown>,
-  O extends { [K in keyof I]: unknown }
->(i: I, fn: <K extends keyof I>(value: I[K], key: K) => O[K]) {
+  R
+>(i: I, fn: <K extends keyof I>(value: I[K], key: K) => R) {
   return Object.entries(i).reduce(
     (o, [k, v]) => ({ ...o, [k]: fn(v as I[keyof I], k) }),
-    {} as O
+    {} as { [K in keyof I]: R }
   )
 }
