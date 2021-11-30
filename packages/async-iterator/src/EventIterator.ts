@@ -56,6 +56,7 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
 
   readonly cancel = async (): Promise<IteratorResult<T>> => {
     if (!this.#cancelled) {
+      this.#cancelled = true
       this.#cancel(Cancelled)
       this.#teardown()
     }
@@ -65,9 +66,11 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
   readonly return = this.cancel
 
   readonly push = (event: T) => {
-    this.#events.push(event)
-    this.#publishArrival()
-    this.#setupNextArrival()
+    if (!this.#cancelled) {
+      this.#events.push(event)
+      this.#publishArrival()
+      this.#setupNextArrival()
+    }
   }
 
   readonly next = async (): Promise<IteratorResult<T>> => {
