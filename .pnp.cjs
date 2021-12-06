@@ -1701,7 +1701,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/array", "workspace:packages/array"],
             ["@types/cli-table", "npm:0.3.0"],
             ["@types/node", "npm:16.11.11"],
-            ["cli-table", "npm:0.3.9"],
+            ["cli-table", "npm:0.3.10"],
             ["colors", "npm:1.4.0"],
             ["ts-node", "virtual:d34d85dc7535d3dcd499bad48a362b1e8b98c396633d4ce810fc3c2a016b5b7b74f64b55e472ce3b626b994297033628b90b2bc592e9d86b3109fae4a4bf6514#npm:10.4.0"],
             ["tslib", "npm:2.3.1"],
@@ -4300,20 +4300,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["cli-table", [
+        ["npm:0.3.10", {
+          "packageLocation": "./.yarn/cache/cli-table-npm-0.3.10-f9b4d1c974-34eeff4439.zip/node_modules/cli-table/",
+          "packageDependencies": [
+            ["cli-table", "npm:0.3.10"],
+            ["colors", "npm:1.0.3"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:0.3.6", {
           "packageLocation": "./.yarn/cache/cli-table-npm-0.3.6-ab3b38c8c8-b0cd08578c.zip/node_modules/cli-table/",
           "packageDependencies": [
             ["cli-table", "npm:0.3.6"],
             ["colors", "npm:1.0.3"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:0.3.9", {
-          "packageLocation": "./.yarn/cache/cli-table-npm-0.3.9-fa4a05fc46-a2bbbae706.zip/node_modules/cli-table/",
-          "packageDependencies": [
-            ["cli-table", "npm:0.3.9"],
-            ["colors", "npm:1.0.3"],
-            ["strip-ansi", "npm:6.0.1"]
           ],
           "linkType": "HARD",
         }]
