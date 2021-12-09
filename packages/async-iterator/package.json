@@ -31,7 +31,7 @@
     "semantic-release-monorepo": "7.0.5",
     "ts-jest": "27.1.1",
     "ts-node": "10.4.0",
-    "typescript": "4.5.2"
+    "typescript": "4.5.3"
   },
   "dependencies": {
     "@johngw/async": "workspace:packages/async",
