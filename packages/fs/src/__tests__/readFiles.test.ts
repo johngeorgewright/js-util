@@ -1,5 +1,5 @@
 import * as pathHelper from 'path'
-import readFiles from '../readFiles'
+import readFiles, { WithFileNamesResult } from '../readFiles'
 
 const fixturesDirname = pathHelper.join(__dirname, 'fixtures')
 
@@ -67,6 +67,33 @@ test('encoding', async () => {
       "I'm A",
       "---
     name: B",
+    ]
+  `)
+})
+
+test('withFileNames', async () => {
+  const content: WithFileNamesResult<string>[] = []
+  for await (const result of readFiles(fixturesDirname, {
+    encoding: 'utf-8',
+    withFileNames: true,
+  }))
+    content.push({
+      contents: result.contents,
+      fileName: pathHelper.relative(__filename, result.fileName),
+    })
+  expect(content).toMatchInlineSnapshot(`
+    Array [
+      Object {
+        "contents": "I'm A
+    ",
+        "fileName": "../fixtures/a.txt",
+      },
+      Object {
+        "contents": "---
+    name: B
+    ",
+        "fileName": "../fixtures/deep/b.yaml",
+      },
     ]
   `)
 })
