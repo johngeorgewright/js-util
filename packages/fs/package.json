@@ -1,6 +1,6 @@
 {
   "name": "@johngw/fs",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "JS/TS File System Utilities.",
   "main": "dist/index.js",
   "sideEffects": false,
