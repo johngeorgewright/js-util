@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/johngeorgewright/js-util#readme",
   "devDependencies": {
+    "@johngw/async-iterator": "workspace:*",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.2",

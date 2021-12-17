@@ -954,7 +954,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@johngw/async-iterator@workspace:packages/async-iterator":
+"@johngw/async-iterator@workspace:*, @johngw/async-iterator@workspace:packages/async-iterator":
   version: 0.0.0-use.local
   resolution: "@johngw/async-iterator@workspace:packages/async-iterator"
   dependencies:
@@ -1026,6 +1026,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/fs@workspace:packages/fs"
   dependencies:
+    "@johngw/async-iterator": "workspace:*"
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
