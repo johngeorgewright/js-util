@@ -8,18 +8,8 @@ test('read a directory', async () => {
   await expect(accumulate(readDir(fixturesDirname))).resolves
     .toMatchInlineSnapshot(`
           Array [
-            Dirent {
-              "name": "a.txt",
-              Symbol(type): 1,
-            },
-            Dirent {
-              "name": "b.yaml",
-              Symbol(type): 1,
-            },
-            Dirent {
-              "name": "deep",
-              Symbol(type): 2,
-            },
+            "/Users/john.wright/Workspace/js-util/packages/fs/src/__tests__/fixtures/a.txt",
+            "/Users/john.wright/Workspace/js-util/packages/fs/src/__tests__/fixtures/deep/b.yaml",
           ]
         `)
 })
