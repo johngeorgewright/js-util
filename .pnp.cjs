@@ -90,7 +90,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@commitlint/cli", "npm:16.0.0"],
+            ["@commitlint/cli", "npm:16.0.1"],
             ["@commitlint/config-conventional", "npm:16.0.0"],
             ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:16.0.0"],
             ["@semantic-release/commit-analyzer", "virtual:b353d2a3356588af07d3e6fe09d99c1fc6947d7eb1c9e4bc6be259423239815b3d2785448f3fb776b4d5b5d812b5ea46d30eb89fdcf466fca0d1d829c8bf5089#npm:9.0.2"],
@@ -897,10 +897,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@commitlint/cli", [
-        ["npm:16.0.0", {
-          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-16.0.0-6bdf4d8543-203d1a02bd.zip/node_modules/@commitlint/cli/",
+        ["npm:16.0.1", {
+          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-16.0.1-a43d26e49a-a4ec182911.zip/node_modules/@commitlint/cli/",
           "packageDependencies": [
-            ["@commitlint/cli", "npm:16.0.0"],
+            ["@commitlint/cli", "npm:16.0.1"],
             ["@commitlint/format", "npm:16.0.0"],
             ["@commitlint/lint", "npm:16.0.0"],
             ["@commitlint/load", "npm:16.0.0"],
@@ -1683,7 +1683,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@johngw/js-util", "workspace:."],
-            ["@commitlint/cli", "npm:16.0.0"],
+            ["@commitlint/cli", "npm:16.0.1"],
             ["@commitlint/config-conventional", "npm:16.0.0"],
             ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:16.0.0"],
             ["@semantic-release/commit-analyzer", "virtual:b353d2a3356588af07d3e6fe09d99c1fc6947d7eb1c9e4bc6be259423239815b3d2785448f3fb776b4d5b5d812b5ea46d30eb89fdcf466fca0d1d829c8bf5089#npm:9.0.2"],
