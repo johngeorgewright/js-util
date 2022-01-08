@@ -1941,7 +1941,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/cli-table", "npm:0.3.0"],
             ["@types/node", "npm:16.11.19"],
             ["cli-table", "npm:0.3.11"],
-            ["colors", "npm:1.4.0"],
+            ["colors", "npm:1.4.1"],
             ["ts-node", "virtual:d34d85dc7535d3dcd499bad48a362b1e8b98c396633d4ce810fc3c2a016b5b7b74f64b55e472ce3b626b994297033628b90b2bc592e9d86b3109fae4a4bf6514#npm:10.4.0"],
             ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
@@ -4807,6 +4807,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/colors-npm-1.4.0-7e2cf12234-98aa2c2418.zip/node_modules/colors/",
           "packageDependencies": [
             ["colors", "npm:1.4.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.4.1", {
+          "packageLocation": "./.yarn/cache/colors-npm-1.4.1-b7aedb525d-dcd9ccce08.zip/node_modules/colors/",
+          "packageDependencies": [
+            ["colors", "npm:1.4.1"]
           ],
           "linkType": "HARD",
         }]
