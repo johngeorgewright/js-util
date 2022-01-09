@@ -1351,7 +1351,7 @@ __metadata:
     "@types/cli-table": 0.3.0
     "@types/node": 16.11.19
     cli-table: 0.3.11
-    colors: 1.4.1
+    colors: 1.4.2
     ts-node: 10.4.0
     tslib: 2.3.1
     typescript: 4.5.4
@@ -3817,10 +3817,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colors@npm:1.4.1":
-  version: 1.4.1
-  resolution: "colors@npm:1.4.1"
-  checksum: dcd9ccce08519d28a7c34001fa450afed67e51eac32ac7c983bb1ae64ef9aa5273c66a9ab87134b2f46e078089b60b857d83111197f5deb529513ee50289224d
+"colors@npm:1.4.2":
+  version: 1.4.2
+  resolution: "colors@npm:1.4.2"
+  checksum: 94d0d40efd6f807e459056a359ff09419ac4f193b47711bc84038fefea7be3f2a9418d07086ec488543122ef5b552fdc87b50a1d874c0cc54823aabb5e8640a5
   languageName: node
   linkType: hard
 
