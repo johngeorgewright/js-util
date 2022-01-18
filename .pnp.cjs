@@ -1874,7 +1874,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.1.3"],
             ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"],
-            ["yeoman-generator", "virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:5.5.2"]
+            ["yeoman-generator", "virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:5.6.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -12786,10 +12786,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["shelljs", [
-        ["npm:0.8.4", {
-          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.4-e2890f4ce2-27f83206ef.zip/node_modules/shelljs/",
+        ["npm:0.8.5", {
+          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.5-44be43f84a-7babc46f73.zip/node_modules/shelljs/",
           "packageDependencies": [
-            ["shelljs", "npm:0.8.4"],
+            ["shelljs", "npm:0.8.5"],
             ["glob", "npm:7.2.0"],
             ["interpret", "npm:1.4.0"],
             ["rechoir", "npm:0.6.2"]
@@ -14968,17 +14968,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["yeoman-generator", [
-        ["npm:5.5.2", {
-          "packageLocation": "./.yarn/cache/yeoman-generator-npm-5.5.2-6138b12da8-75b463974a.zip/node_modules/yeoman-generator/",
+        ["npm:5.6.0", {
+          "packageLocation": "./.yarn/cache/yeoman-generator-npm-5.6.0-0e150b8c6d-f8b298dc94.zip/node_modules/yeoman-generator/",
           "packageDependencies": [
-            ["yeoman-generator", "npm:5.5.2"]
+            ["yeoman-generator", "npm:5.6.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:5.5.2", {
-          "packageLocation": "./.yarn/__virtual__/yeoman-generator-virtual-f5661d2f42/0/cache/yeoman-generator-npm-5.5.2-6138b12da8-75b463974a.zip/node_modules/yeoman-generator/",
+        ["virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:5.6.0", {
+          "packageLocation": "./.yarn/__virtual__/yeoman-generator-virtual-9a4f70324b/0/cache/yeoman-generator-npm-5.6.0-0e150b8c6d-f8b298dc94.zip/node_modules/yeoman-generator/",
           "packageDependencies": [
-            ["yeoman-generator", "virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:5.5.2"],
+            ["yeoman-generator", "virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:5.6.0"],
             ["@types/yeoman-environment", null],
             ["chalk", "npm:4.1.2"],
             ["dargs", "npm:7.0.0"],
@@ -14990,7 +14990,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["read-pkg-up", "npm:7.0.1"],
             ["run-async", "npm:2.4.1"],
             ["semver", "npm:7.3.5"],
-            ["shelljs", "npm:0.8.4"],
+            ["shelljs", "npm:0.8.5"],
             ["sort-keys", "npm:4.2.0"],
             ["text-table", "npm:0.2.0"],
             ["yeoman-environment", null]
