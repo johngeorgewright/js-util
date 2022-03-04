@@ -11,9 +11,7 @@ test('yielding all within a time limit', async () => {
 
   const results = []
 
-  for await (const item of iteratorRace(gen(), 100)) {
-    results.push(item)
-  }
+  for await (const item of iteratorRace(gen(), 100)) results.push(item)
 
   expect(results).toEqual([1, 2, 3])
 })
@@ -27,9 +25,7 @@ test('yielding some within a time limit', async () => {
 
   const results = []
 
-  for await (const item of iteratorRace(gen(), 5)) {
-    results.push(item)
-  }
+  for await (const item of iteratorRace(gen(), 5)) results.push(item)
 
   expect(results).toEqual([1])
 })
@@ -46,9 +42,8 @@ test('aborting', async () => {
 
   timeout(5).then(() => abortController.abort())
 
-  for await (const item of iteratorRace(gen(), 20, abortController.signal)) {
+  for await (const item of iteratorRace(gen(), 20, abortController.signal))
     results.push(item)
-  }
 
   expect(results).toEqual([1])
 })

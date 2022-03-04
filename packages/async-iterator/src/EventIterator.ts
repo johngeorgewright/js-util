@@ -10,6 +10,7 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
   #cancelled = false
   #cancelledPromise: Promise<typeof Cancelled>
   readonly #cancel: (cancelled: typeof Cancelled) => void
+  readonly #signal?: AbortSignal
   readonly #teardown: Teardown
 
   /**
@@ -50,12 +51,13 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
       defer<typeof Cancelled>()
     this.#cancelledPromise = cancelledPromise
     this.#cancel = cancel
+    this.#signal = signal
     this.#setupNextArrival()
     this.#teardown =
       (setup && setup(this.push, () => setImmediate(this.cancel))) || (() => {})
     if (signal) {
       if (signal.aborted) this.cancel()
-      else signal.addEventListener('abort', this.cancel)
+      else signal.addEventListener('abort', this.cancel, { once: true })
     }
   }
 
@@ -64,6 +66,7 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
       this.#cancelled = true
       this.#cancel(Cancelled)
       this.#teardown()
+      this.#signal?.removeEventListener('abort', this.cancel)
     }
     return { done: true, value: undefined }
   }

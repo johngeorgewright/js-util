@@ -40,12 +40,12 @@ function createTimer(
 ): [Promise<never>, () => void] {
   const abortController = new AbortController()
 
-  if (signal) {
-    signal.addEventListener('abort', () => abortController.abort())
+  const abort = () => {
+    signal?.removeEventListener('abort', abort)
+    abortController.abort()
   }
 
-  return [
-    detonate(ms, { signal: abortController.signal }),
-    () => abortController.abort(),
-  ]
+  signal?.addEventListener('abort', abort, { once: true })
+
+  return [detonate(ms, { signal: abortController.signal }), abort]
 }

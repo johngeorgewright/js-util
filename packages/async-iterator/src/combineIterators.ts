@@ -58,11 +58,8 @@ export default async function* combineIterators<T>(
       }
     }
   } finally {
-    for (const iterator of Object.values(asyncIterators)) {
-      if (iterator.return) {
-        iterator.return()
-      }
-    }
+    for (const iterator of Object.values(asyncIterators))
+      if (iterator.return) iterator.return()
   }
 
   return results
