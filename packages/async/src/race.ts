@@ -6,13 +6,15 @@ export default function race<T>(
   signal?: AbortSignal
 ) {
   const abortController = new AbortController()
+  const abort = () => abortController.abort()
 
   if (signal) {
     if (signal.aborted) return Promise.reject(new AbortError())
-    signal.addEventListener('abort', () => abortController.abort())
+    signal.addEventListener('abort', abort, { once: true })
   }
 
-  return Promise.race(fn(abortController.signal)).finally(() =>
-    abortController.abort()
-  )
+  return Promise.race(fn(abortController.signal)).finally(() => {
+    signal?.removeEventListener('abort', abort)
+    abort()
+  })
 }
