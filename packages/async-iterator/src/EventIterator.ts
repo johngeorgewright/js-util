@@ -54,11 +54,9 @@ export default class EventIterator<T> implements AsyncIterableIterator<T> {
     this.#signal = signal
     this.#setupNextArrival()
     this.#teardown =
-      (setup && setup(this.push, () => setImmediate(this.cancel))) || (() => {})
-    if (signal) {
-      if (signal.aborted) this.cancel()
-      else signal.addEventListener('abort', this.cancel, { once: true })
-    }
+      setup?.(this.push, () => setImmediate(this.cancel)) || (() => {})
+    if (signal?.aborted) this.cancel()
+    else signal?.addEventListener('abort', this.cancel, { once: true })
   }
 
   readonly cancel = async (): Promise<IteratorResult<T>> => {
