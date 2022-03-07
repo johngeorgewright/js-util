@@ -3,7 +3,7 @@ import map from './map'
 test('maps to new values', () => {
   const m = new Map<number, number>(
     (function* () {
-      for (let i = 0; i < 10; i++) yield [i, i]
+      for (let i = 0; i < 10; i++) yield [i, i] as const
     })()
   )
 
