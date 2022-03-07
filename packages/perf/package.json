@@ -5,7 +5,8 @@
   "description": "Performance testing for @johngw/array",
   "main": "dist/index.js",
   "scripts": {
-    "perf": "find src -name '*.test.ts' | xargs ts-node"
+    "perf": "find src -name '*.test.ts' | xargs ts-node",
+    "test": "jest --passWithNoTests"
   },
   "author": "John Wright <johngeorge.wright@gmail.com>",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "@types/node": "16.11.26",
     "cli-table": "0.3.11",
     "colors": "1.4.0",
+    "jest": "27.5.1",
     "ts-node": "10.7.0",
     "typescript": "4.6.2"
   },

@@ -42,7 +42,7 @@ test('returning before iteration has finished', async () => {
           }
         },
       },
-      25
+      28
     )
   ).toEqual([0, 1])
 })
