@@ -3,7 +3,7 @@ import remove from './remove'
 test('removes items by key', () => {
   const map = new Map<number, number>(
     (function* () {
-      for (let i = 0; i < 10; i++) yield [i, i]
+      for (let i = 0; i < 10; i++) yield [i, i] as const
     })()
   )
 
