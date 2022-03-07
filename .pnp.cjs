@@ -1866,9 +1866,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@johngw/generator", "workspace:packages/generator"],\
             ["@types/jest", "npm:27.4.1"],\
+            ["@types/prettier", "npm:2.4.4"],\
+            ["@types/rimraf", "npm:3.0.2"],\
             ["@types/yeoman-generator", "npm:5.2.9"],\
             ["change-case", "npm:4.1.2"],\
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.5.1"],\
+            ["prettier", "npm:2.5.1"],\
             ["rimraf", "npm:3.0.2"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:27.1.3"],\
             ["tslib", "npm:2.3.1"],\
@@ -3125,6 +3128,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", "npm:2.4.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.4.4", {\
+          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.4.4-bab324963d-2c2cc57efd.zip/node_modules/@types/prettier/",\
+          "packageDependencies": [\
+            ["@types/prettier", "npm:2.4.4"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@types/responselike", [\
@@ -3142,6 +3152,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-retry-npm-0.12.1-05f3303aac-5f46b25560.zip/node_modules/@types/retry/",\
           "packageDependencies": [\
             ["@types/retry", "npm:0.12.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/rimraf", [\
+        ["npm:3.0.2", {\
+          "packageLocation": "./.yarn/cache/@types-rimraf-npm-3.0.2-dd6eb5de99-b47fa302f4.zip/node_modules/@types/rimraf/",\
+          "packageDependencies": [\
+            ["@types/rimraf", "npm:3.0.2"],\
+            ["@types/glob", "npm:7.2.0"],\
+            ["@types/node", "npm:16.11.6"]\
           ],\
           "linkType": "HARD"\
         }]\

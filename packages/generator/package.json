@@ -17,6 +17,8 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@types/jest": "27.4.1",
+    "@types/prettier": "^2",
+    "@types/rimraf": "3.0.2",
     "@types/yeoman-generator": "5.2.9",
     "jest": "27.5.1",
     "rimraf": "3.0.2",
@@ -25,6 +27,7 @@
   },
   "dependencies": {
     "change-case": "4.1.2",
+    "prettier": "2.5.1",
     "tslib": "2.3.1",
     "yeoman-generator": "5.6.1"
   }

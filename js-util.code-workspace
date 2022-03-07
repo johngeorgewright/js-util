@@ -1,60 +1,20 @@
 {
   "folders": [
-    {
-      "name": "✨ @johngw/js-util",
-      "path": "."
-    },
-    {
-      "name": "📦 @johngw/array",
-      "path": "packages/array"
-    },
-    {
-      "name": "📦 @johngw/async",
-      "path": "packages/async"
-    },
-    {
-      "name": "📦 @johngw/async-iterator",
-      "path": "packages/async-iterator"
-    },
-    {
-      "name": "📦 @johngw/error",
-      "path": "packages/error"
-    },
-    {
-      "name": "📦 @johngw/function",
-      "path": "packages/function"
-    },
-    {
-      "name": "📦 @johngw/fs",
-      "path": "packages/fs"
-    },
-    {
-      "name": "📦 @johngw/map",
-      "path": "packages/map"
-    },
-    {
-      "name": "🏗 @johngw/generator",
-      "path": "packages/generator"
-    },
-    {
-      "name": "📦 @johngw/iterator",
-      "path": "packages/iterator"
-    },
-    {
-      "name": "📦 @johngw/object",
-      "path": "packages/object"
-    },
-    {
-      "name": "📦 @johngw/js-util-perf",
-      "path": "packages/perf"
-    }
+    { "name": "✨ @johngw/js-util", "path": "." },
+    { "name": "🏗 @johngw/generator", "path": "packages/generator" },
+    { "name": "📦 @johngw/array", "path": "packages/array" },
+    { "name": "📦 @johngw/async", "path": "packages/async" },
+    { "name": "📦 @johngw/async-iterator", "path": "packages/async-iterator" },
+    { "name": "📦 @johngw/error", "path": "packages/error" },
+    { "name": "📦 @johngw/fs", "path": "packages/fs" },
+    { "name": "📦 @johngw/function", "path": "packages/function" },
+    { "name": "📦 @johngw/iterator", "path": "packages/iterator" },
+    { "name": "📦 @johngw/js-util-perf", "path": "packages/perf" },
+    { "name": "📦 @johngw/map", "path": "packages/map" },
+    { "name": "📦 @johngw/object", "path": "packages/object" }
   ],
   "settings": {
-    "search.exclude": {
-      "**/dist": true,
-      "**/.yarn": true,
-      "**/.pnp.*": true
-    },
+    "search.exclude": { "**/dist": true, "**/.yarn": true, "**/.pnp.*": true },
     "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
     "typescript.tsdk": ".yarn/sdks/typescript/lib",
     "typescript.enablePromptUseWorkspaceTsdk": true,
