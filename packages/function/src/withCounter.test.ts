@@ -1,7 +1,7 @@
 import { withCounter } from '.'
 
 test('increments a counter to a given', () => {
-  const fn = jest.fn<string, [number, string]>()
+  const fn = jest.fn<string, [count: number, key: string]>()
   const counterFn = withCounter(fn)
   counterFn('a')
   counterFn('b')
@@ -26,7 +26,7 @@ test('increments a counter to a given', () => {
 })
 
 test('change the start number', () => {
-  const fn = jest.fn<string, [number]>()
+  const fn = jest.fn<string, [count: number]>()
   withCounter(fn, 5)()
   expect(fn).toHaveBeenCalledWith(5)
 })
