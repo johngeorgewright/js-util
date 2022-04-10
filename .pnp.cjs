@@ -1866,7 +1866,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@johngw/generator", "workspace:packages/generator"],\
             ["@types/jest", "npm:27.4.1"],\
-            ["@types/prettier", "npm:2.4.4"],\
+            ["@types/prettier", "npm:2.6.0"],\
             ["@types/rimraf", "npm:3.0.2"],\
             ["@types/yeoman-generator", "npm:5.2.10"],\
             ["change-case", "npm:4.1.2"],\
@@ -3129,10 +3129,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:2.4.4", {\
-          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.4.4-bab324963d-2c2cc57efd.zip/node_modules/@types/prettier/",\
+        ["npm:2.6.0", {\
+          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.6.0-68db36c8c1-946f1f82ce.zip/node_modules/@types/prettier/",\
           "packageDependencies": [\
-            ["@types/prettier", "npm:2.4.4"]\
+            ["@types/prettier", "npm:2.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\
