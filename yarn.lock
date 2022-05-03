@@ -1238,7 +1238,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     tslib: ^2.3.1
     typescript: 4.6.4
   languageName: unknown
@@ -1262,7 +1262,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     ts-node: 10.7.0
     tslib: ^2.3.1
     typescript: 4.6.4
@@ -1286,7 +1286,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     tslib: ^2.3.1
     typescript: 4.6.4
   languageName: unknown
@@ -1306,7 +1306,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     tslib: ^2.3.1
     typescript: 4.6.4
   languageName: unknown
@@ -1328,7 +1328,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     tslib: ^2.3.1
     typescript: 4.6.4
   languageName: unknown
@@ -1348,7 +1348,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     tslib: ^2.3.1
     typescript: 4.6.4
   languageName: unknown
@@ -1366,7 +1366,7 @@ __metadata:
     jest: 28.0.3
     prettier: 2.6.2
     rimraf: 3.0.2
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     tslib: 2.4.0
     typescript: 4.6.4
     yeoman-generator: 5.6.1
@@ -1387,7 +1387,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     ts-toolbelt: ^9.6.0
     tslib: ^2.3.1
     typescript: 4.6.4
@@ -1452,7 +1452,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     tslib: ^2.3.1
     typescript: 4.6.4
   languageName: unknown
@@ -1472,7 +1472,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    ts-jest: 28.0.0
+    ts-jest: 28.0.1
     tslib: ^2.3.1
     typescript: 4.6.4
   languageName: unknown
@@ -11933,9 +11933,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:28.0.0":
-  version: 28.0.0
-  resolution: "ts-jest@npm:28.0.0"
+"ts-jest@npm:28.0.1":
+  version: 28.0.1
+  resolution: "ts-jest@npm:28.0.1"
   dependencies:
     bs-logger: 0.x
     fast-json-stable-stringify: 2.x
@@ -11962,7 +11962,7 @@ __metadata:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: a8bbcb5ec931e6f9a9a347cb28d211c1ca440e6205128fcd766e6edbb0706469cb0e675d766a86bfda813037d65a82f0956ed49a452241097a4577970279cb90
+  checksum: d6827b5eb9838b63c694a49a6d85020f62e6eed1e8aae935fdb3fabdccc0ed7207b41c812c0de793a8e5ba1b7818cddfc4d51dc29ed6054f3a08cafbedbef26e
   languageName: node
   linkType: hard
 
