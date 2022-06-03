@@ -1265,7 +1265,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 28.0.4
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1290,7 +1290,7 @@ __metadata:
     ts-jest: 28.0.4
     ts-node: 10.8.1
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1313,7 +1313,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 28.0.4
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1333,7 +1333,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 28.0.4
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1355,7 +1355,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 28.0.4
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1375,7 +1375,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 28.0.4
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1393,7 +1393,7 @@ __metadata:
     rimraf: 3.0.2
     ts-jest: 28.0.4
     tslib: 2.4.0
-    typescript: 4.7.2
+    typescript: 4.7.3
     yeoman-generator: 5.6.1
   languageName: unknown
   linkType: soft
@@ -1415,7 +1415,7 @@ __metadata:
     ts-jest: 28.0.4
     ts-toolbelt: ^9.6.0
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1431,7 +1431,7 @@ __metadata:
     jest: 28.1.0
     ts-node: 10.8.1
     tslib: 2.4.0
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1458,7 +1458,7 @@ __metadata:
     prettier: 2.6.2
     semantic-release: 19.0.2
     semantic-release-monorepo: 7.0.5
-    typescript: 4.7.2
+    typescript: 4.7.3
     yo: 4.3.0
   languageName: unknown
   linkType: soft
@@ -1479,7 +1479,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 28.0.4
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -1499,7 +1499,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 28.0.4
     tslib: ^2.3.1
-    typescript: 4.7.2
+    typescript: 4.7.3
   languageName: unknown
   linkType: soft
 
@@ -12267,13 +12267,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.7.2":
-  version: 4.7.2
-  resolution: "typescript@npm:4.7.2"
+"typescript@npm:4.7.3":
+  version: 4.7.3
+  resolution: "typescript@npm:4.7.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 5163585e6b56410f77d5483b698d9489bbee8902c99029eb70cf6d21525a186530ce19a00951af84eefd4a131cc51d0959f5118e25e70ab61f45ac4057dbd1ef
+  checksum: fd13a1ce53790a36bb8350e1f5e5e384b5f6cb9b0635114a6d01d49cb99916abdcfbc13c7521cdae2f2d3f6d8bc4a8ae7625edf645a04ee940588cd5e7597b2f
   languageName: node
   linkType: hard
 
@@ -12297,13 +12297,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.7.2#~builtin<compat/typescript>":
-  version: 4.7.2
-  resolution: "typescript@patch:typescript@npm%3A4.7.2#~builtin<compat/typescript>::version=4.7.2&hash=7ad353"
+"typescript@patch:typescript@4.7.3#~builtin<compat/typescript>":
+  version: 4.7.3
+  resolution: "typescript@patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 7e2b9a9f4a70fb7616f1b0d986977f8e34a74f046202fa7f24fdee79589598277810fa216b3776c20c0683a9235872c73be34fdb93f67f98c1efaca40999422f
+  checksum: 137d18a77f52254a284960b16ab53d0619f57b69b5d585804b8413f798a1175ce3e774fb95e6a101868577aafe357d8fcfc9171f0dc9fc0c210e9ae59d107cc0
   languageName: node
   linkType: hard
 
