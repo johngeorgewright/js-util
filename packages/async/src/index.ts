@@ -1,3 +1,4 @@
+export { default as abortControllerFromSignal } from './abortControllerFromSignal'
 export { default as AbortError } from './AbortError'
 export { default as debounceP } from './debounceP'
 export { default as defer } from './defer'
