@@ -5,6 +5,27 @@ on:
     branches: [master]
 
 jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Setup
+        run: yarn --immutable
+
+      - name: Test
+        run: yarn test
+
   github:
     name: Create GitHub Release
     environment: Production
@@ -26,9 +47,6 @@ jobs:
 
       - name: Build
         run: yarn build
-
-      - name: Test
-        run: yarn test
 
       - name: Release
         run: yarn release
