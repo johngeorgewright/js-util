@@ -28,6 +28,7 @@ jobs:
 
   github:
     name: Create GitHub Release
+    needs: [test]
     environment: Production
     runs-on: ubuntu-latest
     steps:
