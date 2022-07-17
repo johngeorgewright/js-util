@@ -72,7 +72,6 @@ export = class PackageGenerator extends Generator {
         "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
       clean: 'yarn rimraf dist',
       start: 'yarn tsc --watch --preserveWatchOutput',
-      release: 'yarn semantic-release -e semantic-release-monorepo',
       test: 'yarn jest',
     })
 
@@ -99,9 +98,9 @@ export = class PackageGenerator extends Generator {
     if (this.#answers.public) {
       devDependencies.push(
         '@semantic-release/commit-analyzer',
+        '@semantic-release/exec',
         '@semantic-release/git',
         '@semantic-release/github',
-        '@semantic-release/npm',
         '@semantic-release/release-notes-generator',
         'semantic-release',
         'semantic-release-monorepo'
