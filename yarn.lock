@@ -881,21 +881,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@commitlint/types@npm:16.2.1, @commitlint/types@npm:^16.2.1":
+  version: 16.2.1
+  resolution: "@commitlint/types@npm:16.2.1"
+  dependencies:
+    chalk: ^4.0.0
+  checksum: 93af3c26c36f3b11d99f0cbbb09c8952581eed2a6b7763eb728c0e7e7ecff5072de064a208b80225fb51533823af84ee3117d9c2efbcb63d1f5cfbf6fbfb8ed8
+  languageName: node
+  linkType: hard
+
 "@commitlint/types@npm:^14.0.0":
   version: 14.0.0
   resolution: "@commitlint/types@npm:14.0.0"
   dependencies:
     chalk: ^4.0.0
   checksum: e9164cfdb0e24f8427e1633fe5bc1866fb71b0f626922d8c5c8233a357faf55fd840cf7cd74f86d5947c84e39b57c214c146fd2c17c4f75e551a4ff6e8d22fa7
-  languageName: node
-  linkType: hard
-
-"@commitlint/types@npm:^16.2.1":
-  version: 16.2.1
-  resolution: "@commitlint/types@npm:16.2.1"
-  dependencies:
-    chalk: ^4.0.0
-  checksum: 93af3c26c36f3b11d99f0cbbb09c8952581eed2a6b7763eb728c0e7e7ecff5072de064a208b80225fb51533823af84ee3117d9c2efbcb63d1f5cfbf6fbfb8ed8
   languageName: node
   linkType: hard
 
@@ -1151,6 +1151,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jest/types@npm:27.5.1, @jest/types@npm:^27.5.1":
+  version: 27.5.1
+  resolution: "@jest/types@npm:27.5.1"
+  dependencies:
+    "@types/istanbul-lib-coverage": ^2.0.0
+    "@types/istanbul-reports": ^3.0.0
+    "@types/node": "*"
+    "@types/yargs": ^16.0.0
+    chalk: ^4.0.0
+  checksum: d1f43cc946d87543ddd79d49547aab2399481d34025d5c5f2025d3d99c573e1d9832fa83cef25e9d9b07a8583500229d15bbb07b8e233d127d911d133e2f14b1
+  languageName: node
+  linkType: hard
+
 "@jest/types@npm:^27.2.5":
   version: 27.2.5
   resolution: "@jest/types@npm:27.2.5"
@@ -1161,19 +1174,6 @@ __metadata:
     "@types/yargs": ^16.0.0
     chalk: ^4.0.0
   checksum: 322603c24354a5333b5b7a670464422a46e0244a5a96a35552a7018eb4ac2e84c3b7657336b0ea6aa114963f9b6d0da8b8f6f963cb044fea9e7bc04d464b0ab1
-  languageName: node
-  linkType: hard
-
-"@jest/types@npm:^27.5.1":
-  version: 27.5.1
-  resolution: "@jest/types@npm:27.5.1"
-  dependencies:
-    "@types/istanbul-lib-coverage": ^2.0.0
-    "@types/istanbul-reports": ^3.0.0
-    "@types/node": "*"
-    "@types/yargs": ^16.0.0
-    chalk: ^4.0.0
-  checksum: d1f43cc946d87543ddd79d49547aab2399481d34025d5c5f2025d3d99c573e1d9832fa83cef25e9d9b07a8583500229d15bbb07b8e233d127d911d133e2f14b1
   languageName: node
   linkType: hard
 
@@ -1311,6 +1311,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/generator@workspace:packages/generator"
   dependencies:
+    "@jest/types": 27.5.1
     "@types/jest": 27.4.1
     "@types/prettier": 2.4.4
     "@types/rimraf": 3.0.2
@@ -1370,11 +1371,13 @@ __metadata:
     "@commitlint/cli": 16.2.3
     "@commitlint/config-conventional": 16.2.1
     "@commitlint/config-lerna-scopes": 16.2.2
+    "@commitlint/types": 16.2.1
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
     "@semantic-release/npm": 9.0.1
     "@semantic-release/release-notes-generator": 10.0.3
+    "@types/prettier": 2.4.4
     "@yarks/cli": 1.1.3
     commitizen: 4.2.4
     cz-conventional-changelog: 3.3.0

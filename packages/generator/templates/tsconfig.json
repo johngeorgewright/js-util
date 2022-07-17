@@ -1,20 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["dom", "es2018", "esnext.asynciterable"],
-    "importHelpers": true,
     "declaration": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "downlevelIteration": true,
-    "strict": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "lib": ["es2018"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6"
   },
   "include": ["src"]
 }

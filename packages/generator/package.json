@@ -16,6 +16,7 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@jest/types": "27.5.1",
     "@types/jest": "27.4.1",
     "@types/prettier": "2.4.4",
     "@types/rimraf": "3.0.2",
