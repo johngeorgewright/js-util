@@ -40,7 +40,7 @@ jobs:
     if: github.actor != 'renovate[bot]'
     needs: [test]
     runs-on: ubuntu-latest
-    environment: NPM
+    environment: Production
     steps:
       - name: Checkout project
         uses: actions/checkout@v3
