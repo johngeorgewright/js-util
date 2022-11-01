@@ -85,7 +85,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@commitlint/cli", "npm:17.2.0"],\
             ["@commitlint/config-conventional", "npm:17.2.0"],\
-            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.2.0"],\
+            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.2.1"],\
             ["@commitlint/types", "npm:17.0.0"],\
             ["@semantic-release/commit-analyzer", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:9.0.2"],\
             ["@semantic-release/exec", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:6.0.3"],\
@@ -1164,17 +1164,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@commitlint/config-lerna-scopes", [\
-        ["npm:17.2.0", {\
-          "packageLocation": "./.yarn/cache/@commitlint-config-lerna-scopes-npm-17.2.0-6a669642a5-80ea2473f3.zip/node_modules/@commitlint/config-lerna-scopes/",\
+        ["npm:17.2.1", {\
+          "packageLocation": "./.yarn/cache/@commitlint-config-lerna-scopes-npm-17.2.1-212458044d-fd2dc5af1d.zip/node_modules/@commitlint/config-lerna-scopes/",\
           "packageDependencies": [\
-            ["@commitlint/config-lerna-scopes", "npm:17.2.0"]\
+            ["@commitlint/config-lerna-scopes", "npm:17.2.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.2.0", {\
-          "packageLocation": "./.yarn/__virtual__/@commitlint-config-lerna-scopes-virtual-39ce550af0/0/cache/@commitlint-config-lerna-scopes-npm-17.2.0-6a669642a5-80ea2473f3.zip/node_modules/@commitlint/config-lerna-scopes/",\
+        ["virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/@commitlint-config-lerna-scopes-virtual-fa6822f0a3/0/cache/@commitlint-config-lerna-scopes-npm-17.2.1-212458044d-fd2dc5af1d.zip/node_modules/@commitlint/config-lerna-scopes/",\
           "packageDependencies": [\
-            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.2.0"],\
+            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.2.1"],\
             ["@types/lerna", null],\
             ["globby", "npm:11.0.4"],\
             ["import-from", "npm:4.0.0"],\
@@ -1963,7 +1963,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/js-util", "workspace:."],\
             ["@commitlint/cli", "npm:17.2.0"],\
             ["@commitlint/config-conventional", "npm:17.2.0"],\
-            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.2.0"],\
+            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.2.1"],\
             ["@commitlint/types", "npm:17.0.0"],\
             ["@semantic-release/commit-analyzer", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:9.0.2"],\
             ["@semantic-release/exec", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:6.0.3"],\
