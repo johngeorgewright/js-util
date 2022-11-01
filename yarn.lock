@@ -697,20 +697,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-lerna-scopes@npm:17.2.0":
-  version: 17.2.0
-  resolution: "@commitlint/config-lerna-scopes@npm:17.2.0"
+"@commitlint/config-lerna-scopes@npm:17.2.1":
+  version: 17.2.1
+  resolution: "@commitlint/config-lerna-scopes@npm:17.2.1"
   dependencies:
     globby: ^11.0.1
     import-from: 4.0.0
     resolve-pkg: 2.0.0
     semver: 7.3.7
   peerDependencies:
-    lerna: ^5.0.0
+    lerna: ^5.0.0 || ^6
   peerDependenciesMeta:
     lerna:
       optional: true
-  checksum: 80ea2473f3a94ff0c753e6986240de9e4f2e8cab52e5bc1ef5bc6a7ebe26be5103591e023149bbeebb69e9c0400145856b98b11095df187da3c17bc76ccc391d
+  checksum: fd2dc5af1d25a1f5c800fb32303d7d3ee7112415f1ca7d533b0f9d8795372ca0736262a7618a9c84b65fb467754c64f0627321d30b5b739c9ce0fd4b34fab8e2
   languageName: node
   linkType: hard
 
@@ -1424,7 +1424,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 17.2.0
     "@commitlint/config-conventional": 17.2.0
-    "@commitlint/config-lerna-scopes": 17.2.0
+    "@commitlint/config-lerna-scopes": 17.2.1
     "@commitlint/types": 17.0.0
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/exec": 6.0.3
