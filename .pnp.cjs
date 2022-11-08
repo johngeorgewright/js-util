@@ -96,7 +96,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarks/cli", "npm:1.1.3"],\
             ["commitizen", "npm:4.2.5"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
-            ["husky", "npm:8.0.1"],\
+            ["husky", "npm:8.0.2"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["json-parse-even-better-errors", "npm:2.3.1"],\
             ["lint-staged", "npm:13.0.3"],\
@@ -1974,7 +1974,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarks/cli", "npm:1.1.3"],\
             ["commitizen", "npm:4.2.5"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
-            ["husky", "npm:8.0.1"],\
+            ["husky", "npm:8.0.2"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["json-parse-even-better-errors", "npm:2.3.1"],\
             ["lint-staged", "npm:13.0.3"],\
@@ -7708,10 +7708,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["husky", [\
-        ["npm:8.0.1", {\
-          "packageLocation": "./.yarn/cache/husky-npm-8.0.1-85fede8470-943a73a13d.zip/node_modules/husky/",\
+        ["npm:8.0.2", {\
+          "packageLocation": "./.yarn/cache/husky-npm-8.0.2-46c70b41ed-e101656fcb.zip/node_modules/husky/",\
           "packageDependencies": [\
-            ["husky", "npm:8.0.1"]\
+            ["husky", "npm:8.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
