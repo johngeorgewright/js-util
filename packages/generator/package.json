@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "change-case": "4.1.2",
-    "prettier": "2.7.1",
+    "prettier": "2.8.0",
     "tslib": "2.4.1",
     "yeoman-generator": "5.7.0"
   }
