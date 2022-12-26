@@ -1810,7 +1810,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.7"],\
             ["@semantic-release/release-notes-generator", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:10.0.3"],\
             ["@types/jest", "npm:28.1.8"],\
-            ["@types/node", "npm:16.18.10"],\
+            ["@types/node", "npm:16.18.11"],\
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:28.1.3"],\
             ["node-abort-controller", "npm:3.0.1"],\
             ["rimraf", "npm:3.0.2"],\
@@ -1836,7 +1836,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.7"],\
             ["@semantic-release/release-notes-generator", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:10.0.3"],\
             ["@types/jest", "npm:28.1.8"],\
-            ["@types/node", "npm:16.18.10"],\
+            ["@types/node", "npm:16.18.11"],\
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:28.1.3"],\
             ["node-abort-controller", "npm:3.0.1"],\
             ["rimraf", "npm:3.0.2"],\
@@ -1884,7 +1884,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.0.7"],\
             ["@semantic-release/release-notes-generator", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:10.0.3"],\
             ["@types/jest", "npm:28.1.8"],\
-            ["@types/node", "npm:16.18.10"],\
+            ["@types/node", "npm:16.18.11"],\
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:28.1.3"],\
             ["rimraf", "npm:3.0.2"],\
             ["semantic-release", "npm:19.0.5"],\
@@ -2001,7 +2001,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/js-util-perf", "workspace:packages/perf"],\
             ["@johngw/array", "workspace:packages/array"],\
             ["@types/cli-table", "npm:0.3.1"],\
-            ["@types/node", "npm:16.18.10"],\
+            ["@types/node", "npm:16.18.11"],\
             ["cli-table", "npm:0.3.11"],\
             ["colors", "npm:1.4.0"],\
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:28.1.3"],\
@@ -3392,10 +3392,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:16.18.10", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.18.10-4a4f7d2b17-1b13861692.zip/node_modules/@types/node/",\
+        ["npm:16.18.11", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.18.11-c70c49ef8e-2a3b1da130.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:16.18.10"]\
+            ["@types/node", "npm:16.18.11"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14287,7 +14287,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],\
             ["@tsconfig/node14", "npm:1.0.1"],\
             ["@tsconfig/node16", "npm:1.0.2"],\
-            ["@types/node", "npm:16.18.10"],\
+            ["@types/node", "npm:16.18.11"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
@@ -15348,6 +15348,7 @@ const StringDecoder = require('string_decoder');
 const url = require('url');
 const os = require('os');
 const nodeUtils = require('util');
+const readline = require('readline');
 const assert = require('assert');
 const stream = require('stream');
 const zlib = require('zlib');
@@ -19260,6 +19261,12 @@ class FileHandle {
     } finally {
       this[kUnref]();
     }
+  }
+  readLines(options) {
+    return readline.createInterface({
+      input: this.createReadStream(options),
+      crlfDelay: Infinity
+    });
   }
   async stat(opts) {
     try {
@@ -23956,6 +23963,9 @@ function getPathForDisplay(p) {
   return npath.normalize(npath.fromPortablePath(p));
 }
 
+const [major, minor] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
+const WATCH_MODE_MESSAGE_USES_ARRAYS = major > 19 || major === 19 && minor >= 2;
+
 const builtinModules = new Set(require$$0.Module.builtinModules || Object.keys(process.binding(`natives`)));
 const isBuiltinModule = (request) => request.startsWith(`node:`) || builtinModules.has(request);
 function readPackageScope(checkPath) {
@@ -23990,13 +24000,19 @@ Instead change the require of ${basename} in ${parentPath} to a dynamic import()
   err.code = `ERR_REQUIRE_ESM`;
   return err;
 }
-
-const shouldReportRequiredModules = process.env.WATCH_REPORT_DEPENDENCIES;
-function reportModuleToWatchMode(filename) {
-  if (shouldReportRequiredModules && process.send) {
-    process.send({ "watch:require": npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))) });
+function reportRequiredFilesToWatchMode(files) {
+  if (process.env.WATCH_REPORT_DEPENDENCIES && process.send) {
+    files = files.map((filename) => npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))));
+    if (WATCH_MODE_MESSAGE_USES_ARRAYS) {
+      process.send({ "watch:require": files });
+    } else {
+      for (const filename of files) {
+        process.send({ "watch:require": filename });
+      }
+    }
   }
 }
+
 function applyPatch(pnpapi, opts) {
   const defaultCache = {};
   let enableNativeHooks = true;
@@ -24056,7 +24072,7 @@ function applyPatch(pnpapi, opts) {
     }
     const module = new require$$0.Module(modulePath, parent != null ? parent : void 0);
     module.pnpApiPath = moduleApiPath;
-    reportModuleToWatchMode(modulePath);
+    reportRequiredFilesToWatchMode([modulePath]);
     entry.cache[modulePath] = module;
     if (isMain) {
       process.mainModule = module;
@@ -25414,6 +25430,7 @@ Required by: ${issuerLocator.name}@${issuerLocator.reference} (via ${issuerForDi
     if (qualifiedPath) {
       return ppath.normalize(qualifiedPath);
     } else {
+      reportRequiredFilesToWatchMode(candidates.map((candidate) => npath.fromPortablePath(candidate)));
       const unqualifiedPathForDisplay = getPathForDisplay(unqualifiedPath);
       const containingPackage = findPackageLocator(unqualifiedPath);
       if (containingPackage) {
