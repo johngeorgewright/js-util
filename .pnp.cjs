@@ -8559,7 +8559,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pify", "npm:4.0.1"],\
             ["readable-stream", "npm:3.6.0"],\
             ["sha.js", "npm:2.4.11"],\
-            ["simple-get", "npm:3.1.0"]\
+            ["simple-get", "npm:3.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13320,10 +13320,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["simple-get", [\
-        ["npm:3.1.0", {\
-          "packageLocation": "./.yarn/cache/simple-get-npm-3.1.0-8c6f03c4cd-cca91a9ab2.zip/node_modules/simple-get/",\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/simple-get-npm-3.1.1-dce5923dba-80195e70bf.zip/node_modules/simple-get/",\
           "packageDependencies": [\
-            ["simple-get", "npm:3.1.0"],\
+            ["simple-get", "npm:3.1.1"],\
             ["decompress-response", "npm:4.2.1"],\
             ["once", "npm:1.4.0"],\
             ["simple-concat", "npm:1.0.1"]\
