@@ -85,7 +85,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@commitlint/cli", "npm:17.6.1"],\
             ["@commitlint/config-conventional", "npm:17.6.1"],\
-            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.4.2"],\
+            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.6.2"],\
             ["@commitlint/types", "npm:17.4.4"],\
             ["@semantic-release/commit-analyzer", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:9.0.2"],\
             ["@semantic-release/exec", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:6.0.3"],\
@@ -1164,22 +1164,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@commitlint/config-lerna-scopes", [\
-        ["npm:17.4.2", {\
-          "packageLocation": "./.yarn/cache/@commitlint-config-lerna-scopes-npm-17.4.2-93aa81bbbb-a30a2aa86c.zip/node_modules/@commitlint/config-lerna-scopes/",\
+        ["npm:17.6.2", {\
+          "packageLocation": "./.yarn/cache/@commitlint-config-lerna-scopes-npm-17.6.2-d237dea58f-8aa60e518c.zip/node_modules/@commitlint/config-lerna-scopes/",\
           "packageDependencies": [\
-            ["@commitlint/config-lerna-scopes", "npm:17.4.2"]\
+            ["@commitlint/config-lerna-scopes", "npm:17.6.2"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.4.2", {\
-          "packageLocation": "./.yarn/__virtual__/@commitlint-config-lerna-scopes-virtual-1e814074bb/0/cache/@commitlint-config-lerna-scopes-npm-17.4.2-93aa81bbbb-a30a2aa86c.zip/node_modules/@commitlint/config-lerna-scopes/",\
+        ["virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.6.2", {\
+          "packageLocation": "./.yarn/__virtual__/@commitlint-config-lerna-scopes-virtual-409b233138/0/cache/@commitlint-config-lerna-scopes-npm-17.6.2-d237dea58f-8aa60e518c.zip/node_modules/@commitlint/config-lerna-scopes/",\
           "packageDependencies": [\
-            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.4.2"],\
+            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.6.2"],\
             ["@types/lerna", null],\
             ["glob", "npm:8.0.3"],\
             ["import-from", "npm:4.0.0"],\
             ["lerna", null],\
-            ["resolve-pkg", "npm:2.0.0"],\
             ["semver", "npm:7.3.8"]\
           ],\
           "packagePeers": [\
@@ -1969,7 +1968,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/js-util", "workspace:."],\
             ["@commitlint/cli", "npm:17.6.1"],\
             ["@commitlint/config-conventional", "npm:17.6.1"],\
-            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.4.2"],\
+            ["@commitlint/config-lerna-scopes", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:17.6.2"],\
             ["@commitlint/types", "npm:17.4.4"],\
             ["@semantic-release/commit-analyzer", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:9.0.2"],\
             ["@semantic-release/exec", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:6.0.3"],\
@@ -12786,16 +12785,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["resolve-global", "npm:1.0.0"],\
             ["global-dirs", "npm:0.1.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["resolve-pkg", [\
-        ["npm:2.0.0", {\
-          "packageLocation": "./.yarn/cache/resolve-pkg-npm-2.0.0-7b70eb3262-4a14cc38ef.zip/node_modules/resolve-pkg/",\
-          "packageDependencies": [\
-            ["resolve-pkg", "npm:2.0.0"],\
-            ["resolve-from", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\

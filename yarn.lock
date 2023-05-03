@@ -697,20 +697,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-lerna-scopes@npm:17.4.2":
-  version: 17.4.2
-  resolution: "@commitlint/config-lerna-scopes@npm:17.4.2"
+"@commitlint/config-lerna-scopes@npm:17.6.2":
+  version: 17.6.2
+  resolution: "@commitlint/config-lerna-scopes@npm:17.6.2"
   dependencies:
     glob: ^8.0.3
     import-from: 4.0.0
-    resolve-pkg: 2.0.0
     semver: 7.3.8
   peerDependencies:
     lerna: ^5.0.0 || ^6
   peerDependenciesMeta:
     lerna:
       optional: true
-  checksum: a30a2aa86c6057705248d5b41d7df9a87de74ee1d05d10d9ca6420e02d6a9594c1ce68af373612ed8311a7b15dcc476bb88b9bb72bb078ab9646576a1d0a74dd
+  checksum: 8aa60e518c8e27edb32f510870519c5f9ad63a36b9431cd6670066a6158fa25fbee3231beb1c9f5f689518a60f604a9bd1132a81e3524ce947a25e055ef4351e
   languageName: node
   linkType: hard
 
@@ -1430,7 +1429,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 17.6.1
     "@commitlint/config-conventional": 17.6.1
-    "@commitlint/config-lerna-scopes": 17.4.2
+    "@commitlint/config-lerna-scopes": 17.6.2
     "@commitlint/types": 17.4.4
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/exec": 6.0.3
@@ -10997,15 +10996,6 @@ __metadata:
   dependencies:
     global-dirs: ^0.1.1
   checksum: c4e11d33e84bde7516b824503ffbe4b6cce863d5ce485680fd3db997b7c64da1df98321b1fd0703b58be8bc9bc83bc96bd83043f96194386b45eb47229efb6b6
-  languageName: node
-  linkType: hard
-
-"resolve-pkg@npm:2.0.0":
-  version: 2.0.0
-  resolution: "resolve-pkg@npm:2.0.0"
-  dependencies:
-    resolve-from: ^5.0.0
-  checksum: 4a14cc38effed20ff362c8f377719af9a45ebe27ee07d79d4802b4568858cd96033f4edc3a2add7fd27e361d24101a042047297a9ef9476696ba16b72e0a05fc
   languageName: node
   linkType: hard
 
