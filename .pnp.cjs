@@ -98,7 +98,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
             ["isbinaryfile", "npm:5.0.0"],\
-            ["json-parse-even-better-errors", "npm:2.3.1"],\
+            ["json-parse-even-better-errors", "npm:3.0.0"],\
             ["lint-staged", "npm:13.2.2"],\
             ["mkdirp-infer-owner", "npm:2.0.0"],\
             ["prettier", "npm:2.8.8"],\
@@ -1982,7 +1982,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
             ["isbinaryfile", "npm:5.0.0"],\
-            ["json-parse-even-better-errors", "npm:2.3.1"],\
+            ["json-parse-even-better-errors", "npm:3.0.0"],\
             ["lint-staged", "npm:13.2.2"],\
             ["mkdirp-infer-owner", "npm:2.0.0"],\
             ["prettier", "npm:2.8.8"],\
@@ -9405,6 +9405,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/json-parse-even-better-errors-npm-2.3.1-144d62256e-798ed4cf33.zip/node_modules/json-parse-even-better-errors/",\
           "packageDependencies": [\
             ["json-parse-even-better-errors", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/json-parse-even-better-errors-npm-3.0.0-3675833c0a-f1970b5220.zip/node_modules/json-parse-even-better-errors/",\
+          "packageDependencies": [\
+            ["json-parse-even-better-errors", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
