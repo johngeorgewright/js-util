@@ -1,6 +1,5 @@
 import accumulateRace from './accumulateRace'
 import { timeout } from '@johngw/async'
-import { AbortController } from 'node-abort-controller'
 
 test('returning all within time', async () => {
   expect(

@@ -1,5 +1,3 @@
-import { AbortController, AbortSignal } from 'node-abort-controller'
-
 /**
  * Creates a new AbortController that responds to a signal.
  */

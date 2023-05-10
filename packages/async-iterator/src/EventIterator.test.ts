@@ -1,4 +1,3 @@
-import { AbortController } from 'node-abort-controller'
 import accumulate from './accumulate'
 import EventIterator from './EventIterator'
 

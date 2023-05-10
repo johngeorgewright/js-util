@@ -1,5 +1,4 @@
 import timeout from './timeout'
-import { AbortController } from 'node-abort-controller'
 
 test('it waits in milliseconds', async () => {
   await Promise.race([

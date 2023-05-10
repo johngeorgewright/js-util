@@ -1,6 +1,5 @@
 import TimeoutError from './TimeoutError'
 import detonate from './detonate'
-import { AbortSignal } from 'node-abort-controller'
 import race from './race'
 
 export default async function detonateRace<T>(
