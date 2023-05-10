@@ -8,16 +8,16 @@ test('increments a counter to a given', () => {
   counterFn('c')
   expect(fn).toHaveBeenCalledTimes(3)
   expect(fn.mock.calls).toMatchInlineSnapshot(`
-    Array [
-      Array [
+    [
+      [
         0,
         "a",
       ],
-      Array [
+      [
         1,
         "b",
       ],
-      Array [
+      [
         2,
         "c",
       ],

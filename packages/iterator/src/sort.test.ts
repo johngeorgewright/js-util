@@ -7,7 +7,7 @@ test('sorting chunks of a generator', () => {
 
   expect([...sort<number>(10, (a, b) => b - a)(getValues())])
     .toMatchInlineSnapshot(`
-    Array [
+    [
       9,
       8,
       7,

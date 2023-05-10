@@ -10,7 +10,7 @@ test('take a number of values from a generator', () => {
   const generator = getValues()
 
   expect([...take(10)(generator)]).toMatchInlineSnapshot(`
-    Array [
+    [
       0,
       1,
       2,
@@ -25,7 +25,7 @@ test('take a number of values from a generator', () => {
   `)
 
   expect([...take(20)(generator)]).toMatchInlineSnapshot(`
-    Array [
+    [
       10,
       11,
       12,
@@ -50,7 +50,7 @@ test('take a number of values from a generator', () => {
   `)
 
   expect([...take(5)(generator)]).toMatchInlineSnapshot(`
-    Array [
+    [
       30,
       31,
       32,
@@ -65,7 +65,7 @@ test('taking from an empty generator', () => {
     return
   }
 
-  expect([...take(20)(getValues())]).toMatchInlineSnapshot(`Array []`)
+  expect([...take(20)(getValues())]).toMatchInlineSnapshot(`[]`)
 })
 
 test('taking nothing', () => {
@@ -75,5 +75,5 @@ test('taking nothing', () => {
     }
   }
 
-  expect([...take(0)(getValues())]).toMatchInlineSnapshot(`Array []`)
+  expect([...take(0)(getValues())]).toMatchInlineSnapshot(`[]`)
 })
