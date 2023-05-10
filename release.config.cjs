@@ -8,13 +8,12 @@ const config = {
   extends: ['semantic-release-monorepo'],
   plugins: [
     '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
     [
       '@semantic-release/exec',
       {
         verifyConditionsCmd: 'yarn npm whoami --publish',
         prepareCmd:
-          "yarn version ${nextRelease.version} && echo '::set-output name=version::${nextRelease.version}'",
+          "yarn version ${nextRelease.version} && echo 'echo version=${nextRelease.version}' >> $GITHUB_OUTPUT",
         publishCmd: 'yarn npm publish --access public',
       },
     ],
