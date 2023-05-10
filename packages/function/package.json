@@ -4,8 +4,8 @@
   "description": "Function utilities",
   "main": "dist/index.js",
   "scripts": {
-    "build": "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
-    "clean": "yarn rimraf dist",
+    "build": "yarn clean && yarn tsc && rimraf --glob 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "clean": "rimraf dist",
     "start": "yarn tsc --watch --preserveWatchOutput",
     "test": "yarn jest"
   },
