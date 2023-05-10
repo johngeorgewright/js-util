@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
-    "build": "yarn clean && tsc && rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "build": "yarn clean && tsc && rimraf --glob 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "rimraf dist",
     "start": "tsc --watch --preserveWatchOutput",
     "test": "jest"
