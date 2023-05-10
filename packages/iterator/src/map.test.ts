@@ -9,7 +9,7 @@ test('mapping generators', () => {
   }
 
   expect([...map((i: number) => i * 2)(getValues())]).toMatchInlineSnapshot(`
-    Array [
+    [
       2,
       4,
       6,

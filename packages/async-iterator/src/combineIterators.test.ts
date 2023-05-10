@@ -18,7 +18,7 @@ test('combine', async () => {
   const results = await accumulate(combineIterators(a(), b()))
 
   expect(results).toMatchInlineSnapshot(`
-    Array [
+    [
       0,
       10,
       2,

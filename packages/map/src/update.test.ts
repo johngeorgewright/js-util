@@ -19,7 +19,7 @@ test('when original value exists', () => {
   expect(update(map, 'foo', (v) => (v ? [...v, 'rab'] : v!)))
     .toMatchInlineSnapshot(`
     Map {
-      "foo" => Array [
+      "foo" => [
         "bar",
         "rab",
       ],
@@ -33,7 +33,7 @@ test('immutability', () => {
   update(map, 'foo', (v) => (v ? [...v, 'rab'] : v!))
   expect(map).toMatchInlineSnapshot(`
     Map {
-      "foo" => Array [
+      "foo" => [
         "bar",
       ],
     }

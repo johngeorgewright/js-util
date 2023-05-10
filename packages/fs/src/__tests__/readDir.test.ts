@@ -10,9 +10,9 @@ const fixturesDirname = pathHelper.relative(
 test('read a directory', async () => {
   await expect(accumulate(readDir(fixturesDirname))).resolves
     .toMatchInlineSnapshot(`
-          Array [
-            "src/__tests__/fixtures/a.txt",
-            "src/__tests__/fixtures/deep/b.yaml",
-          ]
-        `)
+    [
+      "src/__tests__/fixtures/a.txt",
+      "src/__tests__/fixtures/deep/b.yaml",
+    ]
+  `)
 })

@@ -14,7 +14,7 @@ export default function separate<T, R extends T, L extends Exclude<T, R>>(
     if (predicate(item)) {
       rightBuilder.add(item)
     } else {
-      leftBuilder.add(item as L)
+      leftBuilder.add(item as unknown as L)
     }
   }
 

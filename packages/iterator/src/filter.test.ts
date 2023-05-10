@@ -10,7 +10,7 @@ test('filter out items in a generator', () => {
 
   expect([...filter((i: number) => i % 2 === 0)(getItems())])
     .toMatchInlineSnapshot(`
-    Array [
+    [
       2,
       4,
     ]

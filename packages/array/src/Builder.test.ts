@@ -8,7 +8,7 @@ test('appending items', () => {
   }
 
   expect(builder.finish()).toMatchInlineSnapshot(`
-    Array [
+    [
       0,
       1,
       2,

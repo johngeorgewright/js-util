@@ -11,7 +11,7 @@ test('recursively read buffers', async () => {
   }
 
   expect(content).toMatchInlineSnapshot(`
-    Array [
+    [
       "I'm A",
       "---
     name: B",
@@ -28,7 +28,7 @@ test('flat lookup', async () => {
   }
 
   expect(content).toMatchInlineSnapshot(`
-    Array [
+    [
       "I'm A",
     ]
   `)
@@ -45,7 +45,7 @@ test('filtering filenames', async () => {
   }
 
   expect(content).toMatchInlineSnapshot(`
-    Array [
+    [
       "---
     name: B",
     ]
@@ -63,7 +63,7 @@ test('encoding', async () => {
   }
 
   expect(content).toMatchInlineSnapshot(`
-    Array [
+    [
       "I'm A",
       "---
     name: B",
@@ -82,13 +82,13 @@ test('withFileNames', async () => {
       fileName: pathHelper.relative(__filename, result.fileName),
     })
   expect(content).toMatchInlineSnapshot(`
-    Array [
-      Object {
+    [
+      {
         "contents": "I'm A
     ",
         "fileName": "../fixtures/a.txt",
       },
-      Object {
+      {
         "contents": "---
     name: B
     ",
