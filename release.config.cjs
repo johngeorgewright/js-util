@@ -13,7 +13,7 @@ const config = {
       {
         verifyConditionsCmd: 'yarn npm whoami --publish',
         prepareCmd:
-          "yarn version ${nextRelease.version} && echo 'echo version=${nextRelease.version}' >> $GITHUB_OUTPUT",
+          "yarn version ${nextRelease.version} && echo 'version=${nextRelease.version}' >> $GITHUB_OUTPUT",
         publishCmd: 'yarn npm publish --access public',
       },
     ],
