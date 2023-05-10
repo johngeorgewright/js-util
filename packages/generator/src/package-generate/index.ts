@@ -69,8 +69,8 @@ export = class PackageGenerator extends Generator {
 
     this.packageJson.set('scripts', {
       build:
-        "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
-      clean: 'yarn rimraf dist',
+        "yarn clean && yarn tsc && rimraf --glob 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+      clean: 'rimraf dist',
       start: 'yarn tsc --watch --preserveWatchOutput',
       test: 'yarn jest',
     })
