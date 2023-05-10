@@ -1,5 +1,4 @@
 import timeout from './timeout'
-import type { AbortSignal } from 'node-abort-controller'
 
 export default async function until(
   fn: (signal?: AbortSignal) => Promise<boolean>,

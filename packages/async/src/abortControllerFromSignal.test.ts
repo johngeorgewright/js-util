@@ -1,4 +1,3 @@
-import { AbortController } from 'node-abort-controller'
 import abortControllerFromSignal from './abortControllerFromSignal'
 
 test("the controller aborts it's signals when the given signal is aborted", () => {

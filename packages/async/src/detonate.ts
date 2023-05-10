@@ -1,6 +1,5 @@
 import AbortError from './AbortError'
 import TimeoutError from './TimeoutError'
-import type { AbortSignal } from 'node-abort-controller'
 
 export default async function detonate(
   ms: number = 0,

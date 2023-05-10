@@ -1,5 +1,4 @@
 import AbortError from './AbortError'
-import { AbortController, AbortSignal } from 'node-abort-controller'
 
 export default function race<T>(
   fn: (signal: AbortSignal) => Promise<T>[],

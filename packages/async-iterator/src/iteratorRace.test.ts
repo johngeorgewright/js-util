@@ -1,6 +1,5 @@
 import iteratorRace from './iteratorRace'
 import { timeout } from '@johngw/async'
-import { AbortController } from 'node-abort-controller'
 
 test('yielding all within a time limit', async () => {
   async function* gen() {

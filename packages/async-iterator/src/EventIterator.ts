@@ -1,5 +1,4 @@
 import { defer } from '@johngw/async'
-import { AbortSignal } from 'node-abort-controller'
 
 const Cancelled = Symbol('cancelled')
 
