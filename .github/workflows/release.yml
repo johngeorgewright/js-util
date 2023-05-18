@@ -37,10 +37,11 @@ jobs:
 
   publish:
     name: Publish
-    if: github.actor != 'renovate[bot]'
     needs: [test]
     runs-on: ubuntu-latest
     environment: NPM
+    concurrency:
+      group: publish
     steps:
       - name: Checkout project
         uses: actions/checkout@v3
