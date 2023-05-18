@@ -8,16 +8,15 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach --topological-dev --exclude @johngw/generator run build",
-    "clean": "yarn workspaces foreach run clean",
-    "build:generator": "yarn workspace @johngw/generator run build",
-    "commit": "yarn git-cz",
-    "package:generate": "yo ./packages/generator/generators/package-generate",
-    "package:remove": "yo ./packages/generator/generators/package-remove",
-    "release": "yarn workspaces foreach --no-private --topological-dev run semantic-release",
-    "start": "yarn build && yarn workspaces foreach --no-private --parallel --interlaced run start",
-    "test": "yarn workspaces foreach run test",
-    "prepare": "yarn husky install"
+    "build": "yarn workspaces foreach --topological-dev --exclude @johngw/generator --verbose --parallel run build",
+    "clean": "yarn workspaces foreach run clean --verbose",
+    "commit": "git-cz",
+    "package:generate": "node --require ts-node/register $(yarn bin yo) ./packages/generator/src/package-generate",
+    "package:remove": "node --require ts-node/register $(yarn bin yo) ./packages/generator/src/package-remove",
+    "release": "yarn workspaces foreach --no-private --topological-dev --verbose run semantic-release",
+    "start": "yarn build && yarn workspaces foreach --no-private --parallel --interlaced --verbose run start",
+    "test": "yarn workspaces foreach --verbose run test",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "UNLICENSED",
