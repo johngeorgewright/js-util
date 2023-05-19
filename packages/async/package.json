@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "@johngw/object": "workspace:packages/object",
-    "tslib": "2.5.1"
+    "tslib": "2.5.2"
   }
 }
