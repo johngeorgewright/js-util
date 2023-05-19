@@ -1,6 +1,6 @@
 {
   "name": "@johngw/error",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "JS/TS Error handling utilities.",
   "main": "dist/index.js",
   "sideEffects": false,
