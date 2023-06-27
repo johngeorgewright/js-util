@@ -35,6 +35,6 @@
   "dependencies": {
     "@johngw/async": "workspace:packages/async",
     "@johngw/object": "workspace:packages/object",
-    "tslib": "2.5.3"
+    "tslib": "2.6.0"
   }
 }
