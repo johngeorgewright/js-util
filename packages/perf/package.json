@@ -17,7 +17,7 @@
   "devDependencies": {
     "@johngw/array": "*",
     "@types/cli-table": "0.3.1",
-    "@types/node": "20.4.3",
+    "@types/node": "20.4.4",
     "cli-table": "0.3.11",
     "colors": "1.4.0",
     "jest": "29.6.1",
