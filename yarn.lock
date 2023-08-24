@@ -1351,7 +1351,7 @@ __metadata:
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.4
     "@types/jest": 29.5.4
-    "@types/node": 20.5.2
+    "@types/node": 20.5.4
     jest: 29.6.3
     rimraf: 5.0.1
     semantic-release: 21.0.9
@@ -1374,7 +1374,7 @@ __metadata:
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.4
     "@types/jest": 29.5.4
-    "@types/node": 20.5.2
+    "@types/node": 20.5.4
     jest: 29.6.3
     rimraf: 5.0.1
     semantic-release: 21.0.9
@@ -1416,7 +1416,7 @@ __metadata:
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.4
     "@types/jest": 29.5.4
-    "@types/node": 20.5.2
+    "@types/node": 20.5.4
     jest: 29.6.3
     rimraf: 5.0.1
     semantic-release: 21.0.9
@@ -1493,7 +1493,7 @@ __metadata:
   dependencies:
     "@johngw/array": "*"
     "@types/cli-table": 0.3.1
-    "@types/node": 20.5.2
+    "@types/node": 20.5.4
     cli-table: 0.3.11
     colors: 1.4.0
     jest: 29.6.3
@@ -2971,10 +2971,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.5.2":
-  version: 20.5.2
-  resolution: "@types/node@npm:20.5.2"
-  checksum: 46d032bb9a1db687693f6351702572d2f1e12face32caf8182323413918de27d4ac16cc2b15ff6b891651313e602da18edbdd095d16d2b5a26588c2edffca892
+"@types/node@npm:20.5.4":
+  version: 20.5.4
+  resolution: "@types/node@npm:20.5.4"
+  checksum: 18de76c990e1c298183661cfc7cf16c9384531538c8090cc27bc3cab801e7c46b9f6943591ab0433955dd57961601684cc0fb19ba2deee9609e137c91afd2e25
   languageName: node
   linkType: hard
 
