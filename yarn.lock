@@ -1328,7 +1328,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     jest: 29.7.0
     rimraf: 5.0.1
     semantic-release: 21.1.1
@@ -1350,7 +1350,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     "@types/node": 20.5.7
     jest: 29.7.0
     rimraf: 5.0.1
@@ -1373,7 +1373,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     "@types/node": 20.5.7
     jest: 29.7.0
     rimraf: 5.0.1
@@ -1394,7 +1394,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     jest: 29.7.0
     rimraf: 5.0.1
     semantic-release: 21.1.1
@@ -1415,7 +1415,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     "@types/node": 20.5.7
     jest: 29.7.0
     rimraf: 5.0.1
@@ -1436,7 +1436,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     jest: 29.7.0
     rimraf: 5.0.1
     semantic-release: 21.1.1
@@ -1451,7 +1451,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/generator@workspace:packages/generator"
   dependencies:
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     "@types/prettier": 2.7.3
     "@types/rimraf": 4.0.5
     "@types/yeoman-generator": 5.2.11
@@ -1475,7 +1475,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     jest: 29.7.0
     rimraf: 5.0.1
     semantic-release: 21.1.1
@@ -1542,7 +1542,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     jest: 29.7.0
     rimraf: 5.0.1
     semantic-release: 21.1.1
@@ -1562,7 +1562,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
-    "@types/jest": 29.5.4
+    "@types/jest": 29.5.5
     jest: 29.7.0
     rimraf: 5.0.1
     semantic-release: 21.1.1
@@ -2877,13 +2877,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:29.5.4":
-  version: 29.5.4
-  resolution: "@types/jest@npm:29.5.4"
+"@types/jest@npm:29.5.5":
+  version: 29.5.5
+  resolution: "@types/jest@npm:29.5.5"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: 38ed5942f44336452efd0f071eab60aaa57cd8d46530348d0a3aa5a691dcbf1366c4ca8f6ee8364efb45b4413bfefae443e5d4f469246a472a03b21ac11cd4ed
+  checksum: 56e55cde9949bcc0ee2fa34ce5b7c32c2bfb20e53424aa4ff3a210859eeaaa3fdf6f42f81a3f655238039cdaaaf108b054b7a8602f394e6c52b903659338d8c6
   languageName: node
   linkType: hard
 
