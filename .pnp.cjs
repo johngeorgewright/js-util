@@ -2100,7 +2100,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@johngw/js-util-perf", "workspace:packages/perf"],\
             ["@johngw/array", "workspace:packages/array"],\
-            ["@types/cli-table", "npm:0.3.2"],\
+            ["@types/cli-table", "npm:0.3.3"],\
             ["@types/node", "npm:20.5.7"],\
             ["cli-table", "npm:0.3.11"],\
             ["colors", "npm:1.4.0"],\
@@ -3588,10 +3588,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/cli-table", [\
-        ["npm:0.3.2", {\
-          "packageLocation": "./.yarn/cache/@types-cli-table-npm-0.3.2-4d92b70ca7-cf87354ccd.zip/node_modules/@types/cli-table/",\
+        ["npm:0.3.3", {\
+          "packageLocation": "./.yarn/cache/@types-cli-table-npm-0.3.3-4c73496c93-b618abce5b.zip/node_modules/@types/cli-table/",\
           "packageDependencies": [\
-            ["@types/cli-table", "npm:0.3.2"]\
+            ["@types/cli-table", "npm:0.3.3"]\
           ],\
           "linkType": "HARD"\
         }]\
