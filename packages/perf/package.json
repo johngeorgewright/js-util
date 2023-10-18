@@ -16,7 +16,7 @@
   "homepage": "https://github.com/johngeorgewright/js-util#readme",
   "devDependencies": {
     "@johngw/array": "*",
-    "@types/cli-table": "0.3.2",
+    "@types/cli-table": "0.3.3",
     "@types/node": "20.5.7",
     "cli-table": "0.3.11",
     "colors": "1.4.0",
