@@ -94,7 +94,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/release-notes-generator", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:11.0.7"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@yarks/cli", "npm:1.1.3"],\
-            ["commitizen", "npm:4.3.0"],\
+            ["commitizen", "npm:4.3.1"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
             ["isbinaryfile", "npm:5.0.0"],\
@@ -2078,7 +2078,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/release-notes-generator", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:11.0.7"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@yarks/cli", "npm:1.1.3"],\
-            ["commitizen", "npm:4.3.0"],\
+            ["commitizen", "npm:4.3.1"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
             ["isbinaryfile", "npm:5.0.0"],\
@@ -5814,10 +5814,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:4.3.0", {\
-          "packageLocation": "./.yarn/cache/commitizen-npm-4.3.0-3695cdaf66-5a54f81ab7.zip/node_modules/commitizen/",\
+        ["npm:4.3.1", {\
+          "packageLocation": "./.yarn/cache/commitizen-npm-4.3.1-eab8087a7a-bcb42ee0cf.zip/node_modules/commitizen/",\
           "packageDependencies": [\
-            ["commitizen", "npm:4.3.0"],\
+            ["commitizen", "npm:4.3.1"],\
             ["cachedir", "npm:2.3.0"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["dedent", "npm:0.7.0"],\
