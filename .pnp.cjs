@@ -97,7 +97,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.3.1"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
-            ["isbinaryfile", "npm:5.0.4"],\
+            ["isbinaryfile", "npm:5.0.6"],\
             ["json-parse-even-better-errors", "npm:3.0.2"],\
             ["lint-staged", "npm:13.3.0"],\
             ["mkdirp-infer-owner", "npm:2.0.0"],\
@@ -2081,7 +2081,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.3.1"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
-            ["isbinaryfile", "npm:5.0.4"],\
+            ["isbinaryfile", "npm:5.0.6"],\
             ["json-parse-even-better-errors", "npm:3.0.2"],\
             ["lint-staged", "npm:13.3.0"],\
             ["mkdirp-infer-owner", "npm:2.0.0"],\
@@ -9572,10 +9572,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:5.0.4", {\
-          "packageLocation": "./.yarn/cache/isbinaryfile-npm-5.0.4-a4a2071876-d88982a889.zip/node_modules/isbinaryfile/",\
+        ["npm:5.0.6", {\
+          "packageLocation": "./.yarn/cache/isbinaryfile-npm-5.0.6-f47c7fc37d-0e30053a35.zip/node_modules/isbinaryfile/",\
           "packageDependencies": [\
-            ["isbinaryfile", "npm:5.0.4"]\
+            ["isbinaryfile", "npm:5.0.6"]\
           ],\
           "linkType": "HARD"\
         }]\
