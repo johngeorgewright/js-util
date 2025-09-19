@@ -1894,7 +1894,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -1918,7 +1918,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -1944,7 +1944,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
             ["ts-node", "virtual:d34d85dc7535d3dcd499bad48a362b1e8b98c396633d4ce810fc3c2a016b5b7b74f64b55e472ce3b626b994297033628b90b2bc592e9d86b3109fae4a4bf6514#npm:10.9.2"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -1966,7 +1966,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -1990,7 +1990,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -2012,7 +2012,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -2032,7 +2032,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.8.8"],\
             ["rimraf", "npm:5.0.10"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
             ["yeoman-generator", "virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:5.10.0"]\
           ],\
@@ -2056,7 +2056,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
             ["ts-toolbelt", "npm:9.6.0"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -2106,7 +2106,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["colors", "npm:1.4.0"],\
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.7.0"],\
             ["ts-node", "virtual:d34d85dc7535d3dcd499bad48a362b1e8b98c396633d4ce810fc3c2a016b5b7b74f64b55e472ce3b626b994297033628b90b2bc592e9d86b3109fae4a4bf6514#npm:10.9.2"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -2128,7 +2128,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -2150,7 +2150,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
-            ["tslib", "npm:2.6.2"],\
+            ["tslib", "npm:2.8.1"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
           ],\
           "linkType": "SOFT"\
@@ -16244,10 +16244,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:2.6.2", {\
-          "packageLocation": "./.yarn/cache/tslib-npm-2.6.2-4fc8c068d9-329ea56123.zip/node_modules/tslib/",\
+        ["npm:2.8.1", {\
+          "packageLocation": "./.yarn/cache/tslib-npm-2.8.1-66590b21b8-e4aba30e63.zip/node_modules/tslib/",\
           "packageDependencies": [\
-            ["tslib", "npm:2.6.2"]\
+            ["tslib", "npm:2.8.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -19232,7 +19232,8 @@ class ZipFS extends BasePortableFakeFS {
           stream$1.destroy();
         },
         bytesRead: 0,
-        path: p
+        path: p,
+        pending: false
       }
     );
     const immediate = setImmediate(async () => {
@@ -19273,11 +19274,12 @@ class ZipFS extends BasePortableFakeFS {
         }
       }),
       {
-        bytesWritten: 0,
-        path: p,
         close() {
           stream$1.destroy();
-        }
+        },
+        bytesWritten: 0,
+        path: p,
+        pending: false
       }
     );
     stream$1.on(`data`, (chunk) => {
@@ -20217,18 +20219,10 @@ class ProxiedFS extends FakeFS {
     return this.baseFs.symlinkSync(mappedTarget, mappedP, type);
   }
   async readFilePromise(p, encoding) {
-    if (encoding === `utf8`) {
-      return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
-    } else {
-      return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
-    }
+    return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
   }
   readFileSync(p, encoding) {
-    if (encoding === `utf8`) {
-      return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
-    } else {
-      return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
-    }
+    return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
   }
   async readdirPromise(p, opts) {
     return this.baseFs.readdirPromise(this.mapToBase(p), opts);
@@ -20954,24 +20948,14 @@ class ZipOpenFS extends BasePortableFakeFS {
   }
   async readFilePromise(p, encoding) {
     return this.makeCallPromise(p, async () => {
-      switch (encoding) {
-        case `utf8`:
-          return await this.baseFs.readFilePromise(p, encoding);
-        default:
-          return await this.baseFs.readFilePromise(p, encoding);
-      }
+      return await this.baseFs.readFilePromise(p, encoding);
     }, async (zipFs, { subPath }) => {
       return await zipFs.readFilePromise(subPath, encoding);
     });
   }
   readFileSync(p, encoding) {
     return this.makeCallSync(p, () => {
-      switch (encoding) {
-        case `utf8`:
-          return this.baseFs.readFileSync(p, encoding);
-        default:
-          return this.baseFs.readFileSync(p, encoding);
-      }
+      return this.baseFs.readFileSync(p, encoding);
     }, (zipFs, { subPath }) => {
       return zipFs.readFileSync(subPath, encoding);
     });
@@ -21663,38 +21647,28 @@ function patchFs(patchedFs, fakeFs) {
     patchedFs.realpathSync.native = patchedFs.realpathSync;
   }
   {
-    const origEmitWarning = process.emitWarning;
-    process.emitWarning = () => {
-    };
-    let patchedFsPromises;
-    try {
-      patchedFsPromises = patchedFs.promises;
-    } finally {
-      process.emitWarning = origEmitWarning;
-    }
-    if (typeof patchedFsPromises !== `undefined`) {
-      for (const fnName of ASYNC_IMPLEMENTATIONS) {
-        const origName = fnName.replace(/Promise$/, ``);
-        if (typeof patchedFsPromises[origName] === `undefined`)
-          continue;
-        const fakeImpl = fakeFs[fnName];
-        if (typeof fakeImpl === `undefined`)
-          continue;
-        if (fnName === `open`)
-          continue;
-        setupFn(patchedFsPromises, origName, (pathLike, ...args) => {
-          if (pathLike instanceof FileHandle) {
-            return pathLike[origName].apply(pathLike, args);
-          } else {
-            return fakeImpl.call(fakeFs, pathLike, ...args);
-          }
-        });
-      }
-      setupFn(patchedFsPromises, `open`, async (...args) => {
-        const fd = await fakeFs.openPromise(...args);
-        return new FileHandle(fd, fakeFs);
+    const patchedFsPromises = patchedFs.promises;
+    for (const fnName of ASYNC_IMPLEMENTATIONS) {
+      const origName = fnName.replace(/Promise$/, ``);
+      if (typeof patchedFsPromises[origName] === `undefined`)
+        continue;
+      const fakeImpl = fakeFs[fnName];
+      if (typeof fakeImpl === `undefined`)
+        continue;
+      if (fnName === `open`)
+        continue;
+      setupFn(patchedFsPromises, origName, (pathLike, ...args) => {
+        if (pathLike instanceof FileHandle) {
+          return pathLike[origName].apply(pathLike, args);
+        } else {
+          return fakeImpl.call(fakeFs, pathLike, ...args);
+        }
       });
     }
+    setupFn(patchedFsPromises, `open`, async (...args) => {
+      const fd = await fakeFs.openPromise(...args);
+      return new FileHandle(fd, fakeFs);
+    });
   }
   {
     patchedFs.read[nodeUtils.promisify.custom] = async (fd, buffer, ...args) => {
@@ -27941,7 +27915,7 @@ function makeManager(pnpapi, opts) {
     apiEntry.lastRefreshCheck = timeNow;
     const stats = opts.fakeFs.statSync(pnpApiPath);
     if (stats.mtime > apiEntry.stats.mtime) {
-      process.emitWarning(`[Warning] The runtime detected new informations in a PnP file; reloading the API instance (${npath.fromPortablePath(pnpApiPath)})`);
+      process.emitWarning(`[Warning] The runtime detected new information in a PnP file; reloading the API instance (${npath.fromPortablePath(pnpApiPath)})`);
       apiEntry.stats = stats;
       apiEntry.instance = loadApiInstance(pnpApiPath);
     }
