@@ -92,7 +92,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/git", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.1.0"],\
             ["@semantic-release/release-notes-generator", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:11.0.7"],\
-            ["@types/prettier", "npm:2.7.3"],\
+            ["@types/prettier", "npm:3.0.0"],\
             ["@yarks/cli", "npm:1.1.3"],\
             ["commitizen", "npm:4.3.1"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
@@ -101,7 +101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["json-parse-even-better-errors", "npm:3.0.2"],\
             ["lint-staged", "npm:13.3.0"],\
             ["mkdirp-infer-owner", "npm:2.0.0"],\
-            ["prettier", "npm:2.8.8"],\
+            ["prettier", "npm:3.6.2"],\
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
@@ -2024,12 +2024,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@johngw/generator", "workspace:packages/generator"],\
             ["@types/jest", "npm:29.5.14"],\
-            ["@types/prettier", "npm:2.7.3"],\
+            ["@types/prettier", "npm:3.0.0"],\
             ["@types/rimraf", "npm:4.0.5"],\
             ["@types/yeoman-generator", "npm:5.2.14"],\
             ["change-case", "npm:4.1.2"],\
             ["jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.7.0"],\
-            ["prettier", "npm:2.8.8"],\
+            ["prettier", "npm:3.6.2"],\
             ["rimraf", "npm:5.0.10"],\
             ["ts-jest", "virtual:5793f492cf31f99c8ced58abf3080232e3d5885e8a3d9fa7cd63e176d14fab37aaf1c90f27ebce0127648dc2bb832502e369051e282a3af022f5f10a9d23420a#npm:29.1.1"],\
             ["tslib", "npm:2.8.1"],\
@@ -2076,7 +2076,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/git", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:8.1.0"],\
             ["@semantic-release/release-notes-generator", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:11.0.7"],\
-            ["@types/prettier", "npm:2.7.3"],\
+            ["@types/prettier", "npm:3.0.0"],\
             ["@yarks/cli", "npm:1.1.3"],\
             ["commitizen", "npm:4.3.1"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
@@ -2085,7 +2085,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["json-parse-even-better-errors", "npm:3.0.2"],\
             ["lint-staged", "npm:13.3.0"],\
             ["mkdirp-infer-owner", "npm:2.0.0"],\
-            ["prettier", "npm:2.8.8"],\
+            ["prettier", "npm:3.6.2"],\
             ["semantic-release", "npm:21.1.2"],\
             ["semantic-release-monorepo", "virtual:cbdd83471681d12fabd353d66ec84a2afc4110cb444bbae52da2f49bde14b3d0af269bbe4b69882b26f988e636dabf0f5fec6058c3db35da127ffcf8cb7f61a8#npm:7.0.8"],\
             ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
@@ -3851,10 +3851,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/prettier", [\
-        ["npm:2.7.3", {\
-          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.7.3-497316f37c-705384209c.zip/node_modules/@types/prettier/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/@types-prettier-npm-3.0.0-6c770110eb-a2a512d304.zip/node_modules/@types/prettier/",\
           "packageDependencies": [\
-            ["@types/prettier", "npm:2.7.3"]\
+            ["@types/prettier", "npm:3.0.0"],\
+            ["prettier", "npm:3.6.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13708,10 +13709,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:2.8.8", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.8.8-430828a36c-b49e409431.zip/node_modules/prettier/",\
+        ["npm:3.6.2", {\
+          "packageLocation": "./.yarn/unplugged/prettier-npm-3.6.2-2668152203/node_modules/prettier/",\
           "packageDependencies": [\
-            ["prettier", "npm:2.8.8"]\
+            ["prettier", "npm:3.6.2"]\
           ],\
           "linkType": "HARD"\
         }]\
