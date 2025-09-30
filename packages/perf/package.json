@@ -22,7 +22,7 @@
     "colors": "1.4.0",
     "jest": "29.7.0",
     "ts-node": "10.9.2",
-    "typescript": "5.2.2"
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "tslib": "2.8.1"
