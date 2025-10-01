@@ -1351,7 +1351,7 @@ __metadata:
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
     "@types/jest": 29.5.14
-    "@types/node": 20.5.7
+    "@types/node": 20.19.19
     jest: 29.7.0
     rimraf: 5.0.10
     semantic-release: 21.1.2
@@ -1374,7 +1374,7 @@ __metadata:
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
     "@types/jest": 29.5.14
-    "@types/node": 20.5.7
+    "@types/node": 20.19.19
     jest: 29.7.0
     rimraf: 5.0.10
     semantic-release: 21.1.2
@@ -1416,7 +1416,7 @@ __metadata:
     "@semantic-release/github": 8.1.0
     "@semantic-release/release-notes-generator": 11.0.7
     "@types/jest": 29.5.14
-    "@types/node": 20.5.7
+    "@types/node": 20.19.19
     jest: 29.7.0
     rimraf: 5.0.10
     semantic-release: 21.1.2
@@ -1493,7 +1493,7 @@ __metadata:
   dependencies:
     "@johngw/array": "*"
     "@types/cli-table": 0.3.4
-    "@types/node": 20.5.7
+    "@types/node": 20.19.19
     cli-table: 0.3.11
     colors: 1.4.0
     jest: 29.7.0
@@ -2964,17 +2964,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:20.19.19":
+  version: 20.19.19
+  resolution: "@types/node@npm:20.19.19"
+  dependencies:
+    undici-types: ~6.21.0
+  checksum: 0019bd44153ef4590a7d8c15b04004572df9b63ca2196ba4f6799196b9ce04b699d7315a94b8029e2f716a530e4683f83b9f0cc03d2d88f9969a0c22ac972665
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:20.5.1":
   version: 20.5.1
   resolution: "@types/node@npm:20.5.1"
   checksum: 3dbe611cd67afa987102c8558ee70f848949c5dcfee5f60abc073e55c0d7b048e391bf06bb1e0dc052cb7210ca97136ac496cbaf6e89123c989de6bd125fde82
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:20.5.7":
-  version: 20.5.7
-  resolution: "@types/node@npm:20.5.7"
-  checksum: fc284c8e16ddc04569730d58e87eae349eb1c3dd9020cb79a1862d9d9add6f04e7367a236f3252db8db2572f90278e250f4cd43d27d264972b54394eaba1ed76
   languageName: node
   linkType: hard
 
@@ -14606,6 +14608,13 @@ __metadata:
   bin:
     uglifyjs: bin/uglifyjs
   checksum: eef57b4fec031f687bef46182c33de5eff6bc40fec8d46152f3b92bb044602dd524a04e33ca5f7391f82db969b92ef6aded860f8a4ee5f4bf796d7420b030236
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: 46331c7d6016bf85b3e8f20c159d62f5ae471aba1eb3dc52fff35a0259d58dcc7d592d4cc4f00c5f9243fa738a11cfa48bd20203040d4a9e6bc25e807fab7ab3
   languageName: node
   linkType: hard
 
