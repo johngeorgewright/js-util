@@ -1,4 +1,5 @@
-import map from './map'
+import { expect, test } from 'vitest'
+import map from './map.js'
 
 test('maps to new values', () => {
   const m = new Map<number, number>(

@@ -1,4 +1,5 @@
-import filter from './filter'
+import { expect, test } from 'vitest'
+import filter from './filter.js'
 
 test('filter out items in a generator', () => {
   function* getItems() {

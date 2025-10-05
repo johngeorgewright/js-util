@@ -2,13 +2,16 @@
   "name": "@johngw/array",
   "version": "3.3.2",
   "description": "JS/TS array utils.",
-  "main": "dist/index.js",
+  "type": "module",
+  "exports": {
+    "./*": "./dist/*.js"
+  },
   "sideEffects": false,
   "scripts": {
     "build": "yarn clean && tsc && rimraf --glob 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "rimraf dist",
     "start": "tsc --watch --preserveWatchOutput",
-    "test": "jest"
+    "test": "vitest --run"
   },
   "author": "John Wright <johngeorge.wright@gmail.com>",
   "license": "MIT",
@@ -17,20 +20,12 @@
   },
   "homepage": "https://github.com/johngeorgewright/js-util#readme",
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "9.0.2",
-    "@semantic-release/exec": "6.0.3",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "8.1.0",
-    "@semantic-release/release-notes-generator": "11.0.7",
-    "@types/jest": "29.5.14",
-    "jest": "29.7.0",
-    "rimraf": "5.0.10",
-    "semantic-release": "21.1.2",
-    "semantic-release-monorepo": "7.0.8",
-    "ts-jest": "29.1.1",
-    "typescript": "5.2.2"
+    "@types/node": "24.6.2",
+    "rimraf": "6.0.1",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
   },
   "dependencies": {
-    "tslib": "2.8.1"
+    "tslib": "^2.8.1"
   }
 }

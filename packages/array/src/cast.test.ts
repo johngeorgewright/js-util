@@ -1,4 +1,5 @@
-import cast from './cast'
+import { expect, test } from 'vitest'
+import cast from './cast.js'
 
 test('cast arrays', () => {
   expect(cast([1, 2, 3])).toEqual([1, 2, 3])

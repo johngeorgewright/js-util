@@ -1,4 +1,4 @@
-import { take } from '.'
+import take from './take.js'
 
 export default function sort<T>(
   maxChunkSize: number,

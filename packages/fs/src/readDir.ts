@@ -1,5 +1,5 @@
-import { readdir } from './promises'
-import * as pathHelper from 'path'
+import { readdir } from './promises.js'
+import * as pathHelper from 'node:path'
 
 export interface ReadDirOptions {
   recursive?: boolean

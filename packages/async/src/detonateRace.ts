@@ -1,6 +1,6 @@
-import TimeoutError from './TimeoutError'
-import detonate from './detonate'
-import race from './race'
+import TimeoutError from './TimeoutError.js'
+import detonate from './detonate.js'
+import race from './race.js'
 
 export default async function detonateRace<T>(
   promise: Promise<T>,

@@ -1,4 +1,5 @@
-import remove from './remove'
+import { expect, test } from 'vitest'
+import remove from './remove.js'
 
 test('removes items by key', () => {
   const map = new Map<number, number>(

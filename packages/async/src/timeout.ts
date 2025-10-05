@@ -1,4 +1,4 @@
-import AbortError from './AbortError'
+import AbortError from './AbortError.js'
 
 export default async function timeout(ms: number = 0, signal?: AbortSignal) {
   return new Promise<void>((resolve, reject) => {

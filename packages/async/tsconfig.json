@@ -1,20 +1,12 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["dom", "es2019", "esnext.asynciterable"],
-    "importHelpers": true,
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "downlevelIteration": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "composite": true,
+    "outDir": "dist",
+    "rootDir": "./src"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [
+    {"path": "../object"}
+  ]
 }

@@ -1,4 +1,4 @@
-import Builder from './Builder'
+import Builder from './Builder.js'
 
 export default function separate<T, R extends T, L extends Exclude<T, R>>(
   input: ArrayLike<T>,

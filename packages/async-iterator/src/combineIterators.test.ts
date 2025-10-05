@@ -1,6 +1,7 @@
-import accumulate from './accumulate'
-import combineIterators from './combineIterators'
-import { timeout } from '@johngw/async'
+import { expect, test } from 'vitest'
+import accumulate from './accumulate.js'
+import combineIterators from './combineIterators.js'
+import timeout from '@johngw/async/timeout'
 
 test('combine', async () => {
   async function* a() {

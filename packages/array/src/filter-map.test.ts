@@ -1,4 +1,5 @@
-import filterMap from './filter-map'
+import { expect, test } from 'vitest'
+import filterMap from './filter-map.js'
 
 test('filtering and mapping arrays', () => {
   const result = filterMap(

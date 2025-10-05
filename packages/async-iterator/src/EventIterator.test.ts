@@ -1,5 +1,6 @@
-import accumulate from './accumulate'
-import EventIterator from './EventIterator'
+import { expect, test } from 'vitest'
+import accumulate from './accumulate.js'
+import EventIterator from './EventIterator.js'
 
 test('iterating through previously emitted events', async () => {
   expect(

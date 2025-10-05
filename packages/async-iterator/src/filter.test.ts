@@ -1,5 +1,6 @@
-import accumulate from './accumulate'
-import filter from './filter'
+import { expect, test } from 'vitest'
+import accumulate from './accumulate.js'
+import filter from './filter.js'
 
 test('filtering results', async () => {
   async function* gen() {

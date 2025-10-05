@@ -1,4 +1,5 @@
-import sort from './sort'
+import { expect, test } from 'vitest'
+import sort from './sort.js'
 
 test('sorting chunks of a generator', () => {
   function* getValues() {

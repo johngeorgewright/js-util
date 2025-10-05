@@ -1,5 +1,6 @@
-import iteratorRace from './iteratorRace'
-import { timeout } from '@johngw/async'
+import { expect, test } from 'vitest'
+import iteratorRace from './iteratorRace.js'
+import timeout from '@johngw/async/timeout'
 
 test('yielding all within a time limit', async () => {
   async function* gen() {

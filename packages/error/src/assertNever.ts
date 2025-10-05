@@ -1,4 +1,4 @@
-import CompileError from './CompileError'
+import CompileError from './CompileError.js'
 
 export default function assertNever<T extends never, M extends string>(
   _message: M,

@@ -1,16 +1,16 @@
-import detonateRace from './detonateRace'
-import timeout from './timeout'
+import { expect, test } from 'vitest'
+import detonateRace from './detonateRace.js'
+import timeout from './timeout.js'
 
-test('it rejects after a number of ms', (done) => {
+test('it rejects after a number of ms', () =>
   detonateRace(timeout(20), 10).then(
-    () => done('it resolved instead of rejected'),
+    () => { throw new Error('it resolved instead of rejected') },
     (error) => {
       expect(error.isTimeoutError).toBe(true)
-      done()
     }
   )
-})
+)
 
-test('it resolves within a number of ms', (done) => {
-  detonateRace(timeout(10), 20).then(done, done)
-})
+test('it resolves within a number of ms', () =>
+  detonateRace(timeout(10), 20)
+)

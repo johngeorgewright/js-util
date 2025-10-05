@@ -1,11 +1,12 @@
-import debounceP from './debounceP'
-import timeout from './timeout'
+import { beforeEach, expect, test, vi } from 'vitest'
+import debounceP from './debounceP.js'
+import timeout from './timeout.js'
 
 let fn: () => Promise<{}>
 let debouncedFn: typeof fn
 
 beforeEach(() => {
-  fn = jest.fn(async () => ({}))
+  fn = vi.fn(async () => ({}))
   debouncedFn = debounceP(fn, 10)
 })
 

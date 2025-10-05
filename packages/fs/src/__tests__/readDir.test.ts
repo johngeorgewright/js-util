@@ -1,6 +1,7 @@
-import { accumulate } from '@johngw/async-iterator'
-import * as pathHelper from 'path'
-import readDir from '../readDir'
+import accumulate from '@johngw/async-iterator/accumulate'
+import * as pathHelper from 'node:path'
+import { expect, test } from 'vitest'
+import readDir from '../readDir.js'
 
 const fixturesDirname = pathHelper.relative(
   process.cwd(),

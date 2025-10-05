@@ -1,4 +1,4 @@
-import timeout from './timeout'
+import timeout from './timeout.js'
 
 export default async function until(
   fn: (signal?: AbortSignal) => Promise<boolean>,

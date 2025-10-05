@@ -1,4 +1,5 @@
-import Builder from './Builder'
+import { expect, test } from 'vitest'
+import Builder from './Builder.js'
 
 test('appending items', () => {
   const builder = new Builder<number>(10)

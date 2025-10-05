@@ -1,4 +1,5 @@
-import take from './take'
+import { expect, test } from 'vitest'
+import take from './take.js'
 
 test('take a number of values from a generator', () => {
   function* getValues() {
