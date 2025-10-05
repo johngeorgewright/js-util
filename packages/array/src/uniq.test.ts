@@ -1,4 +1,5 @@
-import uniq from './uniq'
+import { expect, test } from 'vitest'
+import uniq from './uniq.js'
 
 test('returns unique values', () => {
   expect(uniq([1, 2, 3, 3, 3, 3, 3, 3, 4, 5, 5, 5, 5])).toMatchInlineSnapshot(`

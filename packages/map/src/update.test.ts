@@ -1,4 +1,5 @@
-import update from './update'
+import { expect, test } from 'vitest'
+import update from './update.js'
 
 test('when with no original value', () => {
   expect(

@@ -1,5 +1,5 @@
-import AbortError from './AbortError'
-import TimeoutError from './TimeoutError'
+import AbortError from './AbortError.js'
+import TimeoutError from './TimeoutError.js'
 
 export default async function detonate(
   ms: number = 0,

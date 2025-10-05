@@ -1,4 +1,5 @@
-import IteratorHandler from './IteratorHandler'
+import { expect, test } from 'vitest'
+import IteratorHandler from './IteratorHandler.js'
 
 test('simple iteration', () => {
   const Foo = Symbol('foo')

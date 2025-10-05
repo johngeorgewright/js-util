@@ -1,4 +1,5 @@
-import any from './any'
+import { expect, test } from 'vitest'
+import any from './any.js'
 
 test('true when anything matches', () => {
   const map = new Map<string, string>()

@@ -1,10 +1,11 @@
-import race from './race'
-import timeout from './timeout'
+import { expect, test, vi } from 'vitest'
+import race from './race.js'
+import timeout from './timeout.js'
 
 test('automatically aborting after first result', async () => {
-  const one = jest.fn()
-  const two = jest.fn()
-  const three = jest.fn()
+  const one = vi.fn()
+  const two = vi.fn()
+  const three = vi.fn()
 
   await race((signal) => [
     timeout(10, signal).then(one),

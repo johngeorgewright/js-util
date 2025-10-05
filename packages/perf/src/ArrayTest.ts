@@ -1,5 +1,5 @@
 import Table from 'cli-table'
-import Test from './Test'
+import Test from './Test.js'
 
 const lengths = [
   10,
@@ -52,7 +52,7 @@ export default class ArrayTest implements Test {
       const table = new Table({
         head: ['', ...lengths.map((x) => x.toString())],
       })
-      table.push(...Object.entries(this.results).map(([k, v]) => ({ [k]: v })))
+      table.push(...Object.entries(this.results).map(([k, v]) => ({ [k]: v } as any)))
       console.info(table.toString())
     })
   }

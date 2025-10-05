@@ -1,5 +1,7 @@
-import * as pathHelper from 'path'
-import readFiles, { WithFileNamesResult } from '../readFiles'
+import * as pathHelper from 'node:path'
+import readFiles, { WithFileNamesResult } from '../readFiles.js'
+import test from 'node:test'
+import { expect } from 'vitest'
 
 const fixturesDirname = pathHelper.join(__dirname, 'fixtures')
 

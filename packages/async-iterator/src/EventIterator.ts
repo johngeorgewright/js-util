@@ -1,4 +1,4 @@
-import { defer } from '@johngw/async'
+import defer from '@johngw/async/defer'
 
 const Cancelled = Symbol('cancelled')
 

@@ -1,4 +1,4 @@
-import { detonate } from '@johngw/async'
+import detonate from '@johngw/async/detonate'
 
 export default async function* iteratorRace<T>(
   asyncIterable: AsyncIterable<T>,

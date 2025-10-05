@@ -1,4 +1,5 @@
-import map from './map'
+import { expect, test } from 'vitest'
+import map from './map.js'
 
 test('map values', () => {
   expect(

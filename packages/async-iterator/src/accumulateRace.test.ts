@@ -1,5 +1,6 @@
-import accumulateRace from './accumulateRace'
-import { timeout } from '@johngw/async'
+import timeout from '@johngw/async/timeout'
+import accumulateRace from './accumulateRace.js'
+import { expect, test } from 'vitest'
 
 test('returning all within time', async () => {
   expect(

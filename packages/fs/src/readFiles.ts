@@ -1,5 +1,5 @@
-import { readFile, readdir } from './promises'
-import * as pathHelper from 'path'
+import { readFile, readdir } from './promises.js'
+import * as pathHelper from 'node:path'
 
 export interface ReadFilesOptions {
   encoding?: BufferEncoding

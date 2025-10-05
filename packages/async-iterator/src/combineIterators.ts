@@ -1,4 +1,5 @@
-import { isEmpty, map } from '@johngw/object'
+import isEmpty from '@johngw/object/isEmpty'
+import map from '@johngw/object/map'
 
 /**
  * Combine async iterables and iterate through their results

@@ -1,4 +1,5 @@
-import timeout from './timeout'
+import { expect, test, vi } from 'vitest'
+import timeout from './timeout.js'
 
 test('it waits in milliseconds', async () => {
   await Promise.race([
@@ -18,9 +19,9 @@ test('aborting', async () => {
 
 test('aborting multiple', async () => {
   const abortController = new AbortController()
-  const one = jest.fn()
-  const two = jest.fn()
-  const three = jest.fn()
+  const one = vi.fn()
+  const two = vi.fn()
+  const three = vi.fn()
 
   await Promise.race([
     timeout(10, abortController.signal).then(one),

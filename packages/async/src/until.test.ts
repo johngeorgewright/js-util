@@ -1,9 +1,10 @@
-import until from './until'
+import { expect, test, vi } from 'vitest'
+import until from './until.js'
 
 test('until', async () => {
   let count = 0
 
-  const fn = jest.fn(async () => {
+  const fn = vi.fn(async () => {
     if (count === 3) {
       return true
     } else {

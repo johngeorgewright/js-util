@@ -1,4 +1,5 @@
-import separate from './separate'
+import { expect, test } from 'vitest'
+import separate from './separate.js'
 
 test('separates items into 2 buckets', () => {
   expect(separate([1, 2, 3, 4, 5, 6, 7, 8, 9], (x): x is number => x % 2 === 0))

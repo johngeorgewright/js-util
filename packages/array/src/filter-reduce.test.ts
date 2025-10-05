@@ -1,4 +1,5 @@
-import filterReduce from './filter-reduce'
+import { expect, test } from 'vitest'
+import filterReduce from './filter-reduce.js'
 
 test('filtering and reducing arrays', () => {
   expect(

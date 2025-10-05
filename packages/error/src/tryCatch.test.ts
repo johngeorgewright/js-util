@@ -1,4 +1,5 @@
-import { except, tryCatch, tryFinally } from './tryCatch'
+import { expect, test, vi } from 'vitest'
+import { except, tryCatch, tryFinally } from './tryCatch.js'
 
 test('try/catch as return statement', () => {
   expect(
@@ -115,8 +116,8 @@ test('promises with type matching', async () => {
 })
 
 test('tryFinally', async () => {
-  const bar = jest.fn(() => 'bar')
-  const barP = jest.fn(async () => void 0)
+  const bar = vi.fn(() => 'bar')
+  const barP = vi.fn(async () => void 0)
 
   expect(tryFinally(() => 'foo', bar)).toBe('foo')
   expect(bar).toHaveBeenCalled()

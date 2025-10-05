@@ -1,4 +1,5 @@
-import set from './set'
+import { expect, test } from 'vitest'
+import set from './set.js'
 
 test('sets a new value', () => {
   const map = new Map<string, string>()

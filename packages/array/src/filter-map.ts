@@ -1,4 +1,4 @@
-import Builder from './Builder'
+import Builder from './Builder.js'
 
 export default function filterMap<In, FilteredIn extends In, Out>(
   input: ArrayLike<In>,

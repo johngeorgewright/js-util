@@ -1,4 +1,4 @@
-import AbortError from './AbortError'
+import AbortError from './AbortError.js'
 
 export default function race<T>(
   fn: (signal: AbortSignal) => Promise<T>[],

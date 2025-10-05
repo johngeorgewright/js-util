@@ -1,4 +1,5 @@
-import assertNever from './assertNever'
+import { test } from 'vitest'
+import assertNever from './assertNever.js'
 
 test('doesnt error when the given value is `never`', () => {
   enum T {

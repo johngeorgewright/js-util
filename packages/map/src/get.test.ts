@@ -1,4 +1,5 @@
-import get from './get'
+import { expect, test } from 'vitest'
+import get from './get.js'
 
 test('returns the value', () => {
   const map = new Map<number, number>(

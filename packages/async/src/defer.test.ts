@@ -1,4 +1,5 @@
-import defer from './defer'
+import { expect, test } from 'vitest'
+import defer from './defer.js'
 
 test('it resolves a returned promise', async () => {
   const { resolve, promise } = defer<number>()

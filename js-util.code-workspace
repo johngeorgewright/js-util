@@ -17,8 +17,7 @@
     "search.exclude": { "**/dist": true, "**/.yarn": true, "**/.pnp.*": true },
     "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
     "typescript.tsdk": "✨ @johngw/js-util/.yarn/sdks/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true,
-    "jest.jestCommandLine": "yarn test"
+    "typescript.enablePromptUseWorkspaceTsdk": true
   },
   "extensions": {
     "recommendations": ["arcanis.vscode-zipfs", "esbenp.prettier-vscode"]

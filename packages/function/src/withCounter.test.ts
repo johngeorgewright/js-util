@@ -1,7 +1,8 @@
-import { withCounter } from '.'
+import { expect, test, vi } from 'vitest'
+import withCounter from './withCounter.js'
 
 test('increments a counter to a given', () => {
-  const fn = jest.fn<string, [count: number, key: string]>()
+  const fn = vi.fn<(count: number, key: string) => string>()
   const counterFn = withCounter(fn)
   counterFn('a')
   counterFn('b')
@@ -26,7 +27,7 @@ test('increments a counter to a given', () => {
 })
 
 test('change the start number', () => {
-  const fn = jest.fn<string, [count: number]>()
+  const fn = vi.fn<(count: number) => string>()
   withCounter(fn, 5)()
   expect(fn).toHaveBeenCalledWith(5)
 })

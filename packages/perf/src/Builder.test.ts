@@ -1,5 +1,5 @@
-import { Builder } from '@johngw/array'
-import Test from './ArrayTest'
+import Builder from '@johngw/array/Builder'
+import Test from './ArrayTest.js'
 
 const test = new Test()
 

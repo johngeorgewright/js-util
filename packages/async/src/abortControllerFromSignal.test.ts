@@ -1,4 +1,5 @@
-import abortControllerFromSignal from './abortControllerFromSignal'
+import { expect, test } from 'vitest'
+import abortControllerFromSignal from './abortControllerFromSignal.js'
 
 test("the controller aborts it's signals when the given signal is aborted", () => {
   const originalController = new AbortController()

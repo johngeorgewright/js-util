@@ -1,4 +1,5 @@
-import detonate from './detonate'
+import { expect, test } from 'vitest'
+import detonate from './detonate.js'
 
 test('it throws after an amount of ms', async () => {
   await Promise.race([
