@@ -8,8 +8,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "rimrafgenerators && yarn tsc && rimraf'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
-    "test": "jest --passWithNoTests"
+    "build": "rimrafgenerators && yarn tsc && rimraf'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'"
   },
   "keywords": [
     "yeoman-generator"

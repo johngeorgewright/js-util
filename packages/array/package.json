@@ -11,7 +11,7 @@
     "build": "yarn clean && tsc && rimraf --glob 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "rimraf dist",
     "start": "tsc --watch --preserveWatchOutput",
-    "test": "vitest"
+    "test": "vitest --run"
   },
   "author": "John Wright <johngeorge.wright@gmail.com>",
   "license": "MIT",
