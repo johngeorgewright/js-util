@@ -1,79 +1,52 @@
-name: Publish
+name: Release
 
 on:
   push:
     branches: [master]
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: release
+
 jobs:
-  test:
-    name: Build
+  release-please:
+    outputs:
+      paths: ${{ steps.release-please.outputs.paths_released }}
+      releases_created: ${{ steps.release-please.outputs.releases_created }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout project
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PUSH_TOKEN }}
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
+      - run: yarn install --immutable
+      - run: yarn build
+      - run: yarn test
+      - id: release-please
+        uses: googleapis/release-please-action@v4
 
-      - name: Setup
-        run: yarn --immutable
-
-      - name: Build
-        run: yarn build
-
-      - name: Test
-        run: yarn test
-
-      - name: Upload dists
-        uses: actions/upload-artifact@v3
-        with:
-          if-no-files-found: error
-          name: dists
-          path: packages/**/dist
-
-  publish:
-    name: Publish
-    needs: [test]
+  npm:
+    needs: [release-please]
+    if: needs.release-please.outputs.releases_created == 'true'
     runs-on: ubuntu-latest
-    environment: NPM
-    concurrency:
-      group: publish
+    environment: npm
     steps:
-      - name: Checkout project
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PUSH_TOKEN }}
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
-
-      - name: Setup
-        run: |
-          yarn config set --home 'npmRegistries["https://registry.npmjs.org"].npmAuthToken' '${{ secrets.NPM_TOKEN }}'
-          yarn config set --home npmPublishRegistry https://registry.npmjs.org
-          yarn --immutable
-
-      - name: Download dists
-        uses: actions/download-artifact@v3
-        with:
-          name: dists
-          path: ~/dists
-
-      - name: Move dists to project
-        run: |
-          for package in ~/dists/*
-          do 
-            mv "$package/dist" "packages/${package/$HOME\/dists\//}"
+      - run: yarn install --immutable
+      - run: yarn build
+      - env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: | # shell
+          echo '${{ needs.release-please.outputs.paths }}' | jq -r '.[]' | while read -r path
+          do
+            cd $path
+            yarn npm publish
+            cd -
           done
-
-      - name: Release
-        run: yarn release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
