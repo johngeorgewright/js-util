@@ -596,7 +596,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/async@workspace:packages/async"
   dependencies:
-    "@johngw/object": "workspace:packages/object"
+    "@johngw/object": "workspace:*"
     "@types/node": "npm:24.6.2"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
