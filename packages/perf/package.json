@@ -20,7 +20,7 @@
   "devDependencies": {
     "@johngw/array": "workspace:*",
     "@types/cli-table": "0.3.4",
-    "@types/node": "24.7.1",
+    "@types/node": "24.7.2",
     "cli-table": "0.3.11",
     "colors": "1.4.0",
     "ts-node": "10.9.2",

@@ -1172,7 +1172,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/array/",\
         "packageDependencies": [\
           ["@johngw/array", "workspace:packages/array"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1187,7 +1187,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@johngw/async", "workspace:packages/async"],\
           ["@johngw/object", "workspace:packages/object"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1203,7 +1203,7 @@ const RAW_RUNTIME_STATE =
           ["@johngw/async", "workspace:packages/async"],\
           ["@johngw/async-iterator", "workspace:packages/async-iterator"],\
           ["@johngw/object", "workspace:packages/object"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1217,7 +1217,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/error/",\
         "packageDependencies": [\
           ["@johngw/error", "workspace:packages/error"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1232,7 +1232,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@johngw/async-iterator", "workspace:packages/async-iterator"],\
           ["@johngw/fs", "workspace:packages/fs"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1246,7 +1246,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/function/",\
         "packageDependencies": [\
           ["@johngw/function", "workspace:packages/function"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1280,7 +1280,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/iterator/",\
         "packageDependencies": [\
           ["@johngw/iterator", "workspace:packages/iterator"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["ts-toolbelt", "npm:9.6.0"],\
           ["tslib", "npm:2.8.1"],\
@@ -1317,7 +1317,7 @@ const RAW_RUNTIME_STATE =
           ["@johngw/array", "workspace:packages/array"],\
           ["@johngw/js-util-perf", "workspace:packages/perf"],\
           ["@types/cli-table", "npm:0.3.4"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["cli-table", "npm:0.3.11"],\
           ["colors", "npm:1.4.0"],\
           ["ts-node", "virtual:3945bc26f90f6f09b84b924aa60e60e3cda1452bdb4285bb88f79098b0ac0ed1bbaf6c5c6af4cada6065d98304abc7d835de08d56b7af66a9513ecc2955e98a2#npm:10.9.2"],\
@@ -1332,7 +1332,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/map/",\
         "packageDependencies": [\
           ["@johngw/map", "workspace:packages/map"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1346,7 +1346,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/object/",\
         "packageDependencies": [\
           ["@johngw/object", "workspace:packages/object"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -3179,6 +3179,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-node-npm-24.7.1-2a6b98856d-b1796fa90a.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:24.7.1"],\
+          ["undici-types", "npm:7.14.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:24.7.2", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-24.7.2-c42e5df6ef-62073022f7.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:24.7.2"],\
           ["undici-types", "npm:7.14.0"]\
         ],\
         "linkType": "HARD"\
@@ -13661,7 +13669,7 @@ const RAW_RUNTIME_STATE =
           ["@tsconfig/node12", "npm:1.0.9"],\
           ["@tsconfig/node14", "npm:1.0.1"],\
           ["@tsconfig/node16", "npm:1.0.2"],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["@types/swc__core", null],\
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
@@ -14232,7 +14240,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jiti", null],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["@types/sass", null],\
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
@@ -14374,7 +14382,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:24.7.1"],\
+          ["@types/node", "npm:24.7.2"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
