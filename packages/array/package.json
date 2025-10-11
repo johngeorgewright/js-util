@@ -1,6 +1,6 @@
 {
   "name": "@johngw/array",
-  "version": "3.3.2",
+  "version": "4.0.0",
   "description": "JS/TS array utils.",
   "type": "module",
   "exports": {
