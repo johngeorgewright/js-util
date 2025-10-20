@@ -862,7 +862,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/array@workspace:packages/array"
   dependencies:
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -876,7 +876,7 @@ __metadata:
   dependencies:
     "@johngw/async": "workspace:*"
     "@johngw/object": "workspace:*"
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -889,7 +889,7 @@ __metadata:
   resolution: "@johngw/async@workspace:packages/async"
   dependencies:
     "@johngw/object": "workspace:*"
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -901,7 +901,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/error@workspace:packages/error"
   dependencies:
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -914,7 +914,7 @@ __metadata:
   resolution: "@johngw/fs@workspace:packages/fs"
   dependencies:
     "@johngw/async-iterator": "workspace:*"
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -926,7 +926,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/function@workspace:packages/function"
   dependencies:
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -956,7 +956,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/iterator@workspace:packages/iterator"
   dependencies:
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     ts-toolbelt: "npm:^9.6.0"
     tslib: "npm:^2.8.1"
@@ -971,7 +971,7 @@ __metadata:
   dependencies:
     "@johngw/array": "workspace:*"
     "@types/cli-table": "npm:0.3.4"
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     cli-table: "npm:0.3.11"
     colors: "npm:1.4.0"
     ts-node: "npm:10.9.2"
@@ -1002,7 +1002,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/map@workspace:packages/map"
   dependencies:
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -1014,7 +1014,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/object@workspace:packages/object"
   dependencies:
-    "@types/node": "npm:24.8.1"
+    "@types/node": "npm:24.9.0"
     rimraf: "npm:6.0.1"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -2634,12 +2634,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:24.8.1, @types/node@npm:>=16.18.31, @types/node@npm:>=18, @types/node@npm:^24.6.2":
+"@types/node@npm:*, @types/node@npm:>=16.18.31, @types/node@npm:>=18, @types/node@npm:^24.6.2":
   version: 24.8.1
   resolution: "@types/node@npm:24.8.1"
   dependencies:
     undici-types: "npm:~7.14.0"
   checksum: 10/4f944466766ca8cc0d635386e2b9b42b1948723ca0ec7d24624e80513e5816d6e96197db7c05f8f67b544a228a06a1c0598d66a5526aa4c1f5919db0d3c5bf8c
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:24.9.0":
+  version: 24.9.0
+  resolution: "@types/node@npm:24.9.0"
+  dependencies:
+    undici-types: "npm:~7.16.0"
+  checksum: 10/485bb1c2bb713e34935b47d41ecbdb02af8454ad72b013275992d09be885729a65c78733f054534ef9104df24c4cca2eb3a6c3082eae3c6c7ae078a643cacf9d
   languageName: node
   linkType: hard
 
@@ -12704,6 +12713,13 @@ __metadata:
   version: 7.14.0
   resolution: "undici-types@npm:7.14.0"
   checksum: 10/0f8709b21437697af35801e33bddbe9992e0cf1771959c41850b1946f63822b825e03ce99f44bf19e4f5c3ccc5166e0be59f541565c36ce86163dc2c5870bc62
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 10/db43439f69c2d94cc29f75cbfe9de86df87061d6b0c577ebe9bb3255f49b22c50162a7d7eb413b0458b6510b8ca299ac7cff38c3a29fbd31af9f504bcf7fbc0d
   languageName: node
   linkType: hard
 
