@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.0"],\
-          ["lint-staged", "npm:16.2.5"],\
+          ["lint-staged", "npm:16.2.6"],\
           ["prettier", "npm:3.6.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
@@ -1302,7 +1302,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.0"],\
-          ["lint-staged", "npm:16.2.5"],\
+          ["lint-staged", "npm:16.2.6"],\
           ["prettier", "npm:3.6.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
@@ -8873,12 +8873,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.2.5", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-16.2.5-165aa01d68-9a1019d2d9.zip/node_modules/lint-staged/",\
+      ["npm:16.2.6", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-16.2.6-0ee184c358-c419f13471.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
           ["commander", "npm:14.0.1"],\
-          ["lint-staged", "npm:16.2.5"],\
-          ["listr2", "npm:9.0.4"],\
+          ["lint-staged", "npm:16.2.6"],\
+          ["listr2", "npm:9.0.5"],\
           ["micromatch", "npm:4.0.8"],\
           ["nano-spawn", "npm:2.0.0"],\
           ["pidtree", "npm:0.6.0"],\
@@ -8889,13 +8889,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["listr2", [\
-      ["npm:9.0.4", {\
-        "packageLocation": "./.yarn/cache/listr2-npm-9.0.4-fc5d287291-8d8665d2ef.zip/node_modules/listr2/",\
+      ["npm:9.0.5", {\
+        "packageLocation": "./.yarn/cache/listr2-npm-9.0.5-8443b39154-b78ffd6044.zip/node_modules/listr2/",\
         "packageDependencies": [\
           ["cli-truncate", "npm:5.1.0"],\
           ["colorette", "npm:2.0.20"],\
           ["eventemitter3", "npm:5.0.1"],\
-          ["listr2", "npm:9.0.4"],\
+          ["listr2", "npm:9.0.5"],\
           ["log-update", "npm:6.1.0"],\
           ["rfdc", "npm:1.4.1"],\
           ["wrap-ansi", "npm:9.0.2"]\
