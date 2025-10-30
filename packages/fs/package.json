@@ -22,7 +22,7 @@
   "devDependencies": {
     "@johngw/async-iterator": "workspace:*",
     "@types/node": "24.9.1",
-    "rimraf": "6.0.1",
+    "rimraf": "6.1.0",
     "typescript": "5.9.3",
     "vitest": "3.2.4"
   },
