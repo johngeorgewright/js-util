@@ -92,7 +92,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.3"],\
           ["lint-staged", "npm:16.2.7"],\
-          ["prettier", "npm:3.7.3"],\
+          ["prettier", "npm:3.7.4"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
         ],\
@@ -1266,7 +1266,7 @@ const RAW_RUNTIME_STATE =
           ["@types/yeoman-generator", "npm:6.0.0"],\
           ["change-case", "npm:5.4.4"],\
           ["mem-fs", "npm:4.1.2"],\
-          ["prettier", "npm:3.7.3"],\
+          ["prettier", "npm:3.7.4"],\
           ["rimraf", "npm:6.1.2"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1303,7 +1303,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.3"],\
           ["lint-staged", "npm:16.2.7"],\
-          ["prettier", "npm:3.7.3"],\
+          ["prettier", "npm:3.7.4"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
         ],\
@@ -11599,10 +11599,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.7.3", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.7.3-b8a678e7cd/node_modules/prettier/",\
+      ["npm:3.7.4", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.7.4-78f94d4194/node_modules/prettier/",\
         "packageDependencies": [\
-          ["prettier", "npm:3.7.3"]\
+          ["prettier", "npm:3.7.4"]\
         ],\
         "linkType": "HARD"\
       }]\
