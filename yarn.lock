@@ -861,7 +861,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/array@workspace:packages/array"
   dependencies:
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -875,7 +875,7 @@ __metadata:
   dependencies:
     "@johngw/async": "workspace:*"
     "@johngw/object": "workspace:*"
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -888,7 +888,7 @@ __metadata:
   resolution: "@johngw/async@workspace:packages/async"
   dependencies:
     "@johngw/object": "workspace:*"
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -900,7 +900,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/error@workspace:packages/error"
   dependencies:
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -913,7 +913,7 @@ __metadata:
   resolution: "@johngw/fs@workspace:packages/fs"
   dependencies:
     "@johngw/async-iterator": "workspace:*"
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -925,7 +925,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/function@workspace:packages/function"
   dependencies:
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -955,7 +955,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/iterator@workspace:packages/iterator"
   dependencies:
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     ts-toolbelt: "npm:^9.6.0"
     tslib: "npm:^2.8.1"
@@ -970,7 +970,7 @@ __metadata:
   dependencies:
     "@johngw/array": "workspace:*"
     "@types/cli-table": "npm:0.3.4"
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     cli-table: "npm:0.3.11"
     colors: "npm:1.4.0"
     ts-node: "npm:10.9.2"
@@ -1001,7 +1001,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/map@workspace:packages/map"
   dependencies:
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -1013,7 +1013,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngw/object@workspace:packages/object"
   dependencies:
-    "@types/node": "npm:24.9.1"
+    "@types/node": "npm:24.10.13"
     rimraf: "npm:6.1.2"
     tslib: "npm:^2.8.1"
     typescript: "npm:5.9.3"
@@ -2584,12 +2584,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:24.9.1":
-  version: 24.9.1
-  resolution: "@types/node@npm:24.9.1"
+"@types/node@npm:24.10.13, @types/node@npm:^24.6.2":
+  version: 24.10.13
+  resolution: "@types/node@npm:24.10.13"
   dependencies:
     undici-types: "npm:~7.16.0"
-  checksum: 10/eacbd06621616825042428dd6105d0c2f86d67b5f05f99db9fa89fe1cc173d5e65e604a9a61f1ce52ad915d09f2119e7468816ca1a22bb7a3cf5f3c131413c86
+  checksum: 10/c779d14cf17758a9d603e0c0978c8045bd070e259617ec16f4ddac419ec11aac0e0cf2bb013dab008fdbd2f46c39f82397884662bbdfabeb19bef0079679ea48
   languageName: node
   linkType: hard
 
@@ -2597,15 +2597,6 @@ __metadata:
   version: 16.18.126
   resolution: "@types/node@npm:16.18.126"
   checksum: 10/33e0fa9209a4a96459a8fdf6b078ca9590eb67a8d51899180cfac8afecb9aa133c755d1c38a8b947b9f384f2faa184cabf4e567f5f6dded285be1b31588ec199
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^24.6.2":
-  version: 24.10.13
-  resolution: "@types/node@npm:24.10.13"
-  dependencies:
-    undici-types: "npm:~7.16.0"
-  checksum: 10/c779d14cf17758a9d603e0c0978c8045bd070e259617ec16f4ddac419ec11aac0e0cf2bb013dab008fdbd2f46c39f82397884662bbdfabeb19bef0079679ea48
   languageName: node
   linkType: hard
 
