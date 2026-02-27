@@ -1271,7 +1271,7 @@ const RAW_RUNTIME_STATE =
           ["@types/rimraf", "npm:4.0.5"],\
           ["@types/yeoman-generator", "npm:6.0.0"],\
           ["change-case", "npm:5.4.4"],\
-          ["mem-fs", "npm:4.1.3"],\
+          ["mem-fs", "npm:4.1.4"],\
           ["prettier", "npm:3.8.1"],\
           ["rimraf", "npm:6.1.3"],\
           ["tslib", "npm:2.8.1"],\
@@ -9432,12 +9432,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.1.3", {\
-        "packageLocation": "./.yarn/cache/mem-fs-npm-4.1.3-d2950474b1-97fa0a811c.zip/node_modules/mem-fs/",\
+      ["npm:4.1.4", {\
+        "packageLocation": "./.yarn/cache/mem-fs-npm-4.1.4-aec666399e-6be599a6ff.zip/node_modules/mem-fs/",\
         "packageDependencies": [\
           ["@types/node", "npm:25.3.2"],\
           ["@types/vinyl", "npm:2.0.12"],\
-          ["mem-fs", "npm:4.1.3"],\
+          ["mem-fs", "npm:4.1.4"],\
           ["vinyl", "npm:3.0.1"],\
           ["vinyl-file", "npm:5.0.0"]\
         ],\
@@ -9464,7 +9464,7 @@ const RAW_RUNTIME_STATE =
           ["ejs", "npm:3.1.10"],\
           ["globby", "npm:14.1.0"],\
           ["isbinaryfile", "npm:5.0.3"],\
-          ["mem-fs", "npm:4.1.3"],\
+          ["mem-fs", "npm:4.1.4"],\
           ["mem-fs-editor", "virtual:09f8cf214e9b619d65ece81d3e21bf2bc388b0988fca93ffe82169c5d758ad64f594b969145e83bd0f6b489cbe1cf677e564f53dc24161871721b076378af0c3#npm:11.1.4"],\
           ["minimatch", "npm:9.0.5"],\
           ["multimatch", "npm:7.0.0"],\
@@ -15031,7 +15031,7 @@ const RAW_RUNTIME_STATE =
           ["json-schema", "npm:0.4.0"],\
           ["latest-version", "npm:9.0.0"],\
           ["lodash-es", "npm:4.17.21"],\
-          ["mem-fs", "npm:4.1.3"],\
+          ["mem-fs", "npm:4.1.4"],\
           ["mem-fs-editor", "virtual:09f8cf214e9b619d65ece81d3e21bf2bc388b0988fca93ffe82169c5d758ad64f594b969145e83bd0f6b489cbe1cf677e564f53dc24161871721b076378af0c3#npm:11.1.4"],\
           ["minimist", "npm:1.2.8"],\
           ["read-package-up", "npm:11.0.0"],\
