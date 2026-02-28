@@ -8962,10 +8962,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["locutus", [\
-      ["npm:2.0.15", {\
-        "packageLocation": "./.yarn/cache/locutus-npm-2.0.15-531fedd73f-2672191c92.zip/node_modules/locutus/",\
+      ["npm:2.0.39", {\
+        "packageLocation": "./.yarn/cache/locutus-npm-2.0.39-63f9e4472e-e6c2d693c3.zip/node_modules/locutus/",\
         "packageDependencies": [\
-          ["locutus", "npm:2.0.15"]\
+          ["locutus", "npm:2.0.39"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13906,7 +13906,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/twig-npm-1.15.4-f461f3a420-098e8c4d1d.zip/node_modules/twig/",\
         "packageDependencies": [\
           ["@babel/runtime", "npm:7.16.0"],\
-          ["locutus", "npm:2.0.15"],\
+          ["locutus", "npm:2.0.39"],\
           ["minimatch", "npm:3.0.4"],\
           ["twig", "npm:1.15.4"],\
           ["walk", "npm:2.3.15"]\
