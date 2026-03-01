@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.5"],\
-          ["lint-staged", "npm:16.3.0"],\
+          ["lint-staged", "npm:16.3.1"],\
           ["prettier", "npm:3.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
@@ -1308,7 +1308,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.5"],\
-          ["lint-staged", "npm:16.3.0"],\
+          ["lint-staged", "npm:16.3.1"],\
           ["prettier", "npm:3.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
@@ -8880,14 +8880,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.3.0", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-16.3.0-a670bfc645-0ae6d4bbef.zip/node_modules/lint-staged/",\
+      ["npm:16.3.1", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-16.3.1-0394a5ca17-4eaebcfcf7.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
           ["commander", "npm:14.0.3"],\
-          ["lint-staged", "npm:16.3.0"],\
+          ["lint-staged", "npm:16.3.1"],\
           ["listr2", "npm:9.0.5"],\
           ["micromatch", "npm:4.0.8"],\
-          ["nano-spawn", "npm:2.0.0"],\
           ["string-argv", "npm:0.3.2"],\
           ["tinyexec", "npm:1.0.2"],\
           ["yaml", "npm:2.8.2"]\
@@ -10061,15 +10060,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/mute-stream-npm-2.0.0-45d3c1ef83-d2e4fd2f5a.zip/node_modules/mute-stream/",\
         "packageDependencies": [\
           ["mute-stream", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["nano-spawn", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/nano-spawn-npm-2.0.0-96abe72805-117d35d7bd.zip/node_modules/nano-spawn/",\
-        "packageDependencies": [\
-          ["nano-spawn", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
