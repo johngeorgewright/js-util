@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.5"],\
-          ["lint-staged", "npm:16.3.1"],\
+          ["lint-staged", "npm:16.3.2"],\
           ["prettier", "npm:3.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
@@ -1308,7 +1308,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.5"],\
-          ["lint-staged", "npm:16.3.1"],\
+          ["lint-staged", "npm:16.3.2"],\
           ["prettier", "npm:3.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
@@ -8914,11 +8914,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.3.1", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-16.3.1-0394a5ca17-4eaebcfcf7.zip/node_modules/lint-staged/",\
+      ["npm:16.3.2", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-16.3.2-66096e73a0-41497d746e.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
           ["commander", "npm:14.0.3"],\
-          ["lint-staged", "npm:16.3.1"],\
+          ["lint-staged", "npm:16.3.2"],\
           ["listr2", "npm:9.0.5"],\
           ["micromatch", "npm:4.0.8"],\
           ["string-argv", "npm:0.3.2"],\
