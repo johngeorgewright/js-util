@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.7"],\
-          ["lint-staged", "npm:16.3.3"],\
+          ["lint-staged", "npm:16.4.0"],\
           ["prettier", "npm:3.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
@@ -1337,7 +1337,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.7"],\
-          ["lint-staged", "npm:16.3.3"],\
+          ["lint-staged", "npm:16.4.0"],\
           ["prettier", "npm:3.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
@@ -8792,15 +8792,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.3.3", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-16.3.3-0327960cee-64b20a0aa8.zip/node_modules/lint-staged/",\
+      ["npm:16.4.0", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-16.4.0-bc70d40d4b-eb7aa0d43e.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
           ["commander", "npm:14.0.3"],\
-          ["lint-staged", "npm:16.3.3"],\
+          ["lint-staged", "npm:16.4.0"],\
           ["listr2", "npm:9.0.5"],\
-          ["micromatch", "npm:4.0.8"],\
+          ["picomatch", "npm:4.0.3"],\
           ["string-argv", "npm:0.3.2"],\
-          ["tinyexec", "npm:1.0.2"],\
+          ["tinyexec", "npm:1.0.4"],\
           ["yaml", "npm:2.8.2"]\
         ],\
         "linkType": "HARD"\
@@ -13436,10 +13436,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:1.0.2", {\
-        "packageLocation": "./.yarn/cache/tinyexec-npm-1.0.2-321b713e56-cb709ed424.zip/node_modules/tinyexec/",\
+      ["npm:1.0.4", {\
+        "packageLocation": "./.yarn/cache/tinyexec-npm-1.0.4-c1df9ff8b1-ccebe4044e.zip/node_modules/tinyexec/",\
         "packageDependencies": [\
-          ["tinyexec", "npm:1.0.2"]\
+          ["tinyexec", "npm:1.0.4"]\
         ],\
         "linkType": "HARD"\
       }]\
