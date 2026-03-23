@@ -21,7 +21,7 @@
     "@types/rimraf": "4.0.5",
     "@types/yeoman-generator": "6.0.0",
     "prettier": "3.8.1",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "dependencies": {
     "change-case": "5.4.4",
