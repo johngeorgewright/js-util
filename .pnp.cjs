@@ -12606,13 +12606,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["simple-git", [\
-      ["npm:3.28.0", {\
-        "packageLocation": "./.yarn/cache/simple-git-npm-3.28.0-590362f761-2582e6c1c5.zip/node_modules/simple-git/",\
+      ["npm:3.33.0", {\
+        "packageLocation": "./.yarn/cache/simple-git-npm-3.33.0-5230b6459a-5175133df6.zip/node_modules/simple-git/",\
         "packageDependencies": [\
           ["@kwsites/file-exists", "npm:1.1.1"],\
           ["@kwsites/promise-deferred", "npm:1.1.1"],\
           ["debug", "virtual:77755680f6c8f271b091bed7d841a07b52a9969fa4f481c3d89716f3f0c890ce40d9f1aaf5aa8d67fefd2fbf7efdab283d3e52c3b7f163fc19d12f30c4e4ba07#npm:4.4.3"],\
-          ["simple-git", "npm:3.28.0"]\
+          ["simple-git", "npm:3.33.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14818,7 +14818,7 @@ const RAW_RUNTIME_STATE =
           ["minimist", "npm:1.2.8"],\
           ["read-package-up", "npm:11.0.0"],\
           ["semver", "npm:7.5.4"],\
-          ["simple-git", "npm:3.28.0"],\
+          ["simple-git", "npm:3.33.0"],\
           ["sort-keys", "npm:5.1.0"],\
           ["text-table", "npm:0.2.0"],\
           ["yeoman-generator", "virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:7.5.1"]\
@@ -14853,7 +14853,7 @@ const RAW_RUNTIME_STATE =
           ["minimist", "npm:1.2.8"],\
           ["read-package-up", "npm:11.0.0"],\
           ["semver", "npm:7.5.4"],\
-          ["simple-git", "npm:3.28.0"],\
+          ["simple-git", "npm:3.33.0"],\
           ["sort-keys", "npm:5.1.0"],\
           ["text-table", "npm:0.2.0"],\
           ["yeoman-generator", "virtual:4e0613782cd604799960f212d8b1b013cbf43abeeca6a974ae1d335795166985fbd066595224e878d4ccdee7361044c35ac4bb158c5b6e0792c0d0ba9c36b9fb#npm:7.5.1"]\
