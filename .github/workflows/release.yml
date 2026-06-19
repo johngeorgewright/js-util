@@ -27,7 +27,7 @@ jobs:
       - run: yarn build
       - run: yarn test
       - id: release-please
-        uses: googleapis/release-please-action@v4
+        uses: googleapis/release-please-action@v5
 
   npm:
     needs: [release-please]
