@@ -3327,7 +3327,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@yarnpkg-parsers-npm-3.0.2-c5e3ccc563-87506f140d.zip/node_modules/@yarnpkg/parsers/",\
         "packageDependencies": [\
           ["@yarnpkg/parsers", "npm:3.0.2"],\
-          ["js-yaml", "npm:3.14.1"],\
+          ["js-yaml", "npm:3.14.2"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
@@ -5211,7 +5211,7 @@ const RAW_RUNTIME_STATE =
           ["cosmiconfig", "virtual:5c4c499b0fc9fe880010b82bd3ed6256f2af5578dc0db0eff1474f4feb2549036d6ef72138047171de273e98ee6cc938f5c23199741ff50fab79c407cd67a4a9#npm:9.0.0"],\
           ["env-paths", "npm:2.2.1"],\
           ["import-fresh", "npm:3.3.1"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["parse-json", "npm:5.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
@@ -5228,7 +5228,7 @@ const RAW_RUNTIME_STATE =
           ["cosmiconfig", "virtual:cc04833425b18a921427453d153b7d48525a73078e2d3744a9a691e27af83971fb61b14d06caba61163a1f10b74e309e0ccc9d54922b2ee1ee2879c9f3a84623#npm:9.0.1"],\
           ["env-paths", "npm:2.2.1"],\
           ["import-fresh", "npm:3.3.1"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["parse-json", "npm:5.2.0"],\
           ["typescript", null]\
         ],\
@@ -6619,7 +6619,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/front-matter-npm-4.0.2-e1cc0efa69-8897a831a8.zip/node_modules/front-matter/",\
         "packageDependencies": [\
           ["front-matter", "npm:4.0.2"],\
-          ["js-yaml", "npm:3.14.1"]\
+          ["js-yaml", "npm:3.14.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8476,20 +8476,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["js-yaml", [\
-      ["npm:3.14.1", {\
-        "packageLocation": "./.yarn/cache/js-yaml-npm-3.14.1-b968c6095e-9e22d80b4d.zip/node_modules/js-yaml/",\
+      ["npm:3.14.2", {\
+        "packageLocation": "./.yarn/cache/js-yaml-npm-3.14.2-debd9d20c3-172e0b6007.zip/node_modules/js-yaml/",\
         "packageDependencies": [\
           ["argparse", "npm:1.0.10"],\
           ["esprima", "npm:4.0.1"],\
-          ["js-yaml", "npm:3.14.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:4.1.0", {\
-        "packageLocation": "./.yarn/cache/js-yaml-npm-4.1.0-3606f32312-c138a34a3f.zip/node_modules/js-yaml/",\
-        "packageDependencies": [\
-          ["argparse", "npm:2.0.1"],\
-          ["js-yaml", "npm:4.1.0"]\
+          ["js-yaml", "npm:3.14.2"]\
         ],\
         "linkType": "HARD"\
       }],\
