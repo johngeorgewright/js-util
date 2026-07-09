@@ -1,6 +1,6 @@
 {
   "name": "@johngw/fs",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "JS/TS File System Utilities.",
   "type": "module",
   "exports": {
