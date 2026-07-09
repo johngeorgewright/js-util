@@ -10109,7 +10109,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["hosted-git-info", "npm:2.8.9"],\
           ["normalize-package-data", "npm:2.5.0"],\
-          ["resolve", "patch:resolve@npm%3A1.20.0#optional!builtin<compat/resolve>::version=1.20.0&hash=c3c19d"],\
+          ["resolve", "patch:resolve@npm%3A1.20.0#optional!builtin<compat/resolve>::version=1.20.0&hash=9bd1a5"],\
           ["semver", "npm:5.7.1"],\
           ["validate-npm-package-license", "npm:3.0.4"]\
         ],\
@@ -12041,12 +12041,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["resolve", [\
-      ["patch:resolve@npm%3A1.20.0#optional!builtin<compat/resolve>::version=1.20.0&hash=c3c19d", {\
-        "packageLocation": "./.yarn/cache/resolve-patch-63f1eb0464-197ca6b762.zip/node_modules/resolve/",\
+      ["patch:resolve@npm%3A1.20.0#optional!builtin<compat/resolve>::version=1.20.0&hash=9bd1a5", {\
+        "packageLocation": "./.yarn/cache/resolve-patch-55764d816a-b345e26654.zip/node_modules/resolve/",\
         "packageDependencies": [\
           ["is-core-module", "npm:2.8.0"],\
           ["path-parse", "npm:1.0.7"],\
-          ["resolve", "patch:resolve@npm%3A1.20.0#optional!builtin<compat/resolve>::version=1.20.0&hash=c3c19d"]\
+          ["resolve", "patch:resolve@npm%3A1.20.0#optional!builtin<compat/resolve>::version=1.20.0&hash=9bd1a5"]\
         ],\
         "linkType": "HARD"\
       }]\
