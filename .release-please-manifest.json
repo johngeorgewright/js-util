@@ -1,11 +1,11 @@
 {
-  "packages/array": "3.3.2",
-  "packages/async": "5.0.1",
-  "packages/async-iterator": "4.0.1",
-  "packages/error": "2.2.2",
-  "packages/fs": "3.0.1",
-  "packages/function": "1.1.2",
-  "packages/iterator": "1.2.2",
-  "packages/map": "1.3.2",
-  "packages/object": "1.2.3"
+  "packages/array": "4.0.0",
+  "packages/async": "6.0.0",
+  "packages/async-iterator": "5.0.0",
+  "packages/error": "3.0.0",
+  "packages/fs": "4.0.0",
+  "packages/function": "2.0.0",
+  "packages/iterator": "2.0.0",
+  "packages/map": "2.0.0",
+  "packages/object": "2.0.0"
 }
