@@ -1,6 +1,6 @@
 {
   "name": "@johngw/async-iterator",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "JS/TS Async iterator utilities.",
   "type": "module",
   "exports": {
