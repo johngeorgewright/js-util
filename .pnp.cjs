@@ -92,7 +92,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.7"],\
           ["lint-staged", "npm:16.4.0"],\
-          ["prettier", "npm:3.9.6"],\
+          ["prettier", "npm:3.9.10"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
         ],\
@@ -1317,7 +1317,7 @@ const RAW_RUNTIME_STATE =
           ["@types/yeoman-generator", "npm:6.0.0"],\
           ["change-case", "npm:5.4.4"],\
           ["mem-fs", "virtual:4837ceb6fbcfc2176a98b4a6e05c0c6673ba5d0dacf2e1bd402500982382c7fc3224e31c3eec2681f6f6055b55ab78cc55cb37389b9700d72b17929521abd652#npm:4.1.5"],\
-          ["prettier", "npm:3.9.6"],\
+          ["prettier", "npm:3.9.10"],\
           ["rimraf", "npm:6.1.3"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -1354,7 +1354,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.1.7"],\
           ["lerna", "npm:9.0.7"],\
           ["lint-staged", "npm:16.4.0"],\
-          ["prettier", "npm:3.9.6"],\
+          ["prettier", "npm:3.9.10"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["yo", "npm:5.1.0"]\
         ],\
@@ -11508,10 +11508,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.9.6", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.9.6-ad164eec07/node_modules/prettier/",\
+      ["npm:3.9.10", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.9.10-551fb7fe51/node_modules/prettier/",\
         "packageDependencies": [\
-          ["prettier", "npm:3.9.6"]\
+          ["prettier", "npm:3.9.10"]\
         ],\
         "linkType": "HARD"\
       }]\
