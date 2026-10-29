@@ -1,6 +1,6 @@
 {
   "name": "@johngw/async",
-  "version": "5.0.1",
+  "version": "6.0.0",
   "description": "JS/TS Async utilities.",
   "type": "module",
   "exports": {
